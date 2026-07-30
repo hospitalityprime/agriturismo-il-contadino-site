@@ -1,0 +1,31 @@
+name: Deploy su Hostinger (FTP)
+
+# Ad ogni push sul branch main, carica i file cambiati su Hostinger via FTP.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}   # permette anche l'avvio manuale dalla tab "Actions"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Scarica il codice
+        uses: actions/checkout@v4
+
+      - name: Carica su Hostinger via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          # Cartella di destinazione sul server. Di solito public_html/
+          # (a volte domains/ilcontadino.it/public_html/). La confermiamo insieme.
+          server-dir: public_html/
+          # Non caricare questi file/cartelle sul sito:
+          exclude:
+            - "**/.git*"
+            - "**/.git*/**"
+            - ".github/**"
+            - "LEGGIMI.txt"
+            - "README.md"
