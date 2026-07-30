@@ -1,0 +1,69 @@
+IL CONTADINO — export HTML per Go High Level
+============================================
+
+CONTENUTO
+  index.html   → landing page
+  menu.html    → pagina menù
+  images/      → 51 foto usate dalle due pagine
+
+Sono due file HTML statici, autonomi: nessun framework, nessuna dipendenza
+esterna a parte i font Google (caricati via <link>).
+
+
+COME CARICARLI SU GO HIGH LEVEL
+-------------------------------
+
+OPZIONE A — Custom Code / Embed (la più rapida)
+1. In GHL crea una nuova pagina vuota (Funnel o Website).
+2. Inserisci un elemento "Custom Code" / "Custom HTML" a piena larghezza.
+3. Apri index.html con un editor di testo, copia TUTTO il contenuto tra
+   <body> e </body> più il blocco <style> che sta nel <head>, e incollalo
+   nell'elemento Custom Code.
+4. Aggiungi nel <head> della pagina GHL (Settings → Tracking Code → Head)
+   i due <link> dei font Google che trovi in cima al file.
+5. Ripeti per menu.html su una seconda pagina.
+
+OPZIONE B — Import HTML (se il tuo piano lo consente)
+   Carica direttamente index.html e menu.html.
+
+
+LE IMMAGINI
+-----------
+Nei file le foto sono richiamate come  images/nomefile.jpg
+
+1. Carica tutte le foto della cartella images/ nella Media Library di GHL.
+2. Copia l'URL base che GHL assegna (es. https://storage.googleapis.com/msgsndr/XXXX/media/)
+3. Nei due file HTML fai un find & replace:
+        images/     →     https://TUO-URL-BASE/
+   Attenzione: se i nomi file cambiano in fase di upload, va aggiornato
+   anche il nome nel percorso.
+
+Il logo è già un URL assoluto (ilcontadino.it) e non richiede modifiche.
+
+
+IL FORM DI PRENOTAZIONE
+-----------------------
+Il form in index.html (sezione "Riserva il tuo tavolo") è solo grafico:
+al submit mostra un messaggio di ringraziamento ma NON invia nulla.
+Per farlo funzionare in GHL hai due strade:
+  a) sostituire il <form> con un form nativo GHL (così i lead entrano in CRM);
+  b) aggiungere action/method verso il tuo endpoint o webhook.
+La strada (a) è quella consigliata: mantieni lo stile incollando le classi
+inline sui campi del form GHL.
+
+
+LINK INTERNI
+------------
+index.html punta a menu.html e viceversa. Se in GHL gli slug delle pagine
+sono diversi (es. /menu), aggiorna gli href:
+        href="menu.html"    →    href="/menu"
+        href="index.html"   →    href="/"
+
+
+DA CONFERMARE PRIMA DI PUBBLICARE
+---------------------------------
+- Numero di telefono e WhatsApp (351 774 6917)
+- Email (ilcontadino@ilcontadino.it)
+- Testi delle 3 recensioni (attualmente segnaposto)
+- Prezzo "Zuppa di fagioli e cozze" (mancante nel listino fornito)
+- Link Privacy Policy e Cookie Policy (attualmente #)

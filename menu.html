@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Il menù — Il Contadino, Agriturismo in Salento</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { background:#F3F0E2; -webkit-font-smoothing:antialiased; }
+  a { color:#4C7A34; text-decoration:none; }
+  a:hover { color:#3a5f26; }
+  ::selection { background:#7DB249; color:#12210a; }
+  @keyframes chipHint { 0%, 100% { transform: translateX(0); opacity: 0.75; } 50% { transform: translateX(-5px); opacity: 1; } }
+  [data-r="burger"] { display: none; }
+  @media (max-width: 620px) {
+    [data-r="row"] { flex-wrap: wrap !important; }
+    [data-r="row"] > div:last-child { width: 100%; margin-top: 6px; }
+  }
+  @media (max-width: 900px) {
+    [data-r="2col"] { grid-template-columns: 1fr !important; }
+    [data-r="foot"] { grid-template-columns: 1fr !important; }
+  }
+  @media (max-width: 1000px) {
+    [data-r="topnav"] { flex-wrap: nowrap !important; justify-content: space-between !important; gap: 10px !important; height: 64px; padding-top: 0 !important; padding-bottom: 0 !important; }
+    [data-r="topnav"] > div { display: none !important; }
+    [data-r="topnav"] > a:first-child { flex: 0 1 auto; min-width: 0; overflow: hidden; }
+    [data-r="topnav"] img { height: 36px !important; }
+    [data-r="topnav"] > a:first-child span { font-size: 17px !important; }
+    [data-r="topnav"] > a:last-child { flex: 0 0 auto; font-size: 12px !important; padding: 10px 14px !important; }
+    [data-r="burger"] { display: flex !important; }
+    [data-r="topnav"] > a[href*="prenota"] { display: none !important; }
+    [data-r="catbar"] { top: 64px !important; position: sticky; }
+    [data-r="catbar"]::after { content: "›"; position: absolute; top: 0; right: 0; height: 100%; width: 52px; display: flex; align-items: center; justify-content: flex-end; padding-right: 12px; font-family: 'Sora',sans-serif; font-size: 22px; font-weight: 700; color: #4C7A34; background: linear-gradient(to right, rgba(243,240,226,0) 0%, rgba(243,240,226,0.95) 55%); pointer-events: none; animation: chipHint 1.6s ease-in-out infinite; }
+    [data-r="chips"] { flex-wrap: nowrap !important; overflow-x: auto; justify-content: flex-start !important; scrollbar-width: none; -webkit-overflow-scrolling: touch; padding-right: 56px !important; }
+    [data-r="chips"]::-webkit-scrollbar { display: none; }
+    [data-r="chips"] > a { flex: 0 0 auto; }
+    section[id] { scroll-margin-top: 140px !important; }
+  }
+  @media (max-width: 560px) {
+  }
+
+
+  @media (max-width: 620px) {
+
+
+  }
+
+  @media (max-width: 620px) {
+    [data-r="cta"] { flex-direction: row !important; flex-wrap: nowrap !important; gap: 10px !important; text-align: left !important; padding-top: 8px !important; padding-bottom: 8px !important; }
+    [data-r="cta"] > span { min-width: 0; flex: 1 1 auto; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 13px !important; }
+    [data-r="cta"] > a { flex: 0 0 auto; width: auto !important; white-space: nowrap; font-size: 12px !important; padding: 11px 16px !important; }
+  }
+
+  @media (max-width: 620px) {
+    [data-r="cta"] { padding-top: 13px !important; padding-bottom: 13px !important; }
+    [data-r="cta"] > a { padding: 15px 18px !important; }
+  }
+</style>
+</head>
+<body>
+
+
+
+<div style="font-family:'Plus Jakarta Sans',sans-serif; color:#22301B; background:#F3F0E2; overflow-x:clip; padding-bottom:80px;">
+
+<!-- NAV -->
+<header style="position:sticky; top:0; z-index:50; background:#FFFFFF; border-bottom:1px solid rgba(28,41,19,0.07);">
+  <nav data-r="topnav" style="max-width:1240px; margin:0 auto; padding:14px clamp(20px,5vw,60px); display:flex; align-items:center; justify-content:center; gap:clamp(20px,3vw,44px); flex-wrap:wrap;">
+    <a href="index.html" style="display:flex; align-items:center; gap:12px;">
+      <img src="https://www.ilcontadino.it/wp-content/uploads/2022/01/LOGO-CONTADINO.png" alt="Il Contadino" style="height:52px; width:auto; display:block;" loading="lazy">
+      <span style="font-family:'Sora',sans-serif; font-weight:700; font-size:22px; color:#1c2913;">Il Contadino</span>
+    </a>
+    <div style="display:flex; gap:clamp(16px,2.4vw,30px); align-items:center;">
+      <a href="index.html" style="font-size:15px; font-weight:500; color:#000000;">Home</a>
+      <a href="index.html#sale" style="font-size:15px; font-weight:500; color:#000000;">Le sale</a>
+      <a href="index.html#storia" style="font-size:15px; font-weight:500; color:#000000;">La storia</a>
+      <a href="index.html#dove" style="font-size:15px; font-weight:500; color:#000000;">Dove siamo</a>
+    </div>
+    <a href="index.html#prenota" style="background:#7DB249; color:#12210a; font-size:14px; font-weight:700; letter-spacing:0.01em; padding:14px 28px; border-radius:999px; white-space:nowrap;">Riserva Il Tuo Tavolo</a>
+    <button data-r="burger" aria-label="Menu" style="flex:0 0 auto; width:44px; height:44px; border:1px solid rgba(28,41,19,0.14); border-radius:12px; background:#FFFFFF; cursor:pointer; flex-direction:column; align-items:center; justify-content:center; gap:5px;" data-burger="">
+      <span style="display:block; width:20px; height:2px; background:#1c2913; border-radius:2px;"></span>
+      <span style="display:block; width:20px; height:2px; background:#1c2913; border-radius:2px;"></span>
+      <span style="display:block; width:20px; height:2px; background:#1c2913; border-radius:2px;"></span>
+    </button>
+  </nav>
+  
+    <div style="border-top:1px solid rgba(28,41,19,0.08); background:#FFFFFF; padding:14px clamp(20px,5vw,60px) 20px; display:flex; flex-direction:column; gap:4px;" id="mobile-drawer">
+      <a href="index.html" style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#1c2913; padding:12px 0; border-bottom:1px solid rgba(28,41,19,0.07);">Home</a>
+      <a href="index.html#sale" style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#1c2913; padding:12px 0; border-bottom:1px solid rgba(28,41,19,0.07);">Le sale</a>
+      <a href="index.html#storia" style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#1c2913; padding:12px 0; border-bottom:1px solid rgba(28,41,19,0.07);">La storia</a>
+      <a href="index.html#dove" style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#1c2913; padding:12px 0; border-bottom:1px solid rgba(28,41,19,0.07);">Dove siamo</a>
+      <a href="index.html#prenota" style="margin-top:12px; text-align:center; background:#7DB249; color:#12210a; font-family:'Sora',sans-serif; font-size:15px; font-weight:700; padding:15px 24px; border-radius:999px;">Riserva il tuo tavolo</a>
+    </div>
+  
+</header>
+
+<!-- INTESTAZIONE -->
+<section style="background:#1E3320; color:#e6ecda;">
+  <div style="max-width:1240px; margin:0 auto; padding:clamp(48px,7vw,88px) clamp(20px,5vw,60px); text-align:center;">
+    <span style="display:inline-flex; align-items:center; gap:8px; font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:#bcd39a; background:rgba(255,255,255,0.08); padding:8px 16px; border-radius:999px;"><span style="width:6px; height:6px; border-radius:99px; background:#bcd39a;"></span>Solo materie prime fresche. Solo di stagione.</span>
+    <h1 style="font-family:'Sora',sans-serif; font-weight:700; font-size:clamp(34px,5vw,62px); line-height:1.06; letter-spacing:-0.02em; color:#F3F0E2; margin-top:22px;">Il nostro menù.</h1>
+    <p style="font-size:clamp(17px,1.6vw,19px); line-height:1.65; color:#c3ccb3; margin:20px auto 0; max-width:620px;">Il pane, la pasta, la pizza, l'olio, il vino, la verdura, le conserve: tutto quello che trovi qui viene dalle nostre terre. Il pescato lo scegliamo ogni mattina al porto di Otranto.</p>
+    <div style="display:flex; flex-wrap:wrap; gap:10px 22px; justify-content:center; margin-top:26px; font-size:15px; color:#bcd39a;">
+      <span>Opzioni vegetariane</span>
+      <span>Anche senza glutine</span>
+      <span>Pizzeria con forno a legna</span>
+    </div>
+  </div>
+</section>
+
+<!-- NAV CATEGORIE -->
+<nav data-r="catbar" style="position:sticky; top:81px; z-index:40; background:rgba(243,240,226,0.96); backdrop-filter:blur(10px); border-bottom:1px solid rgba(28,41,19,0.08);">
+  <div data-r="chips" style="max-width:1240px; margin:0 auto; padding:14px clamp(20px,5vw,60px); display:flex; flex-wrap:wrap; gap:8px; justify-content:center;">
+    <a href="#antipasti" style="font-size:13px; font-weight:600; color:#37432c; background:#FFFFFF; border:1px solid #e0dcc7; padding:9px 16px; border-radius:999px;">Antipasti</a>
+    <a href="#primi" style="font-size:13px; font-weight:600; color:#37432c; background:#FFFFFF; border:1px solid #e0dcc7; padding:9px 16px; border-radius:999px;">Primi</a>
+    <a href="#secondi" style="font-size:13px; font-weight:600; color:#37432c; background:#FFFFFF; border:1px solid #e0dcc7; padding:9px 16px; border-radius:999px;">Secondi</a>
+    <a href="#contorni" style="font-size:13px; font-weight:600; color:#37432c; background:#FFFFFF; border:1px solid #e0dcc7; padding:9px 16px; border-radius:999px;">Contorni</a>
+    <a href="#pizze" style="font-size:13px; font-weight:600; color:#37432c; background:#FFFFFF; border:1px solid #e0dcc7; padding:9px 16px; border-radius:999px;">Pizze</a>
+    <a href="#dolci" style="font-size:13px; font-weight:600; color:#37432c; background:#FFFFFF; border:1px solid #e0dcc7; padding:9px 16px; border-radius:999px;">Dolci</a>
+    <a href="#vini" style="font-size:13px; font-weight:600; color:#37432c; background:#FFFFFF; border:1px solid #e0dcc7; padding:9px 16px; border-radius:999px;">Vini</a>
+    <a href="#aperitivi" style="font-size:13px; font-weight:600; color:#37432c; background:#FFFFFF; border:1px solid #e0dcc7; padding:9px 16px; border-radius:999px;">Aperitivi</a>
+    <a href="#bevande" style="font-size:13px; font-weight:600; color:#37432c; background:#FFFFFF; border:1px solid #e0dcc7; padding:9px 16px; border-radius:999px;">Bevande</a>
+    <a href="#distillati" style="font-size:13px; font-weight:600; color:#37432c; background:#FFFFFF; border:1px solid #e0dcc7; padding:9px 16px; border-radius:999px;">Distillati</a>
+  </div>
+</nav>
+
+<!-- ANTIPASTI -->
+<section id="antipasti" style="scroll-margin-top:200px; max-width:1000px; margin:0 auto; padding:clamp(48px,6vw,80px) clamp(20px,5vw,60px) 0;">
+  <h2 style="font-family:'Sora',sans-serif; font-weight:700; font-size:clamp(28px,3.6vw,44px); line-height:1.1; color:#1c2913;">Antipasti</h2>
+  <div style="height:2px; background:#7DB249; width:64px; margin-top:14px;"></div>
+
+  <h3 style="font-family:'Sora',sans-serif; font-size:13px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:#4C7A34; margin-top:36px;">Di terra</h3>
+  <div style="display:flex; flex-direction:column; gap:18px; margin-top:18px;">
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Antipasto del Contadino</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Verdure grigliate, carciofi sott'olio, pizza rustica, parmigiana, flan di zucchine (uova, formaggio), formaggio fresco, burratina.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">15 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Verdure alla brace</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Peperoni, melanzane, zucchine, sale, olio evo, aceto, menta e prezzemolo.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">8 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Verdure sott'olio e sott'aceto</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Pomodori secchi, carciofi, melanzane e zucchine sott'olio, lampascioni sott'aceto.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">12 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Pizza rustica</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Farina di grano duro, olio evo, acqua, sale, cicorie, cipolle, capperi, peperoncino, pomodori.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">6 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Polpette fritte</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Carne di vitello, uova, formaggio vaccino, sale, pangrattato, latte, prezzemolo.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">7 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Crocchette di patate</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Patate, uova, formaggio vaccino, sale, pangrattato, menta e prezzemolo. Fritte in olio di arachidi.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">6 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Piatto misto crocchette e polpette</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;"></p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">8 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Piatto di fritto misto del Contadino</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Crocchette, polpette, verdure di stagione in pastella, ricotta impanata.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">14 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Tagliere di salumi misti</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Esposizione in vetrina. Può contenere allergeni.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">22 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Tagliere misto di salumi e formaggi</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Esposizione in vetrina. Può contenere allergeni.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">22 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Tagliere di formaggi misti</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Esposizione in vetrina. Contiene allergeni.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">22 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Tartare di carne</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Sale affumicato, olio evo, magia di limone, mostarda in semi e cappero grosso.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">22 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Formaggio fresco vaccino e pecorino «Masseria Autigne»</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Caglio, latte, sale.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">8 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Picanha affumicata, rucola e grana</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Olio evo, pepe nero, ginepro, aroma naturale di affumicatura, rucola, grana.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">20 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Burrata</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Formaggio fresco a pasta filata, sale, caglio, panna pastorizzata.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">12 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Hummus e verdure dell'orto in tre consistenze</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Vegetariano, senza glutine e senza lattosio. Ceci, limone, sesamo, verdure grigliate, verdure sott'olio.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">14 €</div>
+      </div>
+    
+  </div>
+
+  <h3 style="font-family:'Sora',sans-serif; font-size:13px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:#4C7A34; margin-top:40px;">Di mare</h3>
+  <div style="display:flex; flex-direction:column; gap:18px; margin-top:18px;">
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Polpo rosticciato su crema di patate</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Polpo, crema di patate (latte e burro), cipolla in carpione, alloro, rosmarino, timo.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">20 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Arancini di riso al nero di seppia su crema di pomodoro bruciato</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Riso, seppia, nero di seppia, pomodoro, cipolla, basilico, prezzemolo, pane, uova, grana, olio, sale.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">18 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Calamaro alla contadina</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Calamaro, patate, pomodorini, basilico, origano, olive, capperi, sale, olio evo.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">20 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Gamberi in tempura</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Gamberi, farina, acqua, sale, olio evo, pangrattato.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">3 € al pezzo</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Insalata di mare</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Polpo, seppia, carote, sedano, prezzemolo, olio evo, limone, sale, aceto.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">18 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Carpaccio misto</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Tonno, spigola, salmone, ricciola, scampo, gambero, olio evo, limone, pepe, sale rosa dell'Himalaya e sale affumicato.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">25 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Scampi e gamberi crudi</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Sale, olio evo, limone, pepe. Prodotto fresco ed abbattuto.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">10 € l'etto</div>
+      </div>
+    
+  </div>
+</section>
+
+<!-- PRIMI -->
+<section id="primi" style="scroll-margin-top:200px; max-width:1000px; margin:0 auto; padding:clamp(48px,6vw,80px) clamp(20px,5vw,60px) 0;">
+  <h2 style="font-family:'Sora',sans-serif; font-weight:700; font-size:clamp(28px,3.6vw,44px); line-height:1.1; color:#1c2913;">Primi</h2>
+  <div style="height:2px; background:#7DB249; width:64px; margin-top:14px;"></div>
+  <p style="font-size:16px; line-height:1.6; color:#56604a; margin-top:18px;">Tutta la pasta è fatta a mano ogni mattina con il nostro grano duro. Tutti i condimenti si possono preparare con pasta senza glutine.</p>
+
+  <h3 style="font-family:'Sora',sans-serif; font-size:13px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:#4C7A34; margin-top:34px;">Di terra</h3>
+  <div style="display:flex; flex-direction:column; gap:18px; margin-top:18px;">
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Orecchiette alle rape con pane tostato alle alici</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Orecchiette (farina di grano, acqua), rape, olio evo, aglio, capperi e peperoncino.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">15 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Orecchiette alla crudaiola</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Orecchiette (farina di grano duro Senatore Cappelli, acqua), rape, olio evo, aglio, capperi e peperoncino, pane tostato.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">15 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Sagne del buongustaio</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Sagne (farina di grano, acqua), guanciale di maiale, cipolla, pomodorini, olio evo, formaggio vaccino, basilico, sale.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">15 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Sagne con polpettone</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Sagne, passata di pomodoro, basilico, sale, olio evo, cipolla. Polpettone: vitello, formaggio di mucca, uova, mozzarella, latte, pane, prosciutto cotto, prezzemolo.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">20 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Gnocchi al forno</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Gnocchi (patate, uova, farina di grano tenero), passata di pomodoro, olio, cipolla, basilico, sale, mozzarella, polpettine di vitello.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">14 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Ciceri e tria (massa e ciceri)</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Farina di grano duro, ceci, sale, pepe, olio evo, cannella, cipolla, pasta fritta.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">12 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Cicatelli al pesto di basilico, speck Sauris croccante e burrata</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Pasta (farina di grano, acqua), basilico, grana, speck, sale, mandorle, olio evo, burrata.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">16 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Fave e cicorie</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Fave, patate, cicorie, pane fritto.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">12 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Zuppa di legumi</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Cipolla, sedano, carote, sale, olio evo. Uno a scelta tra ceci, piselli e fagioli.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">12 €</div>
+      </div>
+    
+  </div>
+
+  <h3 style="font-family:'Sora',sans-serif; font-size:13px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:#4C7A34; margin-top:40px;">Di mare</h3>
+  <div style="display:flex; flex-direction:column; gap:18px; margin-top:18px;">
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Spaghetti ai frutti di mare</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Seppia, cozze, scampi, gamberi, vino bianco, olio, pepe, prezzemolo, passata di datterino giallo e pomodorini.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">18 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Risotto ai frutti di mare</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Seppia, cozze, gamberi, scampi, vino bianco, olio, pepe, prezzemolo, passata di datterino giallo.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">20 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Spaghetto fresco al ragù di pesce (misto di scoglio)</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Olio evo, cipolla, prezzemolo, pomodorini, passata di datterino giallo, basilico. Pesce fresco di scoglio.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">18 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Gnocchi, battuta di ombrina agli agrumi, zucchine e menta</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Ombrina, zucchine, olio evo, arancia, limone, menta, sale, pepe, fumetto di pesce. Gnocchi: patate, farina, uova.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">20 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Zuppa di fagioli e cozze</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Fagioli, cozze, carote, sedano, cipolla, passata di datterino giallo, sale, olio evo.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">[da confermare]</div>
+      </div>
+    
+  </div>
+</section>
+
+<!-- SECONDI -->
+<section id="secondi" style="scroll-margin-top:200px; max-width:1000px; margin:0 auto; padding:clamp(48px,6vw,80px) clamp(20px,5vw,60px) 0;">
+  <h2 style="font-family:'Sora',sans-serif; font-weight:700; font-size:clamp(28px,3.6vw,44px); line-height:1.1; color:#1c2913;">Secondi</h2>
+  <div style="height:2px; background:#7DB249; width:64px; margin-top:14px;"></div>
+  <p style="font-size:16px; line-height:1.6; color:#56604a; margin-top:18px;">Tutti i piatti possono essere preparati senza glutine: chiedere al personale di sala.</p>
+
+  <h3 style="font-family:'Sora',sans-serif; font-size:13px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:#4C7A34; margin-top:36px;">Di terra — la braceria</h3>
+  <div style="display:flex; flex-direction:column; gap:18px; margin-top:18px;">
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Costata di vitello</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Sale aromatico (rosmarino, salvia, alloro).</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">18 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Costolette di capretto alla brace e carote julienne</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Sale aromatico (rosmarino, salvia, alloro).</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">22 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Capretto al forno in chiave moderna con patate</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Patate, olio evo, timo fresco, fondo di vitello, carote, sedano, cipolla.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">24 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Salsiccia puro suino</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Salsiccia di maiale, vino bianco, sale, pepe.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">12 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Grigliata mista</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Salsiccia, vitello, bombetta, stecca di pancetta. Bombetta: capocollo di maiale, scamorza e speck.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">20 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Bombette alla griglia</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Capocollo di maiale, speck, scamorza fumé, sale aromatico (rosmarino, salvia, alloro).</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">3 € al pezzo</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Cotoletta di vitello con patatine</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Uova, farina, pane grattugiato, sale.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">15 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Finissima di Black Angus, midollo gratinato e gremolata di erbe</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Ossa di vitello con midollo, patate, pane gratinato, burro, olio evo, timo, rosmarino, prezzemolo, basilico, scorza di limone, aceto balsamico.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">20 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Filetto alla griglia</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Filetto di manzo, sale aromatico (rosmarino, salvia, alloro).</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">25 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Polpette al sugo</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Vitello, pane grattugiato, latte, formaggio di mucca, uova, sale, passata di pomodoro, prezzemolo.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">14 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Pezzetti di cavallo</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Carote, sedano, cipolla, passata di pomodoro, pepe, peperoncino, sale, alloro, prezzemolo, basilico.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">15 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Parmigiana</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Melanzane, farina 00, uova, latte, sale, passata di pomodoro, mozzarella, formaggio di mucca.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">12 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Fiorentina, scottona, costata</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Esposizione in frigo stagionatore.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">prezzo al kg in esposizione</div>
+      </div>
+    
+  </div>
+
+  <h3 style="font-family:'Sora',sans-serif; font-size:13px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:#4C7A34; margin-top:40px;">Di mare</h3>
+  <div style="display:flex; flex-direction:column; gap:18px; margin-top:18px;">
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Filetto di spigola in crosta di patate</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Spigola, patate, olio, vino bianco, pepe, formaggio.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">16 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Frittura di paranza</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Pesci misti in base al pescato, farina Senatore Cappelli. Prodotto fresco.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">18 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Frittura di calamari</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Calamari, farina Senatore Cappelli. Prodotto fresco ed abbattuto.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">18 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Seppia CBT scottata alla griglia su crema di piselli e menta</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Seppia, piselli, burro, olio d'oliva, menta, sedano rapa, cipolla rossa, vino bianco, aceto, zucchero, sale.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">20 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Pesce fresco, in base al pescato giornaliero</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Pesce esposto in vetrina. Chiedere al personale di sala per differenti cotture.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">8 € l'etto</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Scampi o gamberoni alla griglia</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;"></p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">10 € l'etto</div>
+      </div>
+    
+  </div>
+</section>
+
+<!-- CONTORNI -->
+<section id="contorni" style="scroll-margin-top:200px; max-width:1000px; margin:0 auto; padding:clamp(48px,6vw,80px) clamp(20px,5vw,60px) 0;">
+  <h2 style="font-family:'Sora',sans-serif; font-weight:700; font-size:clamp(28px,3.6vw,44px); line-height:1.1; color:#1c2913;">Contorni</h2>
+  <div style="height:2px; background:#7DB249; width:64px; margin-top:14px;"></div>
+  <p style="font-size:16px; line-height:1.6; color:#56604a; margin-top:18px;">Dall'orto alla cucina alle 7 del mattino. Cambiano con la stagione.</p>
+  <div style="display:flex; flex-direction:column; gap:18px; margin-top:26px;">
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Insalata verde del nostro orto</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Lattuga.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">4 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Insalata di rucola</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Rucola.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">4 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Insalata di pomodoro</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Pomodori.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">4 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Insalata mista</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Lattuga, rucola, pomodori, carote.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">5 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Insalata di patate, pomodori, rucola e cipolla</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Patate, pomodori, rucola, cipolla, olio evo e sale.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">6 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Insalata del Contadino</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Pomodori secchi, melanzane e carciofi sott'olio, lampascioni sott'aceto, patate lesse, olive, melanzane, zucchine e peperoni grigliati, lattuga, pomodori, carote e rucola.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">10 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Peperoni alla brace</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Peperoni, sale, olio evo, prezzemolo.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">6 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Melanzane alla brace</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Melanzane, sale, olio evo, prezzemolo.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">6 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Zucchine alla brace</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Zucchine, sale, olio evo, prezzemolo.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">6 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Rape o cicorie bollite</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;"></p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">8 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Rape o cicorie spadellate</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Aglio, olio, peperoncino, cipolla.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">8 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Patatine fritte</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Patate, sale.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">6 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Patate al forno</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Patate, olio evo, rosmarino, sale.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">6 €</div>
+      </div>
+    
+  </div>
+</section>
+
+<!-- PIZZE -->
+<section id="pizze" style="scroll-margin-top:200px; background:#1E3320; color:#e6ecda; margin-top:clamp(48px,6vw,80px);">
+  <div style="max-width:1000px; margin:0 auto; padding:clamp(48px,6vw,80px) clamp(20px,5vw,60px);">
+    <h2 style="font-family:'Sora',sans-serif; font-weight:700; font-size:clamp(28px,3.6vw,44px); line-height:1.1; color:#F3F0E2;">Pizze</h2>
+    <div style="height:2px; background:#7DB249; width:64px; margin-top:14px;"></div>
+    <p style="font-size:16px; line-height:1.6; color:#c3ccb3; margin-top:18px;">Il nostro è un impasto con una lievitazione di almeno 48/72 ore: con pazienza e cura si ottiene un sapore eccellente e un'altissima digeribilità.</p>
+    <div style="display:flex; flex-wrap:wrap; gap:10px; margin-top:20px;">
+      <span style="font-size:13px; font-weight:600; color:#bcd39a; background:rgba(255,255,255,0.08); padding:9px 16px; border-radius:999px;">Classico</span>
+      <span style="font-size:13px; font-weight:600; color:#bcd39a; background:rgba(255,255,255,0.08); padding:9px 16px; border-radius:999px;">Kamut · +1,50 €</span>
+      <span style="font-size:13px; font-weight:600; color:#bcd39a; background:rgba(255,255,255,0.08); padding:9px 16px; border-radius:999px;">Ai cereali · +1,50 €</span>
+    </div>
+    <p style="font-size:14px; line-height:1.7; color:#8fa47f; margin-top:18px;">Classico: farina 00, acqua, lievito, sale, olio evo. · Kamut: farina 00, kamut, sale, lievito, olio evo. · Ai cereali: farina 00, frumento, segale, avena, orzo, riso, sale, lievito, olio evo.</p>
+    <div style="display:flex; flex-direction:column; gap:18px; margin-top:26px;">
+      
+        <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(243,240,226,0.16); padding-bottom:16px;">
+          <div style="flex:1 1 auto;">
+            <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#F3F0E2;">Margherita</div>
+            <p style="font-size:15px; line-height:1.55; color:#b6c3b7; margin-top:5px;">Pomodoro, mozzarella.</p>
+          </div>
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#bcd39a; white-space:nowrap;">6 €</div>
+        </div>
+      
+        <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(243,240,226,0.16); padding-bottom:16px;">
+          <div style="flex:1 1 auto;">
+            <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#F3F0E2;">Contadino</div>
+            <p style="font-size:15px; line-height:1.55; color:#b6c3b7; margin-top:5px;">Pomodoro, mozzarella, carciofi, funghi, prosciutto, melanzane, peperoni, salame piccante, olive.</p>
+          </div>
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#bcd39a; white-space:nowrap;">9 €</div>
+        </div>
+      
+        <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(243,240,226,0.16); padding-bottom:16px;">
+          <div style="flex:1 1 auto;">
+            <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#F3F0E2;">Diavola</div>
+            <p style="font-size:15px; line-height:1.55; color:#b6c3b7; margin-top:5px;">Pomodoro, mozzarella, salame piccante, olive.</p>
+          </div>
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#bcd39a; white-space:nowrap;">8 €</div>
+        </div>
+      
+        <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(243,240,226,0.16); padding-bottom:16px;">
+          <div style="flex:1 1 auto;">
+            <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#F3F0E2;">Napoli</div>
+            <p style="font-size:15px; line-height:1.55; color:#b6c3b7; margin-top:5px;">Pomodoro, mozzarella, capperi, acciughe, origano.</p>
+          </div>
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#bcd39a; white-space:nowrap;">8 €</div>
+        </div>
+      
+        <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(243,240,226,0.16); padding-bottom:16px;">
+          <div style="flex:1 1 auto;">
+            <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#F3F0E2;">Bianca G</div>
+            <p style="font-size:15px; line-height:1.55; color:#b6c3b7; margin-top:5px;">Mozzarella, gorgonzola, radicchio, noci.</p>
+          </div>
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#bcd39a; white-space:nowrap;">10 €</div>
+        </div>
+      
+        <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(243,240,226,0.16); padding-bottom:16px;">
+          <div style="flex:1 1 auto;">
+            <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#F3F0E2;">Prosciutto e funghi</div>
+            <p style="font-size:15px; line-height:1.55; color:#b6c3b7; margin-top:5px;">Pomodoro, mozzarella, prosciutto, funghi.</p>
+          </div>
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#bcd39a; white-space:nowrap;">8 €</div>
+        </div>
+      
+        <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(243,240,226,0.16); padding-bottom:16px;">
+          <div style="flex:1 1 auto;">
+            <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#F3F0E2;">Quattro stagioni</div>
+            <p style="font-size:15px; line-height:1.55; color:#b6c3b7; margin-top:5px;">Pomodoro, mozzarella, prosciutto, funghi, carciofi, olive.</p>
+          </div>
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#bcd39a; white-space:nowrap;">8 €</div>
+        </div>
+      
+        <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(243,240,226,0.16); padding-bottom:16px;">
+          <div style="flex:1 1 auto;">
+            <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#F3F0E2;">Capricciosa</div>
+            <p style="font-size:15px; line-height:1.55; color:#b6c3b7; margin-top:5px;">Pomodoro, mozzarella, prosciutto, funghi, carciofi, capperi, origano.</p>
+          </div>
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#bcd39a; white-space:nowrap;">8 €</div>
+        </div>
+      
+        <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(243,240,226,0.16); padding-bottom:16px;">
+          <div style="flex:1 1 auto;">
+            <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#F3F0E2;">Melanzane e peperoni</div>
+            <p style="font-size:15px; line-height:1.55; color:#b6c3b7; margin-top:5px;">Pomodoro, mozzarella, melanzane, peperoni arrostiti.</p>
+          </div>
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#bcd39a; white-space:nowrap;">8 €</div>
+        </div>
+      
+        <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(243,240,226,0.16); padding-bottom:16px;">
+          <div style="flex:1 1 auto;">
+            <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#F3F0E2;">Frassanito</div>
+            <p style="font-size:15px; line-height:1.55; color:#b6c3b7; margin-top:5px;">Pomodoro, mozzarella, salsiccia, rape.</p>
+          </div>
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#bcd39a; white-space:nowrap;">10 €</div>
+        </div>
+      
+        <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(243,240,226,0.16); padding-bottom:16px;">
+          <div style="flex:1 1 auto;">
+            <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#F3F0E2;">Prosciutto crudo o cotto</div>
+            <p style="font-size:15px; line-height:1.55; color:#b6c3b7; margin-top:5px;">Pomodoro, mozzarella, prosciutto crudo o cotto.</p>
+          </div>
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#bcd39a; white-space:nowrap;">9 €</div>
+        </div>
+      
+        <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(243,240,226,0.16); padding-bottom:16px;">
+          <div style="flex:1 1 auto;">
+            <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#F3F0E2;">Campagnola</div>
+            <p style="font-size:15px; line-height:1.55; color:#b6c3b7; margin-top:5px;">Pomodoro, mozzarella, pomodori freschi, rucola.</p>
+          </div>
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#bcd39a; white-space:nowrap;">9 €</div>
+        </div>
+      
+        <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(243,240,226,0.16); padding-bottom:16px;">
+          <div style="flex:1 1 auto;">
+            <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#F3F0E2;">Crudaiola</div>
+            <p style="font-size:15px; line-height:1.55; color:#b6c3b7; margin-top:5px;">Pomodoro, mozzarella, pomodori freschi, rucola, ricotta marzotica.</p>
+          </div>
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#bcd39a; white-space:nowrap;">10 €</div>
+        </div>
+      
+        <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(243,240,226,0.16); padding-bottom:16px;">
+          <div style="flex:1 1 auto;">
+            <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#F3F0E2;">Fumè</div>
+            <p style="font-size:15px; line-height:1.55; color:#b6c3b7; margin-top:5px;">Pomodoro, mozzarella, scamorza affumicata, speck.</p>
+          </div>
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#bcd39a; white-space:nowrap;">10 €</div>
+        </div>
+      
+        <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(243,240,226,0.16); padding-bottom:16px;">
+          <div style="flex:1 1 auto;">
+            <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#F3F0E2;">Bufala</div>
+            <p style="font-size:15px; line-height:1.55; color:#b6c3b7; margin-top:5px;">Pomodoro, mozzarella di bufala.</p>
+          </div>
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#bcd39a; white-space:nowrap;">10 €</div>
+        </div>
+      
+        <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(243,240,226,0.16); padding-bottom:16px;">
+          <div style="flex:1 1 auto;">
+            <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#F3F0E2;">Capocollo</div>
+            <p style="font-size:15px; line-height:1.55; color:#b6c3b7; margin-top:5px;">Pomodoro, mozzarella, capocollo, rucola, grana, glassa di aceto balsamico.</p>
+          </div>
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#bcd39a; white-space:nowrap;">10 €</div>
+        </div>
+      
+        <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(243,240,226,0.16); padding-bottom:16px;">
+          <div style="flex:1 1 auto;">
+            <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#F3F0E2;">4 formaggi</div>
+            <p style="font-size:15px; line-height:1.55; color:#b6c3b7; margin-top:5px;">Pomodoro, mozzarella, fontina, gorgonzola, formaggio svizzero.</p>
+          </div>
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#bcd39a; white-space:nowrap;">12 €</div>
+        </div>
+      
+        <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(243,240,226,0.16); padding-bottom:16px;">
+          <div style="flex:1 1 auto;">
+            <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#F3F0E2;">Americana</div>
+            <p style="font-size:15px; line-height:1.55; color:#b6c3b7; margin-top:5px;">Pomodoro, mozzarella, patatine, wurstel.</p>
+          </div>
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#bcd39a; white-space:nowrap;">10 €</div>
+        </div>
+      
+        <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(243,240,226,0.16); padding-bottom:16px;">
+          <div style="flex:1 1 auto;">
+            <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#F3F0E2;">Funghi</div>
+            <p style="font-size:15px; line-height:1.55; color:#b6c3b7; margin-top:5px;">Pomodoro, mozzarella, funghi.</p>
+          </div>
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#bcd39a; white-space:nowrap;">8 €</div>
+        </div>
+      
+        <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(243,240,226,0.16); padding-bottom:16px;">
+          <div style="flex:1 1 auto;">
+            <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#F3F0E2;">Porcini</div>
+            <p style="font-size:15px; line-height:1.55; color:#b6c3b7; margin-top:5px;">Pomodoro, mozzarella, porcini.</p>
+          </div>
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#bcd39a; white-space:nowrap;">12 €</div>
+        </div>
+      
+        <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(243,240,226,0.16); padding-bottom:16px;">
+          <div style="flex:1 1 auto;">
+            <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#F3F0E2;">Piadina carpaccio</div>
+            <p style="font-size:15px; line-height:1.55; color:#b6c3b7; margin-top:5px;">Mozzarella fresca, bresaola, grana, rucola, olio evo.</p>
+          </div>
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#bcd39a; white-space:nowrap;">12 €</div>
+        </div>
+      
+        <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(243,240,226,0.16); padding-bottom:16px;">
+          <div style="flex:1 1 auto;">
+            <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#F3F0E2;">Piadina crudo</div>
+            <p style="font-size:15px; line-height:1.55; color:#b6c3b7; margin-top:5px;">Mozzarella fresca, prosciutto crudo, grana, rucola, olio evo.</p>
+          </div>
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#bcd39a; white-space:nowrap;">12 €</div>
+        </div>
+      
+        <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(243,240,226,0.16); padding-bottom:16px;">
+          <div style="flex:1 1 auto;">
+            <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#F3F0E2;">Tonno e salame</div>
+            <p style="font-size:15px; line-height:1.55; color:#b6c3b7; margin-top:5px;">Pomodoro, mozzarella, tonno, salame piccante.</p>
+          </div>
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#bcd39a; white-space:nowrap;">10 €</div>
+        </div>
+      
+        <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(243,240,226,0.16); padding-bottom:16px;">
+          <div style="flex:1 1 auto;">
+            <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#F3F0E2;">Pugliese</div>
+            <p style="font-size:15px; line-height:1.55; color:#b6c3b7; margin-top:5px;">Mozzarella, cipolla, pomodorini, olive nere, capperi, funghi, origano.</p>
+          </div>
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#bcd39a; white-space:nowrap;">9 €</div>
+        </div>
+      
+        <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(243,240,226,0.16); padding-bottom:16px;">
+          <div style="flex:1 1 auto;">
+            <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#F3F0E2;">Pan pizza</div>
+            <p style="font-size:15px; line-height:1.55; color:#b6c3b7; margin-top:5px;">Pasta pizza, olio evo, sale e origano.</p>
+          </div>
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#bcd39a; white-space:nowrap;">3 €</div>
+        </div>
+      
+        <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(243,240,226,0.16); padding-bottom:16px;">
+          <div style="flex:1 1 auto;">
+            <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#F3F0E2;">Special</div>
+            <p style="font-size:15px; line-height:1.55; color:#b6c3b7; margin-top:5px;">Passata di datterino giallo, bufala, capocollo di Martina.</p>
+          </div>
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#bcd39a; white-space:nowrap;">14 €</div>
+        </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- DOLCI -->
+<section id="dolci" style="scroll-margin-top:200px; max-width:1000px; margin:0 auto; padding:clamp(48px,6vw,80px) clamp(20px,5vw,60px) 0;">
+  <h2 style="font-family:'Sora',sans-serif; font-weight:700; font-size:clamp(28px,3.6vw,44px); line-height:1.1; color:#1c2913;">Dolci</h2>
+  <div style="height:2px; background:#7DB249; width:64px; margin-top:14px;"></div>
+  <p style="font-size:16px; line-height:1.6; color:#56604a; margin-top:18px;">Fatti in casa all'alba, prima che tu ti svegli.</p>
+  <div style="display:flex; flex-direction:column; gap:18px; margin-top:26px;">
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Torte miste «fatte in casa»</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Esposizione nella vetrina dessert o chiedere al personale di sala.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">5 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Spumone artigianale</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Nocciola, pistacchio, cioccolato, mandorle e fichi, fondente e arancia, bombetta alla nutella e noccioline. Contengono allergeni.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">5 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Mini dolcetti semifreddo</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Nocciola, pistacchio, cioccolato. Contiene allergeni.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">2,50 € al pezzo</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Sorbetto al limone</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Senza glutine, senza lattosio.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">3 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:16px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:19px; font-weight:600; color:#1c2913;">Sgroppino</div>
+          <p style="font-size:15px; line-height:1.55; color:#56604a; margin-top:5px;">Sorbetto, prosecco, vodka. Senza glutine, senza lattosio.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#4C7A34; white-space:nowrap;">5 €</div>
+      </div>
+    
+  </div>
+</section>
+
+<!-- VINI -->
+<section id="vini" style="scroll-margin-top:200px; max-width:1000px; margin:0 auto; padding:clamp(48px,6vw,80px) clamp(20px,5vw,60px) 0;">
+  <h2 style="font-family:'Sora',sans-serif; font-weight:700; font-size:clamp(28px,3.6vw,44px); line-height:1.1; color:#1c2913;">Vini</h2>
+  <div style="height:2px; background:#7DB249; width:64px; margin-top:14px;"></div>
+  <p style="font-size:16px; line-height:1.6; color:#56604a; margin-top:18px;">I vini di <strong>Tenuta Merico</strong>, la nostra azienda agricola e vitivinicola: vendemmia, cantina ed etichettatura sono tutte nostre.</p>
+
+  <h3 style="font-family:'Sora',sans-serif; font-size:13px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:#4C7A34; margin-top:34px;">Bollicine</h3>
+  <div style="display:flex; flex-direction:column; gap:16px; margin-top:18px;">
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Barbalonga Franciacorta Brut 2022</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">Uve chardonnay. Bottiglia da 0,75 l.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">30 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Barbalonga Franciacorta Brut 2022 — Magnum</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">Uve chardonnay. Bottiglia da 1,5 l.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">60 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Barbalonga Franciacorta Brut 2022 «Pas Dosé»</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">Uve chardonnay. Bottiglia da 0,75 l.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">35 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Barbalonga Franciacorta Rosé Brut 2022</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">Uve pinot nero e chardonnay. Bottiglia da 0,75 l.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">35 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Prosecco DOC</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">Ventuno DOC Millesimato.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">18 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Dom Pérignon Vintage 2012</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">Bottiglia da 0,75 l.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">330 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Ferrari Perlé — Magnum</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">Da uve chardonnay. Bottiglia da 1,5 l.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">90 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Ferrari Perlé Bianco — Magnum</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">Da uve chardonnay. Bottiglia da 1,5 l.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">100 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Ferrari Perlé Nero — Magnum</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">Da uve pinot nero. Bottiglia da 1,5 l.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">190 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Ferrari Riserva Lunelli</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">Da uve chardonnay. Bottiglia da 0,75 l.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">100 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Ferrari Maximum — Magnum</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">Blanc de blancs, da uve chardonnay. Bottiglia da 1,5 l.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">70 €</div>
+      </div>
+    
+  </div>
+
+  <h3 style="font-family:'Sora',sans-serif; font-size:13px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:#4C7A34; margin-top:36px;">Bianchi</h3>
+  <div style="display:flex; flex-direction:column; gap:16px; margin-top:18px;">
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Duemilauno</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">I.G.P. Salento Bianco, vendemmia 2025. Uve fiano. 12,00%.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">16 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Musivo Bianco</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">I.G.P. Salento Bianco, vendemmia 2025. Uve malvasia bianca. 12,00%.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">15 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Ngracalatu Maresco</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">I.G.P. Salento Bianco, vendemmia 2025. Uve maresco. 13,00%.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">16 €</div>
+      </div>
+    
+  </div>
+
+  <h3 style="font-family:'Sora',sans-serif; font-size:13px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:#4C7A34; margin-top:36px;">Rosati</h3>
+  <div style="display:flex; flex-direction:column; gap:16px; margin-top:18px;">
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Giovanotello</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">I.G.P. Salento Rosato, vendemmia 2025. Uve aleatico. 12,00%.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">16 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Eli</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">I.G.P. Salento Rosato, vendemmia 2025. Uve primitivo. 12,00%.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">16 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Musivo Rosato</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">I.G.P. Salento Rosato, vendemmia 2025. Negroamaro in purezza. 13,00%.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">15 €</div>
+      </div>
+    
+  </div>
+
+  <h3 style="font-family:'Sora',sans-serif; font-size:13px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:#4C7A34; margin-top:36px;">Rossi</h3>
+  <div style="display:flex; flex-direction:column; gap:16px; margin-top:18px;">
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">L'Adelaide</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">I.G.P. Salento Rosso, vendemmia 2023. Uve 100% syrah. 13,50%.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">16 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Primaldo</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">I.G.P. Salento Rosso, vendemmia 2023. Primitivo in purezza. 14,00%.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">18 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Frassanito</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">I.G.P. Salento Rosso, vendemmia 2020. Negroamaro 80% e primitivo 20%, affinato 6 mesi in barriques e 6 mesi in bottiglia. 14,00%.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">20 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Tre Lamie</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">I.G.P. Salento Rosso, vendemmia 2021. Negroamaro in purezza. 14,00%.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">18 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Faticatu</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">I.G.P. Salento Rosso, vendemmia 2023. Uve susumaniello. 13,50%.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">20 €</div>
+      </div>
+    
+  </div>
+
+  <h3 style="font-family:'Sora',sans-serif; font-size:13px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:#4C7A34; margin-top:36px;">Frizzanti</h3>
+  <div style="display:flex; flex-direction:column; gap:16px; margin-top:18px;">
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Ngoccia</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">Vino rosato frizzante extra dry. Uve negroamaro. 11,50%.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">18 €</div>
+      </div>
+    
+  </div>
+</section>
+
+<!-- APERITIVI -->
+<section id="aperitivi" style="scroll-margin-top:200px; max-width:1000px; margin:0 auto; padding:clamp(48px,6vw,80px) clamp(20px,5vw,60px) 0;">
+  <h2 style="font-family:'Sora',sans-serif; font-weight:700; font-size:clamp(28px,3.6vw,44px); line-height:1.1; color:#1c2913;">Aperitivi</h2>
+  <div style="height:2px; background:#7DB249; width:64px; margin-top:14px;"></div>
+  <div style="display:flex; flex-direction:column; gap:16px; margin-top:26px;">
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Aperol Spritz</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">Aperol, prosecco, soda, ghiaccio, arancia.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">6 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Campari Spritz</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">Campari bitter, prosecco, soda, ghiaccio, arancia.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">7 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Negroni</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">Campari, vermouth rosso, gin, ghiaccio, arancia.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">7 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Negroni sbagliato</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">Campari, vermouth rosso, prosecco, ghiaccio, arancia.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">7 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Americano</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">Campari, vermouth rosso, tonica, ghiaccio, scorza di limone.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">7 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Garibaldi (Campari Orange)</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">Campari, succo d'arancia.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">6 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Italian Dream</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">Amaretto di Saronno, succo d'arancia, prosecco.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">6 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Gin tonic / lemon</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">Base Tanqueray Gin.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">7 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Gin «special» tonic / lemon</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">Hendrick's, Gin Mare, Mare Capri, Martin Millers.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">9 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Vodka tonic / lemon / Red Bull</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">Base Smirnoff.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">7 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Vodka «special» tonic / lemon / Red Bull</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">Grey Goose o Belvedere.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">9 €</div>
+      </div>
+    
+  </div>
+</section>
+
+<!-- BEVANDE -->
+<section id="bevande" style="scroll-margin-top:200px; max-width:1000px; margin:0 auto; padding:clamp(48px,6vw,80px) clamp(20px,5vw,60px) 0;">
+  <h2 style="font-family:'Sora',sans-serif; font-weight:700; font-size:clamp(28px,3.6vw,44px); line-height:1.1; color:#1c2913;">Bevande</h2>
+  <div style="height:2px; background:#7DB249; width:64px; margin-top:14px;"></div>
+  <div style="display:flex; flex-direction:column; gap:16px; margin-top:26px;">
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Acqua minerale naturale e gassata</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">75 cl</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">2,50 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Acqua minerale naturale e gassata</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">50 cl</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">1,50 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Coca Cola, Coca Zero, Fanta</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">33 cl</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">3 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Vino in caraffa — Cantina Tenuta Merico</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">1 litro</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">10 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Vino in caraffa — Cantina Tenuta Merico</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">½ litro</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">5 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Vino in caraffa — Cantina Tenuta Merico</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">¼ di litro</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">4 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Nastro Azzurro</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">33 cl</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">3 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Nastro Azzurro</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">50 cl</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">5 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Birra senza glutine</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">33 cl</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">4 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Birra alla spina Krombacher</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">0,2 l</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">3,50 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Birra alla spina Krombacher</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">0,4 l</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">6 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Birra artigianale salentina Agricola</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">Bottiglia 33 cl</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">4 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Birra artigianale salentina Agricola</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">Bottiglia 50 cl</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">6 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Caffè</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;"></p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">1,50 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Deca, orzo, caffè corretto</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;"></p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">2 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Cappuccino</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;"></p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">2 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Caffè in ghiaccio</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;"></p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">2 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Caffè leccese</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;"></p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">2,50 €</div>
+      </div>
+    
+  </div>
+</section>
+
+<!-- DISTILLATI -->
+<section id="distillati" style="scroll-margin-top:200px; max-width:1000px; margin:0 auto; padding:clamp(48px,6vw,80px) clamp(20px,5vw,60px) clamp(48px,6vw,80px);">
+  <h2 style="font-family:'Sora',sans-serif; font-weight:700; font-size:clamp(28px,3.6vw,44px); line-height:1.1; color:#1c2913;">Distillati</h2>
+  <div style="height:2px; background:#7DB249; width:64px; margin-top:14px;"></div>
+  <div style="display:flex; flex-direction:column; gap:16px; margin-top:26px;">
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Distillati</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;">Viola, bergamotto, ciliegia, rabarbaro, camomilla.</p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">3 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Grappa</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;"></p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">3 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Grappa barrique</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;"></p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">3,50 €</div>
+      </div>
+    
+      <div data-r="row" style="display:flex; align-items:baseline; gap:14px; border-bottom:1px dashed rgba(28,41,19,0.14); padding-bottom:14px;">
+        <div style="flex:1 1 auto;">
+          <div style="font-family:'Sora',sans-serif; font-size:18px; font-weight:600; color:#1c2913;">Amari nazionali ed esteri</div>
+          <p style="font-size:14px; line-height:1.5; color:#56604a; margin-top:4px;"></p>
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#4C7A34; white-space:nowrap;">3 €</div>
+      </div>
+    
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="background:#3F6D2E; color:#F3F0E2;">
+  <div style="max-width:1240px; margin:0 auto; padding:clamp(48px,6vw,88px) clamp(20px,5vw,60px); text-align:center;">
+    <h2 style="font-family:'Sora',sans-serif; font-weight:700; font-size:clamp(28px,4vw,48px); line-height:1.1; color:#F3F0E2;">Il problema non è cosa ordinare.<br>È cosa rimandare alla prossima volta.</h2>
+    <a href="index.html#prenota" style="display:inline-block; margin-top:30px; background:#F3F0E2; color:#2f4b1f; font-size:15px; font-weight:700; padding:17px 40px; border-radius:999px;">Riserva il tuo tavolo</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#1E3320; color:#bcc6ac;">
+  <div data-r="foot" style="max-width:1240px; margin:0 auto; padding:clamp(52px,6vw,88px) clamp(20px,5vw,60px) 36px; display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:clamp(32px,5vw,64px);">
+    <div>
+      <img src="https://www.ilcontadino.it/wp-content/uploads/2022/01/LOGO-CONTADINO.png" alt="Il Contadino" style="height:64px; width:auto; display:block;" loading="lazy">
+      <div style="font-family:'Sora',sans-serif; font-weight:700; font-size:24px; color:#F3F0E2; margin-top:14px;">Il Contadino</div>
+      <p style="font-size:14px; margin-top:8px;">Agriturismo in Salento dal 1987</p>
+      <p style="font-size:13px; line-height:1.7; color:#8b9a79; margin-top:16px;">Ristorante · Braceria · Pizzeria con forno a legna<br>Camere · Piscina · Cantina · Frantoio · Shop</p>
+    </div>
+    <div>
+      <div style="font-size:12px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:#bcd39a;">Contatti</div>
+      <a href="tel:+393517746917" style="display:block; font-family:'Sora',sans-serif; font-size:24px; font-weight:700; color:#F3F0E2; margin-top:16px;">351 774 6917</a>
+      <p style="font-size:14px; line-height:1.9; margin-top:12px;">WhatsApp <a href="https://wa.me/+393517746917" style="color:#bcd39a;">+39 351 774 6917</a><br><a href="mailto:ilcontadino@ilcontadino.it" style="color:#bcc6ac;">ilcontadino@ilcontadino.it</a><br>Aperti tutti i giorni a pranzo e cena</p>
+    </div>
+    <div>
+      <div style="font-size:12px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:#bcd39a;">Dove siamo</div>
+      <p style="font-family:'Sora',sans-serif; font-size:17px; line-height:1.6; color:#F3F0E2; margin-top:16px;">Via Azienda, snc<br>73028 Frassanito – Otranto LE</p>
+      <p style="font-size:14px; line-height:1.7; margin-top:12px;">700m dal mare – 10 min da Otranto – 30 min da Lecce</p>
+    </div>
+  </div>
+  <div style="max-width:1240px; margin:0 auto; padding:0 clamp(20px,5vw,60px) 100px;">
+    <div style="padding-top:24px; border-top:1px solid rgba(243,240,226,0.12); display:flex; flex-wrap:wrap; gap:12px 24px; justify-content:space-between; align-items:center; font-size:12px; color:#7d8a6c;">
+      <span>Soc. Agricola Il Contadino di Emiliano Merico &amp; C. S.n.c – Via Azienda Snc – Frassanito – LE – P.IVA IT04292460757</span>
+      <span style="display:flex; gap:14px;"><a href="#" style="color:#7d8a6c;">Privacy Policy</a><a href="#" style="color:#7d8a6c;">Cookie Policy</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- CTA FISSA -->
+<div style="position:fixed; left:0; right:0; bottom:0; z-index:60; background:#1E3320; border-top:1px solid rgba(243,240,226,0.14);">
+  <div data-r="cta" style="max-width:1240px; margin:0 auto; padding:12px clamp(16px,4vw,40px); display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;">
+    <span style="font-family:'Sora',sans-serif; font-weight:600; font-size:16px; color:#FFFFFF;">Tutti i giorni a pranzo e cena</span>
+    <a href="index.html#prenota" style="background:#7DB249; color:#FFFFFF; font-family:'Sora',sans-serif; font-size:15px; font-weight:700; letter-spacing:0.04em; padding:14px 30px; border-radius:999px; white-space:nowrap;">PRENOTA UN TAVOLO</a>
+  </div>
+</div>
+
+</div>
+
+<script>
+(function(){
+  var b=document.querySelector('[data-burger]'), d=document.getElementById('mobile-drawer');
+  if(b&&d){ d.style.display='none'; b.addEventListener('click',function(){ d.style.display=(d.style.display==='none')?'flex':'none'; });
+    Array.prototype.forEach.call(d.querySelectorAll('a'),function(a){ a.addEventListener('click',function(){ d.style.display='none'; }); }); }
+  var f=document.querySelector('form');
+  if(f){ f.addEventListener('submit',function(e){ e.preventDefault();
+    f.innerHTML='<div style="min-height:320px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center"><div style="width:64px;height:64px;border-radius:999px;background:#E7EDD8;display:flex;align-items:center;justify-content:center;color:#4C7A34;font-size:30px;margin-bottom:18px">&#10003;</div><div style="font-family:Sora,sans-serif;font-size:32px;font-weight:600;color:#2f4b1f">Grazie.</div><p style="font-size:17px;line-height:1.6;color:#56604a;margin-top:12px;max-width:320px">Abbiamo ricevuto la tua richiesta. Ti confermeremo il tavolo al pi&ugrave; presto.</p></div>'; }); }
+})();</script>
+</body>
+</html>
