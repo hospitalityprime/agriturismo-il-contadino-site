@@ -19,9 +19,9 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          # Cartella di destinazione sul server. Di solito public_html/
-          # (a volte domains/ilcontadino.it/public_html/). La confermiamo insieme.
-          server-dir: public_html/
+          # L'account FTP Hostinger parte GIÀ dentro public_html (la web root),
+          # quindi la destinazione è la radice "./", non "public_html/".
+          server-dir: ./
           # Non caricare questi file/cartelle sul sito (un glob per riga):
           exclude: |
             **/.git*
