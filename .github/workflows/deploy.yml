@@ -22,10 +22,10 @@ jobs:
           # Cartella di destinazione sul server. Di solito public_html/
           # (a volte domains/ilcontadino.it/public_html/). La confermiamo insieme.
           server-dir: public_html/
-          # Non caricare questi file/cartelle sul sito:
-          exclude:
-            - "**/.git*"
-            - "**/.git*/**"
-            - ".github/**"
-            - "LEGGIMI.txt"
-            - "README.md"
+          # Non caricare questi file/cartelle sul sito (un glob per riga):
+          exclude: |
+            **/.git*
+            **/.git*/**
+            .github/**
+            LEGGIMI.txt
+            README.md
