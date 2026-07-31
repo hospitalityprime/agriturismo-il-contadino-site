@@ -539,21 +539,21 @@
             <div style="display:grid; gap:16px;">
 
               <div data-r="g2f" style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
-                <label style="display:block;"><input required="" type="text" placeholder="Nome *" style="width:100%; padding:13px 15px; border:1px solid #d8d3bd; border-radius:12px; background:#fff; font-size:15px; color:#22301B;"></label>
-                <label style="display:block;"><input required="" type="text" placeholder="Cognome *" style="width:100%; padding:13px 15px; border:1px solid #d8d3bd; border-radius:12px; background:#fff; font-size:15px; color:#22301B;"></label>
+                <label style="display:block;"><input required="" type="text" name="first_name" placeholder="Nome *" style="width:100%; padding:13px 15px; border:1px solid #d8d3bd; border-radius:12px; background:#fff; font-size:15px; color:#22301B;"></label>
+                <label style="display:block;"><input required="" type="text" name="last_name" placeholder="Cognome *" style="width:100%; padding:13px 15px; border:1px solid #d8d3bd; border-radius:12px; background:#fff; font-size:15px; color:#22301B;"></label>
               </div>
               <div data-r="g2f" style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
-                <label style="display:block;"><input required="" type="tel" placeholder="Telefono *" style="width:100%; padding:13px 15px; border:1px solid #d8d3bd; border-radius:12px; background:#fff; font-size:15px; color:#22301B;"></label>
-                <label style="display:block;"><input required="" type="email" placeholder="Email *" style="width:100%; padding:13px 15px; border:1px solid #d8d3bd; border-radius:12px; background:#fff; font-size:15px; color:#22301B;"></label>
+                <label style="display:block;"><input required="" type="tel" name="phone" placeholder="Telefono *" style="width:100%; padding:13px 15px; border:1px solid #d8d3bd; border-radius:12px; background:#fff; font-size:15px; color:#22301B;"></label>
+                <label style="display:block;"><input required="" type="email" name="email" placeholder="Email *" style="width:100%; padding:13px 15px; border:1px solid #d8d3bd; border-radius:12px; background:#fff; font-size:15px; color:#22301B;"></label>
               </div>
               <div data-r="g3f" style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px;">
-                <label style="display:block;"><input type="text" onfocus="this.type='date'" onblur="if(!this.value)this.type='text'" placeholder="Data" style="width:100%; min-width:0; max-width:100%; -webkit-appearance:none; appearance:none; text-align:left; padding:13px 13px; border:1px solid #d8d3bd; border-radius:12px; background:#fff; font-size:15px; color:#22301B;"></label>
-                <label style="display:block;"><select style="width:100%; padding:13px 13px; border:1px solid #d8d3bd; border-radius:12px; background:#fff; font-size:15px; color:#22301B;"><option value="">Orario</option><optgroup label="Pranzo"><option>12:30</option><option>13:00</option><option>13:30</option></optgroup><optgroup label="Cena"><option>19:30</option><option>20:00</option><option>20:30</option><option>21:30</option><option>22:00</option></optgroup></select></label>
-                <label style="display:block;"><input type="number" min="1" placeholder="Numero Ospiti" style="width:100%; padding:13px 13px; border:1px solid #d8d3bd; border-radius:12px; background:#fff; font-size:15px; color:#22301B;"></label>
+                <label style="display:block;"><input type="text" onfocus="this.type='date'" onblur="if(!this.value)this.type='text'" name="data_prenotazione" placeholder="Data" style="width:100%; min-width:0; max-width:100%; -webkit-appearance:none; appearance:none; text-align:left; padding:13px 13px; border:1px solid #d8d3bd; border-radius:12px; background:#fff; font-size:15px; color:#22301B;"></label>
+                <label style="display:block;"><select name="orario" style="width:100%; padding:13px 13px; border:1px solid #d8d3bd; border-radius:12px; background:#fff; font-size:15px; color:#22301B;"><option value="">Orario</option><optgroup label="Pranzo"><option>12:30</option><option>13:00</option><option>13:30</option></optgroup><optgroup label="Cena"><option>19:30</option><option>20:00</option><option>20:30</option><option>21:30</option><option>22:00</option></optgroup></select></label>
+                <label style="display:block;"><input type="number" min="1" name="ospiti" placeholder="Numero Ospiti" style="width:100%; padding:13px 13px; border:1px solid #d8d3bd; border-radius:12px; background:#fff; font-size:15px; color:#22301B;"></label>
               </div>
-              <label style="display:block;"><textarea rows="3" placeholder="Note (allergie, celiachia, occasione speciale…)" style="width:100%; padding:13px 15px; border:1px solid #d8d3bd; border-radius:12px; background:#fff; font-size:15px; color:#22301B; resize:vertical;"></textarea></label>
-              <label style="display:flex; gap:10px; align-items:flex-start; font-size:13px; color:#56604a; line-height:1.4;"><input required="" type="checkbox" style="margin-top:2px;"><span>Ho letto e accetto l'<a href="https://www.iubenda.com/privacy-policy/35643305" target="_blank" rel="noopener" style="color:#4C7A34; text-decoration:underline;">informativa sulla privacy</a>.</span></label>
-              <label style="display:flex; gap:10px; align-items:flex-start; font-size:13px; color:#56604a; line-height:1.4;"><input type="checkbox" style="margin-top:2px;"><span>Voglio ricevere le novità dall'azienda agricola.</span></label>
+              <label style="display:block;"><textarea name="note" rows="3" placeholder="Note (allergie, celiachia, occasione speciale…)" style="width:100%; padding:13px 15px; border:1px solid #d8d3bd; border-radius:12px; background:#fff; font-size:15px; color:#22301B; resize:vertical;"></textarea></label>
+              <label style="display:flex; gap:10px; align-items:flex-start; font-size:13px; color:#56604a; line-height:1.4;"><input required="" type="checkbox" name="privacy" value="accettata" style="margin-top:2px;"><span>Ho letto e accetto l'<a href="https://www.iubenda.com/privacy-policy/35643305" target="_blank" rel="noopener" style="color:#4C7A34; text-decoration:underline;">informativa sulla privacy</a>.</span></label>
+              <label style="display:flex; gap:10px; align-items:flex-start; font-size:13px; color:#56604a; line-height:1.4;"><input type="checkbox" name="newsletter" value="si" style="margin-top:2px;"><span>Voglio ricevere le novità dall'azienda agricola.</span></label>
               <button type="submit" style="width:100%; background:#7DB249; color:#12210a; font-size:15px; font-weight:600; padding:16px; border:none; border-radius:999px; cursor:pointer;">Riserva il tuo tavolo</button>
             </div>
           </form>
@@ -624,7 +624,12 @@
   if(b&&d){ d.style.display='none'; b.addEventListener('click',function(){ d.style.display=(d.style.display==='none')?'flex':'none'; });
     Array.prototype.forEach.call(d.querySelectorAll('a'),function(a){ a.addEventListener('click',function(){ d.style.display='none'; }); }); }
   var f=document.querySelector('form');
-  if(f){ f.addEventListener('submit',function(e){ e.preventDefault(); window.location.href='/tavolo-prenotato'; }); }
+  var GHL_WEBHOOK=''; // <-- incolla qui l'URL del webhook GoHighLevel
+  if(f){ f.addEventListener('submit',function(e){ e.preventDefault();
+    var go=function(){ window.location.href='/tavolo-prenotato'; };
+    if(GHL_WEBHOOK){ var t=setTimeout(go,2500);
+      fetch(GHL_WEBHOOK,{method:'POST',mode:'no-cors',body:new URLSearchParams(new FormData(f))}).then(function(){clearTimeout(t);go();}).catch(function(){clearTimeout(t);go();});
+    } else { go(); } }); }
 })();</script>
 <script>
 (function(){
