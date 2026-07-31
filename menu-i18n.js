@@ -106,7 +106,6 @@
     "Ombrina, zucchine, olio evo, arancia, limone, menta, sale, pepe, fumetto di pesce. Gnocchi: patate, farina, uova.":"Shi drum, courgettes, extra-virgin olive oil, orange, lemon, mint, salt, pepper, fish stock. Gnocchi: potatoes, flour, eggs.",
     "Zuppa di fagioli e cozze":"Bean and mussel soup",
     "Fagioli, cozze, carote, sedano, cipolla, passata di datterino giallo, sale, olio evo.":"Beans, mussels, carrots, celery, onion, yellow datterino passata, salt, extra-virgin olive oil.",
-    "[da confermare]":"[to be confirmed]",
     "Tutti i piatti possono essere preparati senza glutine: chiedere al personale di sala.":"All dishes can be prepared gluten-free: please ask our staff.",
     // --- Secondi ---
     "Costata di vitello":"Veal rib steak",
@@ -296,20 +295,21 @@
 
   var STORE = [];
   function collect(){
-    var els = document.querySelectorAll("h1,h2,h3,h4,p,div,span,a,li,button,strong,em,b");
-    Array.prototype.forEach.call(els, function(n){
-      if(n.id === "lang-toggle") return;
-      if(n.children.length !== 0) return;         // solo elementi foglia (solo testo)
-      var raw = n.textContent;
+    // Lavora sui NODI DI TESTO: così traduce anche testo dentro elementi che
+    // contengono altri elementi (es. la tagline con il pallino grafico).
+    var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
+    var n;
+    while((n = walker.nextNode())){
+      var raw = n.nodeValue;
       var t = raw.trim();
       if(t && Object.prototype.hasOwnProperty.call(MAP, t)){
         STORE.push({ n:n, it:raw, en:raw.replace(t, MAP[t]) });
       }
-    });
+    }
   }
 
   function setLang(lang){
-    for(var i=0;i<STORE.length;i++){ STORE[i].n.textContent = (lang==="en") ? STORE[i].en : STORE[i].it; }
+    for(var i=0;i<STORE.length;i++){ STORE[i].n.nodeValue = (lang==="en") ? STORE[i].en : STORE[i].it; }
     document.documentElement.setAttribute("lang", lang);
     document.title = (lang==="en") ? "Menu — Il Contadino, Salento farmhouse" : "Il menù — Il Contadino, Agriturismo in Salento";
     var btn = document.getElementById("lang-toggle");
