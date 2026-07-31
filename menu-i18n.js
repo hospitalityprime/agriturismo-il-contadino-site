@@ -9,7 +9,7 @@
     "Riserva Il Tuo Tavolo":"Book Your Table",
     "Riserva il tuo tavolo":"Book your table",
     "Solo materie prime fresche. Solo di stagione.":"Only fresh ingredients. Always in season.",
-    "Il nostro menù.":"Our menu.",
+    "Il nostro menù":"Our menu",
     "Il pane, la pasta, la pizza, l'olio, il vino, la verdura, le conserve: tutto quello che trovi qui viene dalle nostre terre. Il pescato lo scegliamo ogni mattina al porto di Otranto.":"Bread, pasta, pizza, oil, wine, vegetables, preserves: everything you find here comes from our own land. The fish we choose every morning at the port of Otranto.",
     "Opzioni vegetariane":"Vegetarian options",
     "Anche senza glutine":"Gluten-free available",
