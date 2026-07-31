@@ -1,10 +1,10 @@
-name: Deploy su Hostinger (FTP)
+name: Deploy su Hostinger (SSH)
 
-# Ad ogni push sul branch main, carica i file cambiati su Hostinger via FTP.
+# Ad ogni push sul branch main, sincronizza i file su Hostinger via SSH/rsync.
 on:
   push:
     branches: [main]
-  workflow_dispatch: {}   # permette anche l'avvio manuale dalla tab "Actions"
+  workflow_dispatch: {}   # avvio manuale dalla tab "Actions"
 
 jobs:
   deploy:
@@ -13,19 +13,16 @@ jobs:
       - name: Scarica il codice
         uses: actions/checkout@v4
 
-      - name: Carica su Hostinger via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Deploy su Hostinger via SSH (rsync)
+        uses: easingthemes/ssh-deploy@v5.1.0
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          # L'account FTP Hostinger parte GIÀ dentro public_html (la web root),
-          # quindi la destinazione è la radice "./", non "public_html/".
-          server-dir: ./
-          # Non caricare questi file/cartelle sul sito (un glob per riga):
-          exclude: |
-            **/.git*
-            **/.git*/**
-            .github/**
-            LEGGIMI.txt
-            README.md
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          REMOTE_HOST: ${{ secrets.SSH_HOST }}
+          REMOTE_USER: ${{ secrets.SSH_USER }}
+          REMOTE_PORT: ${{ secrets.SSH_PORT }}
+          SOURCE: "./"
+          TARGET: "public_html/"
+          # -rltgoDzv = ricorsivo, mantiene permessi/tempi, compresso, verboso.
+          # NIENTE --delete: non cancelliamo nulla di già presente sul server.
+          ARGS: "-rltgoDzv"
+          EXCLUDE: ".git/, .github/, LEGGIMI.txt, README.md, .DS_Store"
