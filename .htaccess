@@ -1,0 +1,19 @@
+# Il Contadino — URL puliti
+RewriteEngine On
+
+# Rimuovi lo slash finale (tranne le cartelle) per non rompere i path relativi
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+?)/$ /$1 [R=301,L]
+
+# Redirect 301 dai vecchi file .html agli URL puliti
+RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
+RewriteRule ^ / [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+menu\.html[\s?] [NC]
+RewriteRule ^ /menu [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+grazie\.html[\s?] [NC]
+RewriteRule ^ /tavolo-prenotato [R=301,L]
+
+# URL puliti -> file reali
+RewriteRule ^ristorante$ index.html [L]
+RewriteRule ^menu$ menu.html [L]
+RewriteRule ^tavolo-prenotato$ grazie.html [L]

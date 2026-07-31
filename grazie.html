@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="robots" content="noindex">
+<title>Grazie — Il Contadino</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#F3F0E2; -webkit-font-smoothing:antialiased; }
+  a { color:#4C7A34; text-decoration:none; }
+  a:hover { color:#3a5f26; }
+  ::selection { background:#7DB249; color:#12210a; }
+  @keyframes tyIn { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:translateY(0); } }
+  @keyframes tyPop { 0% { transform:scale(0.7); opacity:0; } 60% { transform:scale(1.06); } 100% { transform:scale(1); opacity:1; } }
+  @media (max-width: 700px) {
+    [data-r="foot"] { grid-template-columns: 1fr !important; }
+    [data-r="actions"] { flex-direction: column !important; align-items: stretch !important; }
+    [data-r="actions"] > a { text-align: center; }
+  }
+
+</style>
+</head>
+<body>
+
+
+
+<div style="font-family:'Plus Jakarta Sans',sans-serif; color:#22301B; background:#F3F0E2; min-height:100vh; display:flex; flex-direction:column;">
+
+<!-- NAV -->
+<header style="background:#FFFFFF; border-bottom:1px solid rgba(28,41,19,0.07);">
+  <nav style="max-width:1240px; margin:0 auto; padding:14px clamp(20px,5vw,60px); display:flex; align-items:center; justify-content:center;">
+    <a href="/" style="display:flex; align-items:center; gap:12px;">
+      <img src="https://www.ilcontadino.it/wp-content/uploads/2022/01/LOGO-CONTADINO.png" alt="Il Contadino" style="height:48px; width:auto; display:block;">
+      <span style="font-family:'Sora',sans-serif; font-weight:700; font-size:21px; color:#1c2913;">Il Contadino</span>
+    </a>
+  </nav>
+</header>
+
+<!-- CONTENUTO -->
+<main style="flex:1 1 auto; display:flex; align-items:center; justify-content:center; padding:clamp(48px,8vw,110px) clamp(20px,5vw,60px);">
+  <div style="max-width:720px; text-align:center; animation:tyIn 0.7s ease both;">
+
+    <div style="width:96px; height:96px; margin:0 auto; border-radius:999px; background:#7DB249; display:flex; align-items:center; justify-content:center; animation:tyPop 0.6s cubic-bezier(.34,1.56,.64,1) both;">
+      <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#12210a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    </div>
+
+    <h1 style="font-family:'Sora',sans-serif; font-weight:700; font-size:clamp(30px,4.6vw,54px); line-height:1.08; letter-spacing:-0.02em; color:#1c2913; margin-top:32px; text-wrap:balance;">Richiesta di prenotazione ricevuta</h1>
+
+    <p style="font-size:clamp(17px,1.7vw,20px); line-height:1.6; color:#56604a; margin:22px auto 0; max-width:520px;">Riceverai su WhatsApp conferma se il tavolo è disponibile.</p>
+
+    <div style="display:inline-flex; align-items:center; gap:12px; margin-top:30px; background:#FFFFFF; border:1px solid #e0dcc7; border-radius:999px; padding:13px 24px;">
+      <span style="width:8px; height:8px; border-radius:99px; background:#7DB249; flex:0 0 auto;"></span>
+      <span style="font-family:'Sora',sans-serif; font-size:16px; font-weight:600; color:#1c2913;">Tieni il telefono sotto controllo</span>
+    </div>
+
+    <div data-r="actions" style="display:flex; flex-wrap:wrap; gap:14px; justify-content:center; margin-top:44px;">
+      <a href="/" style="background:#7DB249; color:#12210a; font-family:'Sora',sans-serif; font-size:15px; font-weight:700; padding:17px 38px; border-radius:999px;">Torna alla home</a>
+      <a href="/menu" style="font-family:'Sora',sans-serif; font-size:15px; font-weight:600; color:#4C7A34; border:1.5px solid #4C7A34; padding:15px 32px; border-radius:999px;">Scopri il menù</a>
+    </div>
+
+    <p style="font-size:15px; line-height:1.7; color:#7d8a6c; margin-top:40px;">Serve modificare qualcosa? Scrivici su <a href="https://wa.me/+393517746917" style="font-weight:600;">WhatsApp</a> o chiamaci allo <a href="tel:+393517746917" style="font-weight:600;">351 774 6917</a>.</p>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer style="background:#1E3320; color:#bcc6ac;">
+  <div data-r="foot" style="max-width:1240px; margin:0 auto; padding:clamp(40px,5vw,64px) clamp(20px,5vw,60px) 28px; display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:clamp(28px,5vw,64px);">
+    <div>
+      <img src="https://www.ilcontadino.it/wp-content/uploads/2022/01/LOGO-CONTADINO.png" alt="Il Contadino" style="height:58px; width:auto; display:block;">
+      <div style="font-family:'Sora',sans-serif; font-weight:700; font-size:22px; color:#F3F0E2; margin-top:12px;">Il Contadino</div>
+      <p style="font-size:14px; margin-top:8px;">Agriturismo in Salento dal 1987</p>
+    </div>
+    <div>
+      <div style="font-size:12px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:#bcd39a;">Contatti</div>
+      <a href="tel:+393517746917" style="display:block; font-family:'Sora',sans-serif; font-size:22px; font-weight:700; color:#F3F0E2; margin-top:14px;">351 774 6917</a>
+      <p style="font-size:14px; line-height:1.9; margin-top:10px;"><a href="mailto:ilcontadino@ilcontadino.it" style="color:#bcc6ac;">ilcontadino@ilcontadino.it</a><br>Aperti tutti i giorni a pranzo e cena</p>
+    </div>
+    <div>
+      <div style="font-size:12px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:#bcd39a;">Dove siamo</div>
+      <p style="font-family:'Sora',sans-serif; font-size:16px; line-height:1.6; color:#F3F0E2; margin-top:14px;">Via Azienda, snc<br>73028 Frassanito – Otranto LE</p>
+    </div>
+  </div>
+  <div style="max-width:1240px; margin:0 auto; padding:0 clamp(20px,5vw,60px) 32px;">
+    <div style="padding-top:22px; border-top:1px solid rgba(243,240,226,0.12); display:flex; flex-wrap:wrap; gap:12px 24px; justify-content:space-between; align-items:center; font-size:12px; color:#7d8a6c;">
+      <span>Soc. Agricola Il Contadino di Emiliano Merico &amp; C. S.n.c – Via Azienda Snc – Frassanito – LE – P.IVA IT04292460757</span>
+      <span style="display:flex; gap:14px;"><a href="https://www.iubenda.com/privacy-policy/35643305" target="_blank" rel="noopener" style="color:#7d8a6c;">Privacy Policy</a><a href="https://www.iubenda.com/privacy-policy/35643305/cookie-policy" target="_blank" rel="noopener" style="color:#7d8a6c;">Cookie Policy</a></span>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+<script>document.addEventListener('gesturestart',function(e){ e.preventDefault(); });</script>
+</body>
+</html>
