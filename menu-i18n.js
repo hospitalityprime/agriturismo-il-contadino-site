@@ -289,7 +289,6 @@
     // --- chiusura / footer ---
     "Il problema non è cosa ordinare.":"The hard part isn't what to order.",
     "È cosa rimandare alla prossima volta.":"It's what to leave for next time.",
-    "Agriturismo in Salento dal 1987":"Farmhouse restaurant in Salento since 1987",
     "Ristorante · Braceria · Pizzeria con forno a legna":"Restaurant · Grill house · Wood-fired pizzeria",
     "Camere · Piscina · Cantina · Frantoio · Shop":"Rooms · Pool · Winery · Oil mill · Shop",
     "Contatti":"Contact",
