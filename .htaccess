@@ -2,7 +2,7 @@
 
 # Niente cache per le pagine HTML (così le modifiche sono subito online)
 <IfModule mod_headers.c>
-  <FilesMatch "\.html$">
+  <FilesMatch "\.(html|js)$">
     Header set Cache-Control "no-cache, no-store, must-revalidate, max-age=0"
     Header set Pragma "no-cache"
   </FilesMatch>
