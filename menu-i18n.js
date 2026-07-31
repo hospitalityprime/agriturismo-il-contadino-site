@@ -15,7 +15,7 @@
     "Anche senza glutine":"Gluten-free available",
     "Pizzeria con forno a legna":"Wood-fired pizzeria",
     // --- categorie ---
-    "Antipasti":"Appetizers",
+    "Antipasti":"Starters",
     "Primi":"First courses",
     "Secondi":"Main courses",
     "Contorni":"Sides",
