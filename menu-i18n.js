@@ -106,6 +106,7 @@
     "Ombrina, zucchine, olio evo, arancia, limone, menta, sale, pepe, fumetto di pesce. Gnocchi: patate, farina, uova.":"Shi drum, courgettes, extra-virgin olive oil, orange, lemon, mint, salt, pepper, fish stock. Gnocchi: potatoes, flour, eggs.",
     "Zuppa di fagioli e cozze":"Bean and mussel soup",
     "Fagioli, cozze, carote, sedano, cipolla, passata di datterino giallo, sale, olio evo.":"Beans, mussels, carrots, celery, onion, yellow datterino passata, salt, extra-virgin olive oil.",
+    "[da confermare]":"[to be confirmed]",
     "Tutti i piatti possono essere preparati senza glutine: chiedere al personale di sala.":"All dishes can be prepared gluten-free: please ask our staff.",
     // --- Secondi ---
     "Costata di vitello":"Veal rib steak",
@@ -173,11 +174,7 @@
     "Patate al forno":"Roast potatoes",
     "Patate, olio evo, rosmarino, sale.":"Potatoes, extra-virgin olive oil, rosemary, salt.",
     // --- Pizze ---
-    "Il nostro è un impasto con una lievitazione di almeno 48/72 ore: con pazienza e cura si ottiene un sapore eccellente e un'altissima digeribilità.":"Our dough rises for at least 48/72 hours: with patience and care we achieve an excellent flavour and very high digestibility.",
-    "Classico":"Classic",
-    "Kamut · +1,50 €":"Kamut · +€1.50",
-    "Ai cereali · +1,50 €":"Multigrain · +€1.50",
-    "Classico: farina 00, acqua, lievito, sale, olio evo. · Kamut: farina 00, kamut, sale, lievito, olio evo. · Ai cereali: farina 00, frumento, segale, avena, orzo, riso, sale, lievito, olio evo.":"Classic: type 00 flour, water, yeast, salt, extra-virgin olive oil. · Kamut: type 00 flour, kamut, salt, yeast, extra-virgin olive oil. · Multigrain: type 00 flour, wheat, rye, oats, barley, rice, salt, yeast, extra-virgin olive oil.",
+    "È possibile scegliere tra 3 tipologie di impasto.":"You can choose from 3 types of dough.",
     "Pomodoro, mozzarella.":"Tomato, mozzarella.",
     "Pomodoro, mozzarella, carciofi, funghi, prosciutto, melanzane, peperoni, salame piccante, olive.":"Tomato, mozzarella, artichokes, mushrooms, ham, aubergines, peppers, spicy salami, olives.",
     "Pomodoro, mozzarella, salame piccante, olive.":"Tomato, mozzarella, spicy salami, olives.",
