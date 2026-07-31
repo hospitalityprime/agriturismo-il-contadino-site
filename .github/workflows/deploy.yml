@@ -21,7 +21,7 @@ jobs:
           REMOTE_USER: ${{ secrets.SSH_USER }}
           REMOTE_PORT: ${{ secrets.SSH_PORT }}
           SOURCE: "./"
-          TARGET: "public_html/"
+          TARGET: "domains/ilcontadino.it/public_html/"
           # -rltgoDzv = ricorsivo, mantiene permessi/tempi, compresso, verboso.
           # NIENTE --delete: non cancelliamo nulla di già presente sul server.
           ARGS: "-rltgoDzv"
