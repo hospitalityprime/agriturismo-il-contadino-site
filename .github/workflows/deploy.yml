@@ -2,9 +2,9 @@ name: Deploy su Hostinger (SSH)
 
 # Ad ogni push sul branch main, sincronizza i file su Hostinger via SSH/rsync.
 on:
-  push:
-    branches: [main]
-  workflow_dispatch: {}   # avvio manuale dalla tab "Actions"
+  workflow_dispatch: {}   # solo avvio manuale — il deploy di routine avviene via rsync/SSH.
+  # NB: il push automatico è disattivato di proposito. Il secret SSH_PRIVATE_KEY
+  # va reimpostato con la chiave completa (~/.ssh/ilc_deploy) per riattivare l'auto-deploy.
 
 jobs:
   deploy:
