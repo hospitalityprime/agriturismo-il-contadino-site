@@ -17,6 +17,8 @@
   a:hover { color:#3a5f26; }
   ::selection { background:#7DB249; color:#12210a; }
   input, textarea, select, button { font-family:'Plus Jakarta Sans', sans-serif; }
+  input[type="date"]::-webkit-date-and-time-value { text-align:left; margin:0; }
+  input[type="date"]::-webkit-calendar-picker-indicator { margin-left:auto; }
   @keyframes contFade { from { opacity:0; transform:translateY(14px); } to { opacity:1; transform:translateY(0); } }
   [data-r="burger"] { display: none; }
   @media (max-width: 1100px) {
@@ -545,7 +547,7 @@
                 <label style="display:block;"><input required="" type="email" placeholder="Email *" style="width:100%; padding:13px 15px; border:1px solid #d8d3bd; border-radius:12px; background:#fff; font-size:15px; color:#22301B;"></label>
               </div>
               <div data-r="g3f" style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px;">
-                <label style="display:block;"><input type="text" onfocus="this.type='date'" onblur="if(!this.value)this.type='text'" placeholder="Data" style="width:100%; padding:13px 13px; border:1px solid #d8d3bd; border-radius:12px; background:#fff; font-size:15px; color:#22301B;"></label>
+                <label style="display:block;"><input type="text" onfocus="this.type='date'" onblur="if(!this.value)this.type='text'" placeholder="Data" style="width:100%; min-width:0; max-width:100%; -webkit-appearance:none; appearance:none; text-align:left; padding:13px 13px; border:1px solid #d8d3bd; border-radius:12px; background:#fff; font-size:15px; color:#22301B;"></label>
                 <label style="display:block;"><select style="width:100%; padding:13px 13px; border:1px solid #d8d3bd; border-radius:12px; background:#fff; font-size:15px; color:#22301B;"><option value="">Orario</option><optgroup label="Pranzo"><option>12:30</option><option>13:00</option><option>13:30</option></optgroup><optgroup label="Cena"><option>19:30</option><option>20:00</option><option>20:30</option><option>21:30</option><option>22:00</option></optgroup></select></label>
                 <label style="display:block;"><input type="number" min="1" placeholder="Numero Ospiti" style="width:100%; padding:13px 13px; border:1px solid #d8d3bd; border-radius:12px; background:#fff; font-size:15px; color:#22301B;"></label>
               </div>
@@ -642,7 +644,7 @@
   var base='position:absolute;border:none;border-radius:999px;background:rgba(255,255,255,0.88);color:#1c2913;cursor:pointer;display:flex;align-items:center;justify-content:center;line-height:1;';
   var prev=mk('&#8249;', base+'top:50%;left:14px;transform:translateY(-50%);width:52px;height:52px;font-size:28px;font-weight:700;','Foto precedente');
   var next=mk('&#8250;', base+'top:50%;right:14px;transform:translateY(-50%);width:52px;height:52px;font-size:28px;font-weight:700;','Foto successiva');
-  var close=mk('&times;', base+'top:16px;right:18px;width:46px;height:46px;font-size:28px;','Chiudi');
+  var close=mk('<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1c2913" stroke-width="2.5" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"></line><line x1="18" y1="6" x2="6" y2="18"></line></svg>', base+'top:16px;right:18px;width:46px;height:46px;','Chiudi');
   ov.appendChild(prev); ov.appendChild(next); ov.appendChild(close);
   document.body.appendChild(ov);
 
