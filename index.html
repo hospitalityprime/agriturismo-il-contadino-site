@@ -624,7 +624,7 @@
   if(b&&d){ d.style.display='none'; b.addEventListener('click',function(){ d.style.display=(d.style.display==='none')?'flex':'none'; });
     Array.prototype.forEach.call(d.querySelectorAll('a'),function(a){ a.addEventListener('click',function(){ d.style.display='none'; }); }); }
   var f=document.querySelector('form');
-  var GHL_WEBHOOK=''; // <-- incolla qui l'URL del webhook GoHighLevel
+  var GHL_WEBHOOK='https://services.leadconnectorhq.com/hooks/VmFnGX838iORHZX477Tw/webhook-trigger/92dfd292-1de4-465c-ba32-54f013b57bee';
   if(f){ f.addEventListener('submit',function(e){ e.preventDefault();
     var go=function(){ window.location.href='/tavolo-prenotato'; };
     if(GHL_WEBHOOK){ var t=setTimeout(go,2500);
