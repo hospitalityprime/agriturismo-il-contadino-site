@@ -17,9 +17,9 @@ jobs:
         uses: easingthemes/ssh-deploy@v5.1.0
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          REMOTE_HOST: ${{ secrets.SSH_HOST }}
-          REMOTE_USER: ${{ secrets.SSH_USER }}
-          REMOTE_PORT: ${{ secrets.SSH_PORT }}
+          REMOTE_HOST: "72.60.93.213"
+          REMOTE_USER: "u200659392"
+          REMOTE_PORT: "65002"
           SOURCE: "./"
           TARGET: "domains/ilcontadino.it/public_html/"
           # -rltgoDzv = ricorsivo, mantiene permessi/tempi, compresso, verboso.
