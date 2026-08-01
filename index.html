@@ -90,6 +90,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
   /* sezioni/immagini non devono sforare in larghezza su mobile */
   section, [data-r] { max-width:100%; }
+  /* mappa: zoom ridotto su mobile per mostrare il mare */
+  [data-r="map-desktop"] { display:block; }
+  [data-r="map-mobile"] { display:none; }
+  @media (max-width: 920px) {
+    [data-r="map-desktop"] { display:none; }
+    [data-r="map-mobile"] { display:block; }
+  }
 </style>
 </head>
 <body>
@@ -635,7 +642,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div id="dove" style="scroll-margin-top:90px; display:flex; flex-direction:column; gap:20px;">
         <div style="border-radius:clamp(20px,2.6vw,30px); overflow:hidden; flex:1 1 auto; min-height:260px;">
-          <iframe title="Mappa — Agriturismo Il Contadino, Otranto" src="https://www.google.com/maps?q=Agriturismo+Il+Contadino,+Via+Azienda,+Frassanito,+Otranto+LE&amp;output=embed" style="width:100%; height:100%; min-height:260px; border:0; display:block;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe data-r="map-desktop" title="Mappa — Agriturismo Il Contadino, Otranto" src="https://www.google.com/maps?q=Agriturismo+Il+Contadino,+Via+Azienda,+Frassanito,+Otranto+LE&amp;output=embed" style="width:100%; height:100%; min-height:260px; border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe data-r="map-mobile" title="Mappa — Agriturismo Il Contadino, Otranto" src="https://www.google.com/maps?q=Agriturismo+Il+Contadino,+Via+Azienda,+Frassanito,+Otranto+LE&amp;z=13&amp;output=embed" style="width:100%; height:100%; min-height:260px; border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div style="background:#1E3320; border-radius:clamp(20px,2.6vw,30px); padding:clamp(24px,3vw,36px); color:#c6d0b6;">
           <div style="font-family:'Sora',sans-serif; font-size:12px; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; color:#a9d47a;">Dove siamo</div>
