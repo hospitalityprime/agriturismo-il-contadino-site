@@ -71,6 +71,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     [data-r="gal"] > div > div { aspect-ratio: 1 / 1 !important; border-radius: 12px !important; }
   }
 
+
+  /* --- FIX responsive mobile (aggiunte) --- */
+  @media (max-width: 920px) {
+    [data-r="split"], [data-r="g2"], [data-r="g2f"], [data-r="mosaic"], [data-r="numeri"],
+    [data-r="beat-e"], [data-r="beat-e-wrap"], [data-r="portrait"], [data-r="foot"],
+    [data-r="pano"], [data-r="amen"], [data-r="g3"] { grid-template-columns:1fr !important; }
+    [data-r="pil"] { grid-template-columns:repeat(2,1fr) !important; }
+    [data-r="split"] > * , [data-r="beat-e"] > * { min-width:0 !important; }
+  }
+  @media (max-width: 560px) {
+    [data-r="pil"] { grid-template-columns:1fr !important; }
+  }
+  /* sezioni/immagini non devono sforare in larghezza su mobile */
+  section, [data-r] { max-width:100%; }
 </style>
 </head>
 <body>
@@ -97,7 +111,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </defs></svg>
 
 <!-- 0 — NAV -->
-<header style="position:sticky; top:0; z-index:50; background:#FFFFFF; border-bottom:1px solid rgba(28,41,19,0.07);">
+<header style="position:sticky; top:0; z-index:9990; background:#FFFFFF; border-bottom:1px solid rgba(28,41,19,0.07);">
   <nav data-r="topnav" style="max-width:1240px; margin:0 auto; padding:14px clamp(20px,5vw,60px); display:flex; align-items:center; justify-content:center; gap:clamp(20px,3vw,44px); flex-wrap:wrap;">
     <a href="/" style="display:flex; align-items:center; gap:12px;">
       <img src="/images/logo.png" alt="Il Contadino" style="height:52px; width:auto; display:block;" loading="lazy">
@@ -761,5 +775,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   document.addEventListener('gesturestart',function(e){ e.preventDefault(); });
 })();
 </script>
+<script>document.addEventListener("gesturestart",function(e){e.preventDefault();},{passive:false});document.addEventListener("dblclick",function(e){e.preventDefault();},{passive:false});</script>
 </body>
 </html>
