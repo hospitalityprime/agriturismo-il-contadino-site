@@ -9,91 +9,67 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-5DL5ZBJ4');</script>
 <!-- End Google Tag Manager -->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>Il Contadino — Agriturismo in Salento dal 1987</title>
-<meta name="description" content="Agriturismo Il Contadino a Otranto, nel Salento dal 1987: ristorante, braceria e pizzeria con forno a legna. Materie prime fresche dai nostri campi e pescato del giorno. Prenota il tuo tavolo.">
+<meta name="description" content="Agriturismo Il Contadino a Otranto, nel Salento dal 1987: camere e appartamenti immersi nel verde, a 700m dal mare. Ristorante, piscina, colazione con i prodotti dei nostri campi.">
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Il Contadino — Agriturismo in Salento dal 1987</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;family=Archivo:wght@400;500;600;700&amp;family=Sora:wght@400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 <style>
 
   * { margin:0; padding:0; box-sizing:border-box; }
   html { scroll-behavior:smooth; }
-  html, body { overflow-x:clip; max-width:100%; }
-  body { background:#F3F0E2; -webkit-font-smoothing:antialiased; }
+  body { background:#F5F2E6; -webkit-font-smoothing:antialiased; }
   a { color:#4C7A34; text-decoration:none; }
   a:hover { color:#3a5f26; }
   ::selection { background:#7DB249; color:#12210a; }
   input, textarea, select, button { font-family:'Plus Jakarta Sans', sans-serif; }
-  input[type="date"]::-webkit-date-and-time-value { text-align:left; margin:0; }
-  input[type="date"]::-webkit-calendar-picker-indicator { margin-left:auto; }
   @keyframes contFade { from { opacity:0; transform:translateY(14px); } to { opacity:1; transform:translateY(0); } }
-  [data-r="burger"] { display: none; }
-  @media (max-width: 1100px) {
-    [data-r="nowrap"] { white-space: normal !important; }
-  }
+  [data-r="burger"] { display:none; }
+  [data-dot][data-active="1"] { width:24px !important; background:#FFFFFF !important; }
   @media (max-width: 1000px) {
+    [data-r="topnav"] { flex-wrap:nowrap !important; justify-content:space-between !important; gap:10px !important; height:64px; padding-top:0 !important; padding-bottom:0 !important; }
+    [data-r="topnav"] > div:first-of-type { display:none !important; }
+    [data-r="topnav"] > a:first-child { flex:0 1 auto; min-width:0; overflow:hidden; }
+    [data-r="topnav"] img { height:36px !important; }
+    [data-r="topnav"] > a:first-child span { font-size:17px !important; }
+    [data-r="topnav"] > a[href*="prenota"] { display:none !important; }
+    [data-r="burger"] { display:flex !important; }
+    section[id] { scroll-margin-top:76px !important; }
   }
-  @media (max-width: 900px) {
-    [data-r="g2"], [data-r="g3f"] { grid-template-columns: 1fr !important; }
-    [data-r="g3"] { grid-template-columns: repeat(2, 1fr) !important; }
-    [data-r="foot"] { grid-template-columns: 1fr !important; }
-    [data-r="stat"] { grid-template-columns: 1fr !important; gap: 14px !important; }
-    [data-r="stat"] > div { box-shadow: none !important; }
+  @media (max-width: 980px) {
+    [data-r="bento"] { grid-template-columns:repeat(2,1fr) !important; grid-auto-rows:auto !important; }
+    [data-r="bento"] > * { grid-column:auto !important; grid-row:auto !important; min-height:280px; }
+    [data-r="split"], [data-r="g2"], [data-r="g2f"] { grid-template-columns:1fr !important; }
+    [data-r="portrait"] { aspect-ratio:16/10 !important; }
+    [data-r="pano"] { aspect-ratio:16/10 !important; min-height:0 !important; }
+    [data-r="gal"] { grid-template-columns:repeat(4,1fr) !important; }
+    [data-r="gal"] > button { grid-column:span 2 !important; aspect-ratio:1/1 !important; }
+    [data-r="mosaic"] { aspect-ratio:16/10 !important; }
+    [data-r="beat-e"] { position:static !important; padding:28px 24px 32px !important; }
+    [data-r="beat-e-grad"] { display:none !important; }
+    [data-r="beat-e-img"] { aspect-ratio:16/10 !important; min-height:0 !important; }
+    [data-r="numeri"] { grid-template-columns:repeat(2,1fr) !important; }
+    [data-r="pil"] { grid-template-columns:repeat(2,1fr) !important; }
   }
   @media (max-width: 620px) {
-    [data-r="g3"], [data-r="g2f"] { grid-template-columns: 1fr !important; }
-
-  }
-  @media (max-width: 1000px) {
-    [data-r="topnav"] { flex-wrap: nowrap !important; justify-content: space-between !important; gap: 10px !important; height: 64px; padding-top: 0 !important; padding-bottom: 0 !important; }
-    [data-r="topnav"] > div:first-of-type { display: none !important; }
-    [data-r="burger"] { display: flex !important; }
-    [data-r="topnav"] > a:first-child { flex: 0 1 auto; min-width: 0; overflow: hidden; }
-    [data-r="topnav"] img { height: 36px !important; }
-    [data-r="topnav"] > a:first-child span { font-size: 17px !important; }
-    [data-r="topnav"] > a:first-child span[data-r="brandsub"] { font-size: 11px !important; }
-    [data-r="topnav"] > a:last-child { flex: 0 0 auto; font-size: 12px !important; padding: 10px 14px !important; }
-    section[id] { scroll-margin-top: 76px !important; }
+    [data-r="bento"] { grid-template-columns:1fr !important; }
+    [data-r="g3"], [data-r="pil"], [data-r="amen"] { grid-template-columns:1fr !important; }
+    [data-r="numeri"] { grid-template-columns:1fr !important; }
+    [data-r="cta"] { padding-top:13px !important; padding-bottom:13px !important; }
+    [data-r="cta"] > span { font-size:13px !important; }
+    [data-r="cta"] > a { font-size:12px !important; padding:15px 18px !important; }
+    [data-r="pills"] { overflow-x:auto; }
   }
 
-
-  @media (max-width: 900px) {
-
-
-  }
-
-  @media (max-width: 900px) {
-  }
-
-  @media (max-width: 1000px) {
-    [data-r="gal"] { grid-template-columns: repeat(3, 1fr) !important; gap: 8px !important; }
+  @media (max-width: 700px) {
+    [data-r="gal"] { grid-template-columns: repeat(2, 1fr) !important; gap: 8px !important; }
     [data-r="gal"] > div { display: contents !important; }
-    [data-r="gal"] > div > div { aspect-ratio: 1 / 1 !important; border-radius: 10px !important; }
-    [data-r="gal"] > div:last-child > div:last-child { display: none !important; }
+    [data-r="gal"] > div > div { aspect-ratio: 1 / 1 !important; border-radius: 12px !important; }
   }
 
-  @media (max-width: 1000px) {
-    h2[style*="nowrap"], p[style*="nowrap"] { text-wrap: normal !important; white-space: normal !important; }
-  }
-
-  @media (max-width: 620px) {
-
-
-  }
-
-  @media (max-width: 620px) {
-    [data-r="cta"] { flex-direction: row !important; flex-wrap: nowrap !important; gap: 10px !important; text-align: left !important; padding-top: 8px !important; padding-bottom: 8px !important; }
-    [data-r="cta"] > span { min-width: 0; flex: 1 1 auto; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 13px !important; }
-    [data-r="cta"] > a { flex: 0 0 auto; width: auto !important; white-space: nowrap; font-size: 12px !important; padding: 11px 16px !important; }
-  }
-
-  @media (max-width: 620px) {
-    [data-r="cta"] { padding-top: 13px !important; padding-bottom: 13px !important; }
-    [data-r="cta"] > a { padding: 15px 18px !important; }
-  }
 </style>
 </head>
 <body>
@@ -104,23 +80,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
-<div style="font-family:'Plus Jakarta Sans',sans-serif; color:#22301B; background:#F3F0E2; overflow-x:clip;">
+<div style="font-family:'Plus Jakarta Sans',sans-serif; color:#22301B; background:#F5F2E6; overflow-x:clip; padding-bottom:72px;">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="ic-ac" viewBox="0 0 24 24"><path d="M3 8h18M3 13h18M6.5 17.5c1.6 0 1.6 2 3.2 2s1.6-2 3.2-2 1.6 2 3.2 2 1.6-2 3.2-2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></symbol>
+<symbol id="ic-safe" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="10" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.6"></rect><path d="M8 10V7.5a4 4 0 0 1 8 0V10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path><circle cx="12" cy="15" r="1.4" fill="currentColor"></circle></symbol>
+<symbol id="ic-fridge" viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="18" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.6"></rect><path d="M6 10h12M9 6.5v2M9 13v2.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></symbol>
+<symbol id="ic-dryer" viewBox="0 0 24 24"><circle cx="9" cy="9.5" r="5" fill="none" stroke="currentColor" stroke-width="1.6"></circle><path d="M13.6 7.5H21M13.6 11.5H21M10 14.5V20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></symbol>
+<symbol id="ic-outdoor" viewBox="0 0 24 24"><path d="M12 3v3M5.5 5.5l2 2M3 12h3M18 12h3M16.5 7.5l2-2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path><circle cx="12" cy="12" r="3.2" fill="none" stroke="currentColor" stroke-width="1.6"></circle><path d="M4 20h16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></symbol>
+<symbol id="ic-door" viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="18" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.6"></rect><circle cx="14.5" cy="12" r="1.1" fill="currentColor"></circle></symbol>
+<symbol id="ic-kitchen" viewBox="0 0 24 24"><rect x="4" y="9" width="16" height="11" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.6"></rect><circle cx="9" cy="14.5" r="2" fill="none" stroke="currentColor" stroke-width="1.6"></circle><circle cx="15" cy="14.5" r="2" fill="none" stroke="currentColor" stroke-width="1.6"></circle><path d="M7 9V6.5M12 9V5M17 9V6.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></symbol>
+<symbol id="ic-portico" viewBox="0 0 24 24"><path d="M2 8l10-4 10 4M5 8v12M19 8v12M9.5 20v-6h5v6M3 20h18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></symbol>
+<symbol id="ic-people" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2" fill="none" stroke="currentColor" stroke-width="1.6"></circle><path d="M3 20v-1.2C3 16.6 5.7 15 9 15s6 1.6 6 3.8V20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path><path d="M16.5 6.2a3.2 3.2 0 0 1 0 6M18 15.4c1.9.5 3 1.7 3 3.4V20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></symbol>
+<symbol id="ic-beds" viewBox="0 0 24 24"><path d="M3 19v-7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v7M3 15h18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path><circle cx="7.5" cy="7.5" r="2" fill="none" stroke="currentColor" stroke-width="1.6"></circle><circle cx="16.5" cy="7.5" r="2" fill="none" stroke="currentColor" stroke-width="1.6"></circle></symbol>
+</defs></svg>
 
 <!-- 0 — NAV -->
 <header style="position:sticky; top:0; z-index:50; background:#FFFFFF; border-bottom:1px solid rgba(28,41,19,0.07);">
   <nav data-r="topnav" style="max-width:1240px; margin:0 auto; padding:14px clamp(20px,5vw,60px); display:flex; align-items:center; justify-content:center; gap:clamp(20px,3vw,44px); flex-wrap:wrap;">
-    <a href="#top" style="display:flex; align-items:center; gap:12px;">
+    <a href="/" style="display:flex; align-items:center; gap:12px;">
       <img src="/images/logo.png" alt="Il Contadino" style="height:52px; width:auto; display:block;" loading="lazy">
       <span style="display:flex; flex-direction:column; line-height:1.05;"><span style="font-family:'Sora',sans-serif; font-weight:700; font-size:22px; color:#1c2913;">Il Contadino</span><span data-r="brandsub" style="font-family:'Sora',sans-serif; font-weight:500; font-size:12px; color:#4C7A34; margin-top:2px;">Agriturismo in Salento dal 1987</span></span>
     </a>
     <div style="display:flex; align-items:center; gap:clamp(18px,3vw,38px);">
       <div style="display:flex; gap:clamp(16px,2.4vw,30px); align-items:center; font-family:'Plus Jakarta Sans',sans-serif;">
+        <a href="/" style="font-size: 15px; font-weight: 500; color: #000000">Home</a>
+        <a href="/ristorante" style="font-size: 15px; font-weight: 500; color: #000000">Ristorante</a>
         <a href="/menu" style="font-size: 15px; font-weight: 500; color: #000000">Il menù</a>
-        <a href="#sale" style="font-size: 15px; font-weight: 500; color: #000000">Le sale</a>
-        <a href="#storia" style="font-size: 15px; font-weight: 500; color: #000000">La storia</a>
-        <a href="#dove" style="font-size: 15px; font-weight: 500; color: #000000">Dove siamo</a>
       </div>
-      <a href="#prenota" style="font-family:'Plus Jakarta Sans',sans-serif; background:#7DB249; color:#12210a; font-size:14px; font-weight:700; letter-spacing:0.01em; padding:14px 28px; border-radius:999px; white-space:nowrap;">Riserva Il Tuo Tavolo</a>
+      <a href="/ristorante#prenota" style="font-family:'Plus Jakarta Sans',sans-serif; background:#7DB249; color:#12210a; font-size:14px; font-weight:700; letter-spacing:0.01em; padding:14px 28px; border-radius:999px; white-space:nowrap;">Riserva Il Tuo Tavolo</a>
     </div>
     <button data-r="burger" aria-label="Menu" style="flex:0 0 auto; width:44px; height:44px; border:1px solid rgba(28,41,19,0.14); border-radius:12px; background:#FFFFFF; cursor:pointer; flex-direction:column; align-items:center; justify-content:center; gap:5px;" data-burger="">
       <span style="display:block; width:20px; height:2px; background:#1c2913; border-radius:2px;"></span>
@@ -128,469 +116,517 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <span style="display:block; width:20px; height:2px; background:#1c2913; border-radius:2px;"></span>
     </button>
   </nav>
-  
     <div style="border-top:1px solid rgba(28,41,19,0.08); background:#FFFFFF; padding:14px clamp(20px,5vw,60px) 20px; display:flex; flex-direction:column; gap:4px;" id="mobile-drawer">
+      <a href="/" style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#1c2913; padding:12px 0; border-bottom:1px solid rgba(28,41,19,0.07);">Home</a>
+      <a href="/ristorante" style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#1c2913; padding:12px 0; border-bottom:1px solid rgba(28,41,19,0.07);">Ristorante</a>
       <a href="/menu" style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#1c2913; padding:12px 0; border-bottom:1px solid rgba(28,41,19,0.07);">Il menù</a>
-      <a href="#sale" style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#1c2913; padding:12px 0; border-bottom:1px solid rgba(28,41,19,0.07);">Le sale</a>
-      <a href="#storia" style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#1c2913; padding:12px 0; border-bottom:1px solid rgba(28,41,19,0.07);">La storia</a>
-      <a href="#dove" style="font-family:'Sora',sans-serif; font-size:17px; font-weight:600; color:#1c2913; padding:12px 0; border-bottom:1px solid rgba(28,41,19,0.07);">Dove siamo</a>
-      <a href="#prenota" style="margin-top:12px; text-align:center; background:#7DB249; color:#12210a; font-family:'Sora',sans-serif; font-size:15px; font-weight:700; padding:15px 24px; border-radius:999px;">Riserva il tuo tavolo</a>
+      <a href="/ristorante#prenota" style="margin-top:12px; text-align:center; background:#7DB249; color:#12210a; font-family:'Sora',sans-serif; font-size:15px; font-weight:700; padding:15px 24px; border-radius:999px;">Riserva il tuo tavolo</a>
     </div>
-  
 </header>
 
-<!-- 1 — HERO -->
-<section id="top" style="position:relative; min-height:50vh; display:flex; align-items:center; justify-content:center; padding:clamp(90px,14vh,150px) clamp(20px,6vw,60px); overflow:hidden;">
-  <div aria-hidden="true" style="position: absolute; inset: 0"><img src="images/agriturismo-otranto-il-contadino-147-ms7oiozk-5fx7.jpg" alt="" style="object-fit: cover; display: block; width: 100%; height: 100%" loading="lazy"></div>
-  <div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(240deg, #2B613000, #0A1903); width: 371%; height: 949px; border-radius: 0px; overflow: visible; opacity: 1"></div>
+<!-- 1 — HERO (invariata) -->
+<section id="top" style="position:relative; min-height:62vh; display:flex; align-items:center; justify-content:center; padding:clamp(70px,11vh,120px) clamp(20px,6vw,60px); overflow:hidden; background:#12210a;">
+  <div aria-hidden="true" style="position:absolute; inset:0;"><img src="images/agriturismo-otranto-il-contadino-66-msajb9oh-fxhv.jpg" alt="" style="width:100%; height:100%; object-fit:cover; object-position:center 45%; display:block;" loading="lazy"></div>
+  <div aria-hidden="true" style="position:absolute; inset:0; background:linear-gradient(240deg, rgba(43,97,48,0.10), rgba(10,25,3,0.88));"></div>
+  <div aria-hidden="true" style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(12,28,10,0.58), rgba(12,28,10,0.66));"></div>
 
-  <div style="position:relative; z-index:2; max-width:860px; text-align:center; color:#F7F6EF; animation:contFade 0.8s ease both;">
-    <span style="display:inline-flex; align-items:center; gap:9px; font-family:'Plus Jakarta Sans',sans-serif; font-size:12px; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:#eaf2dd; background:rgba(255,255,255,0.14); backdrop-filter:blur(4px); padding:9px 18px; border-radius:999px; border:1px solid rgba(255,255,255,0.18);"><span style="width:6px; height:6px; border-radius:99px; background:#9ccc5a;"></span>Il Contadino — Agriturismo in Salento dal 1987</span>
+  <div style="position:relative; z-index:2; max-width:900px; text-align:center; color:#F7F6EF; animation:contFade 0.8s ease both;">
+    <span style="display:inline-flex; align-items:center; gap:9px; font-size:12px; font-weight:600; letter-spacing:0.18em; text-transform:uppercase; color:#eaf2dd; background:rgba(255,255,255,0.14); backdrop-filter:blur(4px); padding:9px 18px; border-radius:999px; border:1px solid rgba(255,255,255,0.18);"><span style="width:6px; height:6px; border-radius:99px; background:#9ccc5a;"></span>Agriturismo in Salento dal 1987</span>
 
-    <h1 style="font-family:'Sora',sans-serif; font-weight:700; font-size:clamp(40px,6vw,78px); line-height:1.04; letter-spacing:-0.02em; color:#FFFFFF; margin-top:26px;">La Vera Cucina Salentina, Fatta Ogni Giorno Con Quello Che Coltiviamo Noi.</h1>
-    
+    <h1 style="font-family: 'Sora',sans-serif; font-weight: 700; font-size: clamp(36px,5.4vw,70px); line-height: 1.04; letter-spacing: -0.02em; color: #FFFFFF; margin-top: 26px; text-wrap: balance; text-transform: none">Il Salento di una volta,<br>da vivere con tutti e 5 i sensi</h1>
 
-    <p style="font-family:'Plus Jakarta Sans',sans-serif; font-size:clamp(17px,1.6vw,20px); line-height:1.6; color:#e7ebdc; margin:26px auto 0; max-width:640px;"><b>Ristorante tipico salentino, braceria, pizzeria con forno a legna.<br>Aperti tutti i giorni a pranzo e a cena.</b></p>
+    <p style="font-size:clamp(17px,1.6vw,20px); line-height:1.6; color:#e7ebdc; margin:26px auto 0; max-width:640px;">Camere e appartamenti immersi in oltre 60 ettari di azienda agricola.<br>Gestione familiare dal 1987.</p>
 
-    <div style="display:flex; flex-wrap:wrap; gap:10px clamp(28px,4vw,52px); justify-content:center; align-items:center; margin-top:34px; font-family:'Plus Jakarta Sans',sans-serif; font-size:17px; font-weight:500; color:#f3f5ea;">
-      <span>A 700 metri dal mare</span>
-      <span>10 Minuti da Otranto</span>
+    <div style="display:flex; flex-wrap:wrap; gap:10px clamp(28px,4vw,52px); justify-content:center; align-items:center; margin-top:32px; font-size:17px; font-weight:500; color:#f3f5ea;">
+      <span>800 metri dal mare</span>
+      <span>10 minuti da Otranto</span>
       <span>30 minuti da Lecce</span>
     </div>
 
     <div style="display:flex; flex-wrap:wrap; gap:14px; justify-content:center; margin-top:38px;">
-      <a href="#prenota" style="font-family:'Plus Jakarta Sans',sans-serif; background:#7DB249; color:#12210a; font-size:16px; font-weight:700; letter-spacing:0.01em; padding:17px 36px; border-radius:999px;">Prenota Un Tavolo</a>
-      <a href="/menu" style="font-family:'Plus Jakarta Sans',sans-serif; background:#FFFFFF; font-size:16px; font-weight:600; color:#1c2913; padding:17px 34px; border-radius:999px;">Scopri Il Menù</a>
+      <a href="#prenota" style="background:#7DB249; color:#12210a; font-family:'Sora',sans-serif; font-size:16px; font-weight:700; padding:17px 36px; border-radius:999px;">Prenota una camera</a>
+      <a href="ristorante.html" style="background:#FFFFFF; font-size:16px; font-weight:600; color:#1c2913; padding:17px 34px; border-radius:999px;">Prenota un tavolo</a>
+    </div>
+
+    <div style="display:inline-flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:12px; margin-top:34px; padding:12px 22px; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.2); border-radius:999px;">
+      <span style="color:#E0B65C; font-size:15px; letter-spacing:2px;">★★★★★</span>
+      <span style="font-size:15px; font-weight:600; color:#FFFFFF;">9,4/10 su Booking</span>
+      <span style="font-size:15px; color:#d3ddc6;">oltre 800 recensioni</span>
     </div>
   </div>
 </section>
 
-<!-- STAT BAND -->
-<section style="background: #1E3320">
-  <div data-r="stat" style="max-width:1240px; margin:0 auto; padding:clamp(40px,5vw,64px) clamp(20px,5vw,60px); display:grid; grid-template-columns:repeat(3,1fr); gap:24px;">
+<!-- 2 — I 4 PILASTRI (verde pieno, nessuna sfumatura) -->
+<section style="background:#1E3320;">
+  <div data-r="pil" style="max-width:1240px; margin:0 auto; padding:clamp(48px,6vw,80px) clamp(20px,5vw,60px); display:grid; grid-template-columns:repeat(4,1fr); gap:clamp(24px,3vw,44px);">
     
-      <div style="text-align:center; padding:0 12px; box-shadow:none;">
-        <div style="font-family:'Sora',sans-serif; font-weight:600; font-size:clamp(22px,2.6vw,34px); color:#F3F0E2;">Dal 1987</div>
-      </div>
-    
-      <div style="text-align:center; padding:0 12px; box-shadow:inset 1px 0 0 0 rgba(255,255,255,0.12);">
-        <div style="font-family:'Sora',sans-serif; font-weight:600; font-size:clamp(22px,2.6vw,34px); color:#F3F0E2;">700m dal mare</div>
-      </div>
-    
-      <div style="text-align:center; padding:0 12px; box-shadow:inset 1px 0 0 0 rgba(255,255,255,0.12);">
-        <div style="font-family:'Sora',sans-serif; font-weight:600; font-size:clamp(22px,2.6vw,34px); color:#F3F0E2;">Prodotti KM 0</div>
-      </div>
-    
-  </div>
-</section>
-
-<!-- 2 — FILIERA -->
-<section style="max-width:1240px; margin:0 auto; padding:clamp(52px,7vw,104px) clamp(20px,5vw,60px);">
-  <div style="max-width:960px; margin:0 auto; text-align:center;">
-    <span style="display:inline-flex; align-items:center; gap:8px; font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:#4C7A34; background:#E7EDD8; padding:8px 16px; border-radius:999px;"><span style="width: 6px; height: 6px; border-radius: 99px; background: rgb(76, 122, 52);"></span>NON UN RISTORANTE CON L'ORTO, MA Un'azienda agricola con un ristorante al suo interno</span>
-    
-    <h2 style="font-family:'Sora',sans-serif; font-weight:600; font-size:clamp(30px,4.2vw,52px); line-height:1.1; color:#1c2913; margin-top:20px; text-align:center; text-wrap:nowrap;">Dalla nostra terra alla tavola.<br>Senza nessun passaggio in mezzo.</h2><p style="font-size:18px; line-height:1.65; color:#56604a; margin-top:22px;">Il pane, la pasta, la pizza, l'olio, il vino, la verdura, la frutta, le conserve. Tutto questo, nel tuo piatto, viene dalle nostre terre. Le stesse che la nostra famiglia coltiva qui intorno dal 1987.<br>E se non ci credi, chiedi di fare un giro: ti accompagniamo volentieri.</p>
-  </div>
-  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:clamp(16px,2vw,24px); margin-top:clamp(40px,5vw,60px);">
-<div style="flex:1 1 300px; max-width:380px; background:#FBF9F0; border:1px solid #e6e2ce; border-radius:22px; overflow:hidden;">
-      <div style="aspect-ratio:16/10; overflow:hidden;">
-        
-      <div style="box-sizing: border-box; display: flex; flex-direction: column; gap: 12px; width:100%; height:100%"><div style="box-sizing: border-box; display: flex; flex-direction: column; gap: 12px; width:100%; height:100%"><div style="box-sizing: border-box; display: flex; flex-direction: column; gap: 12px; width: 100%; height:100%"><img src="images/agriturismo-otranto-il-contadino-153-ms7p4hjx-shb7.jpg" alt="Le verdure" style="width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; align-self: auto" loading="lazy"></div></div></div></div>
-      <div style="padding:22px 24px 26px;">
-        <h3 style="font-family:'Sora',sans-serif; font-size:22px; font-weight:600; color:#1c2913; margin:0 0 10px;">Le verdure</h3>
-        <p style="font-size:15px; line-height:1.6; color:#56604a;">Nel tuo piatto quello che la stagione offre. Raccolto fresco ogni mattina.</p>
-      </div>
-    </div>
-    <div style="flex:1 1 300px; max-width:380px; background:#FBF9F0; border:1px solid #e6e2ce; border-radius:22px; overflow:hidden;">
-      <div style="aspect-ratio:16/10; overflow:hidden;">
-        <img src="images/agriturismo-otranto-il-contadino-40-ms7p84sr-wo9g.jpg" alt="La pasta" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
-      </div>
-      <div style="padding:22px 24px 26px;">
-        <h3 style="font-family:'Sora',sans-serif; font-size:22px; font-weight:600; color:#1c2913; margin:0 0 10px;">La pasta</h3>
-        <p style="font-size:15px; line-height:1.6; color:#56604a;">Preparata a mano ogni giorno, usando solo la nostra farina di grano duro.</p>
-      </div>
-    </div>
-    <div style="flex:1 1 300px; max-width:380px; background:#FBF9F0; border:1px solid #e6e2ce; border-radius:22px; overflow:hidden;">
-      <div style="aspect-ratio:16/10; overflow:hidden;">
-        <img src="images/58.jpg" alt="Le conserve" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
-      </div>
-      <div style="padding:22px 24px 26px;">
-        <h3 style="font-family:'Sora',sans-serif; font-size:22px; font-weight:600; color:#1c2913; margin:0 0 10px;">Le conserve</h3>
-        <p style="font-size:15px; line-height:1.6; color:#56604a;">Passate, sottoli, marmellate. L'estate che ti ritrovi in tavola a gennaio.</p>
-      </div>
-    </div>
-    <div style="flex:1 1 300px; max-width:380px; background:#FBF9F0; border:1px solid #e6e2ce; border-radius:22px; overflow:hidden;">
-      <div style="aspect-ratio:16/10; overflow:hidden;">
-        <img src="images/agriturismo-otranto-il-contadino-103-ms7p955k-mty7.jpg" alt="Il vino" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
-      </div>
-      <div style="padding:22px 24px 26px;">
-        <h3 style="font-family:'Sora',sans-serif; font-size:22px; font-weight:600; color:#1c2913; margin:0 0 10px;">Il vino</h3>
-        <p style="font-size:15px; line-height:1.6; color:#56604a;">13 etichette tra bianchi, rossi, rosati, spumanti e passiti. Dalla vendemmia all'etichettatura.</p>
-      </div>
-    </div>
-    <div style="flex:1 1 300px; max-width:380px; background:#FBF9F0; border:1px solid #e6e2ce; border-radius:22px; overflow:hidden;">
-      <div style="aspect-ratio:16/10; overflow:hidden;">
-        <img src="images/151.jpg" alt="L'olio" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
-      </div>
-      <div style="padding:22px 24px 26px;">
-        <h3 style="font-family:'Sora',sans-serif; font-size:22px; font-weight:600; color:#1c2913; margin:0 0 10px;">L'olio</h3>
-        <p style="font-size:15px; line-height:1.6; color:#56604a;">Una produzione limitata per il fabbisogno del nostro ristorante. In ogni preparazione.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 3 — AGRITURISMO VERO (DARK) -->
-<section style="position: relative; background: url(&quot;images/agriturismo-otranto-il-contadino-68-ms7pd06h-l3qc.jpg&quot;) center / cover no-repeat; color: #e6ecda">
-  <div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(240deg, #2B613000, #0A1903); width: 371%; height: 100%; border-radius: 0px; overflow: visible; opacity: 1"></div>
-  <div style="position:relative; z-index:1; max-width:1240px; margin:0 auto; padding:clamp(56px,8vw,120px) clamp(20px,5vw,60px); text-align:center;">
-    <span style="display:inline-flex; align-items:center; gap:8px; font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:#bcd39a; background:rgba(255,255,255,0.08); padding:8px 16px; border-radius:999px;"><span style="width:6px; height:6px; border-radius:99px; background:#bcd39a;"></span>Da noi il chilometro zero è zero davvero</span>
-    <h2 style="font-family:'Sora',sans-serif; font-weight:700; font-size:clamp(30px,4vw,52px); line-height:1.12; letter-spacing:-0.01em; color:#F3F0E2; max-width:1000px; margin:24px auto 0;">Gli altri si credono agriturismi.<br>Noi lo siamo davvero.</h2>
-    <div style="max-width:980px; margin:32px auto 0; text-align:center;">
-      <p style="font-size:19px; line-height:1.7; color:#c3ccb3;">Per definirsi agriturismo, per legge, basta che un quinto dei prodotti sia tuo.<br>Per scrivere «km 0» sul menù basta non superare i 70 chilometri.<br>Ecco perché è pieno di agriturismi a km 0. È facile.</p>
-      
-      <p style="font-family:'Sora',sans-serif; font-weight:600; font-size:clamp(22px,2.6vw,30px); line-height:1.32; color:#F3F0E2; max-width:840px; margin:28px auto 0;">Da noi la filiera si misura in passi.<br>Quelli che separano la cucina dai campi dove si coltiva tutto ciò che serviamo.</p>
-      <p style="font-family:'Sora',sans-serif; font-weight:600; font-size:clamp(22px,2.6vw,30px); line-height:1.32; color:#F3F0E2; margin:20px auto 0;">La differenza la sentirai nel piatto.</p>
-      
-    </div>
-  </div>
-</section>
-
-<!-- 4 — LE MANI -->
-<section style="max-width:1240px; margin:0 auto; padding:clamp(52px,7vw,104px) clamp(20px,5vw,60px);">
-  <div style="text-align:center; max-width:760px; margin:0 auto;">
-    <span style="display:inline-flex; align-items:center; gap:8px; font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:#4C7A34; background:#E7EDD8; padding:8px 16px; border-radius:999px;"><span style="width: 6px; height: 6px; border-radius: 99px; background: rgb(76, 122, 52);"></span>DA NOI La giornata inizia molto presto</span>
-    <h2 style="font-family:'Sora',sans-serif; font-weight:700; font-size:clamp(34px,4.6vw,58px); line-height:1.08; letter-spacing:-0.01em; color:#1c2913; margin-top:20px;">Fatto a mano. Con amore.<br>Ogni giorno. Da 40 anni.</h2><p style="font-size:19px; line-height:1.7; color:#56604a; margin:22px auto 0; max-width:720px; text-align:center;">Le orecchiette, la ciceri e tria, gli gnocchi, le polpette, il pane, le torte, l'impasto della pizza. Nessuna macchina. Nessun semilavorato. Solo mani e duro lavoro.</p>
-    
-  </div>
-  <div data-r="g4" style="display:grid; grid-template-columns:repeat(2,1fr); gap:clamp(12px,1.6vw,20px); margin-top:clamp(36px,4vw,56px);">
-<figure style="margin:0;">
-      <div style="position:relative; aspect-ratio:3/4; border-radius:20px; overflow:hidden;">
-        <img src="images/agriturismo-otranto-il-contadino-37-ms7piqup-85z8.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
-      </div>
-    </figure>
-    <figure style="margin:0;">
-      <div style="position:relative; aspect-ratio:3/4; border-radius:20px; overflow:hidden;">
-        <img src="images/agriturismo-otranto-il-contadino-39-ms7phpdu-047n.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
-      </div>
-    </figure>
-    <figure style="margin:0;">
-      <div style="position:relative; aspect-ratio:3/4; border-radius:20px; overflow:hidden;">
-        <img src="images/agriturismo-otranto-il-contadino-34-ms7ph2y9-p01h.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
-      </div>
-    </figure>
-    <figure style="margin:0;">
-      <div style="position:relative; aspect-ratio:3/4; border-radius:20px; overflow:hidden;">
-        <img src="images/agriturismo-otranto-il-contadino-75-ms7pgavt-wbis.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
-      </div>
-    </figure>
-  </div>
-</section>
-
-<!-- 5 — IL PESCATO (DARK) -->
-<section style="background:#17322A; color:#e6ecda;">
-  <div style="max-width:1240px; margin:0 auto; padding:clamp(56px,8vw,110px) clamp(20px,5vw,60px);">
-    <div data-r="g2" style="display:grid; grid-template-columns:1fr 1fr; gap:clamp(32px,5vw,64px); align-items:start;">
       <div>
-        <span style="display:inline-flex; align-items:center; gap:8px; font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:#8fc6b6; background:rgba(255,255,255,0.08); padding:8px 16px; border-radius:999px;"><span style="width: 6px; height: 6px; border-radius: 99px; background: rgb(143, 198, 182);"></span>QUELLO CHE NON PRODUCIAMO, LO scegliamo DI PERSONA&nbsp;</span>
-        <h2 style="font-family:'Sora',sans-serif; font-weight:600; font-size:clamp(30px,4vw,50px); line-height:1.12; color:#F3F0E2; margin-top:20px;">Ogni mattina sveglia all'alba per offrirti solo il miglior pescato del giorno.</h2>
-        <div style="position:relative; aspect-ratio:16/7; border-radius:22px; overflow:hidden; margin-top:22px;">
-          <img src="images/95.jpg" alt="La vetrina del pescato in sala" style="width: 100%; height: 100%; object-fit: cover; object-position: center 75%; display: block" loading="lazy">
-        </div>
-        <p style="font-size:18px; line-height:1.7; color:#b6c3b7; margin-top:22px;">Il pesce migliore lo prende chi c'è, non chi telefona. Quando i pescherecci rientrano al porto di Otranto noi siamo già lì: per guardare, toccare e scegliere uno a uno i pesci che troverai nella vetrina del nostro ristorante.</p>
-        <p style="font-size:18px; line-height:1.7; color:#b6c3b7; margin-top:16px;">E la carne? Da allevatori locali, che conosciamo di persona.</p>
+        <div style="width:44px; height:2px; background:#7DB249;"></div>
+        <h3 style="font-family:'Sora',sans-serif; font-size:20px; font-weight:600; color:#F3F0E2; margin:16px 0 10px;">Posizione unica</h3>
+        <p style="font-size:15.5px; line-height:1.6; color:#c6d0b6;">La tranquillità della campagna, il mare a 800 metri e Otranto a 10 minuti.</p>
       </div>
-      <div style="display:grid; gap:16px;">
-
-        <div style="position:relative; aspect-ratio:3/4; border-radius:22px; overflow:hidden;">
-          <img src="images/91.jpg" alt="La scelta del pescato" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
-        </div>
-        
-      </div>
-    </div><blockquote style="font-family:'Sora',sans-serif; font-size:22px; line-height:1.5; color:#F3F0E2; margin-top:26px; padding-left:20px; border-left:2px solid #8fc6b6;"><i>"Avrei potuto dormire e farmi consegnare tutto, ma capirai perchè non lo faccio quando verrai a mangiare da noi."</i><span style="display: block; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: rgb(143, 198, 182); margin-top: 12px;">— Bartolomeo Merico</span></blockquote>
-  </div>
-</section>
-
-<!-- 6 — LA FAMIGLIA (DARK) -->
-<section id="storia" style="scroll-margin-top:90px; background:#1E3320; color:#e6ecda;">
-  <div style="max-width:1240px; margin:0 auto; padding:clamp(56px,8vw,110px) clamp(20px,5vw,60px);">
-    <div style="text-align:center;">
-      
-      
-    </div>
-    <div data-r="g2" style="display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px,5vw,64px); align-items: start; margin-top: clamp(40px,5vw,60px); width: 100%; max-width: 1115px; margin-left: auto; margin-right: auto">
+    
       <div>
-        <span style="display:inline-flex; align-items:center; gap:8px; font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:#bcd39a; background:rgba(255,255,255,0.08); padding:8px 16px; border-radius:999px;"><span style="width: 6px; height: 6px; border-radius: 99px; background: rgb(188, 211, 154);"></span>bartolomeo merico - il contadino di frassanito</span><h2 style="font-family:'Sora',sans-serif; font-weight:700; font-size:clamp(32px,4.6vw,58px); line-height:1.08; letter-spacing:-0.01em; color:#F3F0E2; margin-top:20px;">Dal 1987.<br>Una bella storia di famiglia.</h2><blockquote style="font-family:'Sora',sans-serif; font-style:italic; font-size:clamp(19px,2vw,23px); line-height:1.5; color:#F3F0E2; margin:28px 0 0; padding-left:20px; border-left:2px solid #bcd39a;">“Questa terra era dei miei nonni. Quando ero bambino qui intorno non c'era niente. Solo palude e zanzare”</blockquote><p style="font-size:18px; line-height:1.75; color:#bcc6ac; margin-top:18px;">Poi hanno bonificato, e io ho visto un'opportunità per realizzare <strong style="color:#F3F0E2;">il mio sogno: fare il contadino</strong>. Ai tempi chi poteva scappava dalla campagna. Io ho fatto il contrario: mi sono licenziato da un contratto a tempo indeterminato per venire qui. Mio padre non lo accettò mai…</p><p style="font-size:18px; line-height:1.75; color:#bcc6ac; margin-top:18px;">Quarant'anni fa, insieme a mia moglie, abbiamo posato la prima pietra. Oggi l'azienda è gestita dai miei figli, col supporto delle loro mogli e di tutte le persone dello staff — ormai parte della nostra famiglia allargata.</p></div><img src="images/87.jpg" alt="Bartolomeo Merico" style="width: 100%; max-width: 547px; aspect-ratio: 547/675; height: auto; object-fit: cover; display: block; border-radius: 22px" loading="lazy">
-    </div>
-    <div style="display:flex; flex-direction:column; align-items:center; gap:32px; text-align:center; margin-top:clamp(40px,5vw,64px);">
-      <p style="font-family:'Sora',sans-serif; font-weight:600; font-size:clamp(22px,2.8vw,30px); line-height:1.35; color:#F3F0E2; max-width:none; margin:0; white-space:nowrap;" data-r="nowrap">Qui non prenoti un semplice ristorante. Vieni a mangiare a casa nostra.</p>
-      <a href="#prenota" style="display:inline-block; background:#7DB249; color:#12210a; font-size:15px; font-weight:600; padding:16px 34px; border-radius:999px;">Riserva il tuo tavolo</a>
-    </div>
+        <div style="width:44px; height:2px; background:#7DB249;"></div>
+        <h3 style="font-family:'Sora',sans-serif; font-size:20px; font-weight:600; color:#F3F0E2; margin:16px 0 10px;">Immersi nel verde</h3>
+        <p style="font-size:15.5px; line-height:1.6; color:#c6d0b6;">Oltre 60 ettari di natura tra ulivi, vigneti, campi di grano e i profumi del Salento.</p>
+      </div>
+    
+      <div>
+        <div style="width:44px; height:2px; background:#7DB249;"></div>
+        <h3 style="font-family:'Sora',sans-serif; font-size:20px; font-weight:600; color:#F3F0E2; margin:16px 0 10px;">Cucina tipica salentina</h3>
+        <p style="font-size:15.5px; line-height:1.6; color:#c6d0b6;">Prodotti della nostra terra, ricette della tradizione, pesce fresco ogni giorno, braceria e pizze cotte nel forno a legna.</p>
+      </div>
+    
+      <div>
+        <div style="width:44px; height:2px; background:#7DB249;"></div>
+        <h3 style="font-family:'Sora',sans-serif; font-size:20px; font-weight:600; color:#F3F0E2; margin:16px 0 10px;">Tradizioni da vivere</h3>
+        <p style="font-size:15.5px; line-height:1.6; color:#c6d0b6;">Prepara le orecchiette, degusta i nostri vini e vivi la vendemmia o la raccolta delle olive nella nostra azienda agricola.</p>
+      </div>
+    
   </div>
 </section>
 
-<!-- 7 — LE TRE ATMOSFERE -->
-<section id="sale" style="scroll-margin-top:90px; max-width:1240px; margin:0 auto; padding:clamp(52px,7vw,104px) clamp(20px,5vw,60px);">
-  <div style="max-width:800px;">
-    <span style="display:inline-flex; align-items:center; gap:8px; font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:#4C7A34; background:#E7EDD8; padding:8px 16px; border-radius:999px;"><span style="width:6px; height:6px; border-radius:99px; background:#4C7A34;"></span>3 atmosfere diverse. Un unico menù.</span>
-    <h2 style="font-family:'Sora',sans-serif; font-weight:600; font-size:clamp(30px,4.2vw,52px); line-height:1.1; color:#1c2913; margin-top:20px;">Le prime foto le scatti prima ancora che arrivino i piatti.</h2>
-    <p style="font-size:18px; line-height:1.65; color:#56604a; margin-top:20px;">Pietra leccese, luminarie salentine, tovaglie a quadretti bianche e rosse. Una sala interna e due ambienti all'aperto, ognuno con la sua luce. Che sia per una cena romantica, un pranzo di lavoro o una serata tra amici, Il Contadino è il posto giusto per te.</p>
-  </div>
-  <div data-r="g3" style="display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(16px,2vw,24px); margin-top:clamp(36px,4vw,56px);">
-<figure style="margin:0;">
-      <div style="position:relative; aspect-ratio:4/5; border-radius:22px; overflow:hidden;">
-        <img src="images/190.jpg" alt="La sala interna" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
-      </div>
-      <h3 style="font-family:'Sora',sans-serif; font-size:22px; font-weight:600; color:#1c2913; margin:16px 0 6px;">La sala interna</h3>
-    </figure>
-    <figure style="margin:0;">
-      <div style="position:relative; aspect-ratio:4/5; border-radius:22px; overflow:hidden;">
-        <img src="images/sala-portico.jpg" alt="Il portico" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
-      </div>
-      <h3 style="font-family:'Sora',sans-serif; font-size:22px; font-weight:600; color:#1c2913; margin:16px 0 6px;">Il portico</h3>
-    </figure>
-    <figure style="margin:0;">
-      <div style="position:relative; aspect-ratio:4/5; border-radius:22px; overflow:hidden;">
-        <img src="images/sala-giardino.jpg" alt="Il giardino segreto" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
-      </div>
-      <h3 style="font-family:'Sora',sans-serif; font-size:22px; font-weight:600; color:#1c2913; margin:16px 0 6px;">Il giardino segreto</h3>
-    </figure>
+<!-- 3 — PONTE -->
+<section style="background:#F5F2E6;">
+  <div style="max-width:1240px; margin:0 auto; padding:clamp(56px,7vw,110px) clamp(20px,5vw,60px); text-align:center;">
+    <p style="font-family:'Sora',sans-serif; font-weight:700; letter-spacing:-0.02em; margin:0; font-size:clamp(26px,3.8vw,50px); line-height:1.12; color:#1c2913; max-width:920px; margin:0 auto; text-wrap:balance;">Non è solo il luogo a fare la differenza. È il modo in cui vivrai ogni giornata.</p>
+    <p style="font-size:19px; line-height:1.7; color:#56604a; max-width:640px; margin:22px auto 0;">Dal risveglio al tramonto, il Salento si scopre un momento alla volta.</p>
   </div>
 </section>
 
-<!-- 7b — GALLERIA (mosaico) full-bleed -->
-<section style="background: #17322A">
-  <div style="max-width:1100px; margin:0 auto; padding:clamp(40px,5vw,64px) clamp(20px,5vw,60px) 0; text-align:center;">
-    <h2 style="font-family: 'Sora',sans-serif; font-weight: 400; font-size: clamp(26px,3.2vw,40px); line-height: 1.3; color: #F3F0E2; margin: 0">Queste <strong style="font-weight: 700;">facce</strong> <span style="font-weight: normal;">sono quelle che vedrai </span>girare nei campi<span style="font-weight: normal;"> al mattino presto, quelle che vedrai </span>uscire dalla cucina<span style="font-weight: normal;">, e le stesse che ti </span>serviranno il pasto a tavola<span style="font-weight: normal;">.</span></h2>
+<!-- 4 — LA GIORNATA -->
+<section id="giornata" style="scroll-margin-top:90px;">
+
+  <!-- A · risveglio — full bleed, nessun contenitore -->
+  <div style="position:relative; min-height:clamp(460px,74vh,780px); display:flex; align-items:center;">
+    <img src="images/agriturismo-otranto-il-contadino-71-msakt46l-n8zc.jpg" alt="Il patio della camera, affacciato sul verde" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; align-self: auto; top: 0px" loading="lazy">
+    <div aria-hidden="true" style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(10,25,3,0.5) 0%, rgba(10,25,3,0.62) 50%, rgba(10,25,3,0.72) 100%);"></div>
+    <div style="position:relative; width:100%; max-width:1320px; margin:0 auto; padding:clamp(32px,5vw,80px) clamp(20px,5vw,60px); color:#F7F6EF;">
+      <span style="display:inline-flex; align-items:center; gap:10px; font-family:'Sora',sans-serif; font-size:12px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:#a9d47a;"><span style="width:22px; height:1px; background:#a9d47a;"></span>Tra il mare e gli Alimini</span>
+      <h2 style="font-family:'Sora',sans-serif; font-weight:700; letter-spacing:-0.02em; margin:0; font-size:clamp(32px,5vw,66px); line-height:1.02; color:#FFFFFF; margin-top:16px; max-width:840px; text-wrap:balance;">Risvegliati immerso nella natura del Salento.</h2>
+      <p style="font-size:17.5px; line-height:1.65; color:#e2e8d6; margin-top:18px; max-width:600px;">Ti svegli in una camera immersa nel verde, tra ulivi e muretti a secco. Apri la finestra e davanti a te ci sono oltre 60 ettari di natura. Nessun rumore, solo il silenzio della campagna che accompagna l'inizio della giornata.</p>
+      <a href="#prenota" style="display:inline-block; background:#7DB249; color:#12210a; font-family:'Sora',sans-serif; font-size:15px; font-weight:700; padding:15px 30px; border-radius:999px; margin-top:26px;">Verifica disponibilità</a>
+    </div>
   </div>
-  <div style="margin:0 auto; padding:clamp(24px,3vw,36px) clamp(16px,3vw,40px);">
-    <div id="galleria" data-r="gal" style="display:grid; grid-template-columns:repeat(7,1fr); gap:clamp(10px,1.2vw,16px); align-items:start;">
+
+  <!-- B · colazione — banda verde piena, foto che sborda -->
+  <div style="background:#1E3320; position:relative;">
+    <div data-r="split" style="max-width:1320px; margin:0 auto; padding:clamp(48px,6vw,96px) clamp(20px,5vw,60px); display:grid; grid-template-columns:0.85fr 1.15fr; gap:clamp(28px,4vw,64px); align-items:center;">
+      <div data-r="portrait" style="aspect-ratio:4/5; overflow:hidden; border-radius:22px;">
+        <img src="images/agriturismo-otranto-il-contadino-20-msajeset-1hu5.jpg" alt="La colazione in famiglia" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
+      </div>
+      <div>
+        <span style="display:inline-flex; align-items:center; gap:10px; font-family:'Sora',sans-serif; font-size:12px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:#bcd39a;"><span style="width:22px; height:1px; background:#bcd39a;"></span>La colazione</span>
+        <h2 style="font-family:'Sora',sans-serif; font-weight:700; letter-spacing:-0.02em; margin:0; font-size:clamp(28px,4vw,54px); line-height:1.05; color:#F3F0E2; margin-top:16px; text-wrap:balance;">Inizia la giornata con i sapori della nostra terra.</h2>
+        <p style="font-size:18px; line-height:1.7; color:#c2cfc2; margin-top:20px; max-width:540px;">La colazione profuma di torte appena sfornate, pasticciotti, marmellate preparate da noi e frutta raccolta nella nostra azienda agricola. Il modo migliore per iniziare una giornata nel Salento.</p>
+        <a href="#prenota" style="display:inline-block; background:#7DB249; color:#12210a; font-family:'Sora',sans-serif; font-size:15px; font-weight:700; padding:15px 30px; border-radius:999px; margin-top:26px;">Verifica disponibilità</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- C · mare — editoriale sul fondo pagina, foto panoramica full bleed -->
+  <div style="background:#F5F2E6;">
+    <div style="max-width:1320px; margin:0 auto; padding:clamp(52px,7vw,104px) clamp(20px,5vw,60px);">
+      <div data-r="split" style="display:grid; grid-template-columns:1.15fr 0.85fr; gap:clamp(24px,4vw,64px); align-items:center;">
+        <div>
+          <h2 style="font-family:'Sora',sans-serif; font-weight:700; letter-spacing:-0.02em; margin:0; font-size:clamp(32px,5vw,68px); line-height:1.0; color:#1c2913; text-wrap:balance;">Il mare è a due pedalate. La tranquillità ti aspetta al ritorno.</h2>
+        </div>
+        <div>
+          <p style="font-size:18px; line-height:1.7; color:#56604a;">Prendi una delle biciclette dell'agriturismo e raggiungi il mare in pochi minuti. Quando hai voglia di esplorare, Otranto è a soli 10 minuti. Poi torni qui, dove il tempo scorre con un altro ritmo.</p>
+          <a href="#prenota" style="display:inline-block; background:#7DB249; color:#12210a; font-family:'Sora',sans-serif; font-size:15px; font-weight:700; padding:15px 30px; border-radius:999px; margin-top:24px;">Verifica disponibilità</a>
+        </div>
+      </div>
+    </div>
+    <div data-r="pano" style="aspect-ratio:24/8; min-height:240px;">
+      <img src="images/agriturismo-otranto-il-contadino-66-msajb9oh-fxhv.jpg" alt="Il giardino privato della camera" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
+    </div>
+  </div>
+
+  <!-- D · tradizioni — verde scuro, mosaico -->
+  <div id="tradizioni" style="scroll-margin-top:90px; background:#17322A;">
+    <div data-r="split" style="max-width:1320px; margin:0 auto; padding:clamp(48px,6vw,96px) clamp(20px,5vw,60px); display:grid; grid-template-columns:1.05fr 0.95fr; gap:clamp(28px,4vw,64px); align-items:center;">
+      <div>
+        <span style="display:inline-flex; align-items:center; gap:10px; font-family:'Sora',sans-serif; font-size:12px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:#8fc6b6;"><span style="width:22px; height:1px; background:#8fc6b6;"></span>Le tradizioni</span>
+        <h2 style="font-family:'Sora',sans-serif; font-weight:700; letter-spacing:-0.02em; margin:0; font-size:clamp(28px,4vw,54px); line-height:1.05; color:#F3F0E2; margin-top:16px; text-wrap:balance;">Vivi le tradizioni del Salento, non limitarti a guardarle.</h2>
+        <p style="font-size:18px; line-height:1.7; color:#b3c4b6; margin-top:20px;">Prepara le orecchiette con le nostre cuoche, partecipa a una degustazione dei vini dell'azienda o vivi la vendemmia e la raccolta delle olive insieme a noi.</p>
+        <p style="font-family:'Sora',sans-serif; font-weight:600; font-size:clamp(19px,2.2vw,27px); line-height:1.35; color:#F3F0E2; margin-top:24px; padding-left:20px; border-left:2px solid #7DB249;">Non sono attività pensate per i turisti: sono gesti che fanno parte della nostra quotidianità.</p>
+        <a href="#prenota" style="display:inline-block; background:#7DB249; color:#12210a; font-family:'Sora',sans-serif; font-size:15px; font-weight:700; padding:15px 30px; border-radius:999px; margin-top:28px;">Verifica disponibilità</a>
+      </div>
+      <div data-r="mosaic" style="display:grid; grid-template-columns:1.35fr 1fr; grid-template-rows:1fr 1fr; gap:12px; aspect-ratio:1/1;">
+        <div style="grid-row:span 2; overflow:hidden; border-radius:20px;">
+          <img src="images/agriturismo-otranto-il-contadino-39-msajft94-kmy0.jpg" alt="Le orecchiette fatte a mano" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
+        </div>
+        <div style="overflow:hidden; border-radius:20px;">
+          <img src="images/agriturismo-otranto-il-contadino-6-msajfk1b-rkrc.jpg" alt="Le bottiglie dei nostri vini in cantina" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
+        </div>
+        <div style="overflow:hidden; border-radius:20px;">
+          <img src="images/agriturismo-otranto-il-contadino-81-msajg5aj-sohe.jpg" alt="L'azienda agricola tra gli ulivi" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- E · sera — full bleed, testo sovrapposto a sinistra -->
+  <div data-r="beat-e-wrap" style="position:relative; background:#16281a;">
+    <div data-r="beat-e-img" style="aspect-ratio:21/8; min-height:420px;">
+      <img src="images/189.jpg" alt="La tavola apparecchiata al tramonto" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
+    </div>
+    <div data-r="beat-e-grad" aria-hidden="true" style="position:absolute; inset:0; background:linear-gradient(90deg, rgba(10,25,3,0.94) 0%, rgba(10,25,3,0.6) 48%, rgba(10,25,3,0.04) 100%);"></div>
+    <div data-r="beat-e" style="position:absolute; inset:0; display:flex; align-items:center;">
+      <div style="width:100%; max-width:1320px; margin:0 auto; padding:clamp(24px,4vw,64px) clamp(20px,5vw,60px);">
+        <div style="max-width:600px; color:#F7F6EF;">
+          <span style="display:inline-flex; align-items:center; gap:10px; font-family:'Sora',sans-serif; font-size:12px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:#a9d47a;"><span style="width:22px; height:1px; background:#a9d47a;"></span>Ristorante tipico salentino</span>
+          <h2 style="font-family:'Sora',sans-serif; font-weight:700; letter-spacing:-0.02em; margin:0; font-size:clamp(26px,3.6vw,50px); line-height:1.05; color:#FFFFFF; margin-top:16px; text-wrap:balance;">A cena ritrovi nel piatto tutto quello che hai visto durante il giorno.</h2>
+          <p style="font-size:17px; line-height:1.65; color:#dbe4cd; margin-top:16px;">Le verdure dell'orto, il nostro olio extravergine, il pesce fresco scelto ogni mattina, la carne alla brace, le pizze cotte nel forno a legna e le ricette che qui si tramandano da generazioni.</p>
+          <p style="font-family:'Sora',sans-serif; font-weight:600; font-size:clamp(18px,2vw,24px); line-height:1.35; color:#FFFFFF; margin-top:18px;">Perché il Salento non si porta solo negli occhi. Si porta a tavola.</p>
+          <a href="ristorante.html" style="display:inline-block; background:#7DB249; color:#12210a; font-family:'Sora',sans-serif; font-size:15px; font-weight:700; padding:15px 30px; border-radius:999px; margin-top:24px;">Scopri il ristorante e il menù</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- 5 — SERVIZI -->
+<section style="background:#3F6D2E;">
+  <div style="max-width:1320px; margin:0 auto; padding:clamp(48px,7vw,104px) clamp(20px,5vw,60px); text-align:center;">
+    
+    <h2 style="font-family:'Sora',sans-serif; font-weight:700; letter-spacing:-0.02em; margin:0; font-size:clamp(30px,4.4vw,56px); line-height:1.07; color:#F3F0E2; margin-top:18px; text-wrap:balance;">Qui la giornata la decidi tu.</h2>
+    <p style="font-size:18.5px; line-height:1.7; color:#e2ebd3; max-width:700px; margin:20px auto 0;">Piscina, animali della fattoria per i più piccoli, sport all'aperto e relax.<br>Tutto dentro i nostri 60 ettari.</p>
+    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:12px; margin-top:clamp(32px,4vw,48px);">
+      
+        <span style="font-size:15px; font-weight:600; color:#F3F0E2; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.22); padding:12px 22px; border-radius:999px;">Piscina semiolimpionica</span>
+      
+        <span style="font-size:15px; font-weight:600; color:#F3F0E2; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.22); padding:12px 22px; border-radius:999px;">Animali della fattoria</span>
+      
+        <span style="font-size:15px; font-weight:600; color:#F3F0E2; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.22); padding:12px 22px; border-radius:999px;">Minigolf</span>
+      
+        <span style="font-size:15px; font-weight:600; color:#F3F0E2; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.22); padding:12px 22px; border-radius:999px;">Tennis</span>
+      
+        <span style="font-size:15px; font-weight:600; color:#F3F0E2; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.22); padding:12px 22px; border-radius:999px;">Calcetto</span>
+      
+        <span style="font-size:15px; font-weight:600; color:#F3F0E2; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.22); padding:12px 22px; border-radius:999px;">Noleggio bici</span>
+      
+        <span style="font-size:15px; font-weight:600; color:#F3F0E2; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.22); padding:12px 22px; border-radius:999px;">Massaggi in camera</span>
+      
+        <span style="font-size:15px; font-weight:600; color:#F3F0E2; background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.22); padding:12px 22px; border-radius:999px;">Parcheggio interno videosorvegliato</span>
+      
+    </div>
+    <a href="#prenota" style="display:inline-block; margin-top:clamp(32px,4vw,44px); background:#F3F0E2; color:#2f4b1f; font-family:'Sora',sans-serif; font-size:15px; font-weight:700; padding:16px 34px; border-radius:999px;">Verifica disponibilità</a>
+  </div>
+</section>
+
+<!-- 6 — ALLOGGI -->
+<section id="alloggi" style="scroll-margin-top:90px; background:#F5F2E6;">
+  <div style="max-width:1320px; margin:0 auto; padding:clamp(56px,7vw,110px) clamp(20px,5vw,60px);">
+
+    <div style="display:flex; flex-wrap:wrap; align-items:flex-start; justify-content:space-between; gap:clamp(24px,4vw,60px);">
+      <div style="max-width:640px;">
+        <span style="display:inline-flex; align-items:center; gap:10px; font-family:'Sora',sans-serif; font-size:12px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:#4C7A34;"><span style="width:22px; height:1px; background:#7DB249;"></span>Camere e appartamenti</span>
+        <h2 style="font-family:'Sora',sans-serif; font-weight:700; font-size:clamp(38px,6vw,80px); line-height:1.0; letter-spacing:-0.03em; color:#1c2913; margin:18px 0 0; text-wrap:balance;">Dormi immerso nel verde.</h2>
+      </div>
+      <p style="font-size:17.5px; line-height:1.65; color:#56604a; max-width:400px; padding-top:8px;">Tutte le soluzioni sono strutture autonome, con ingresso indipendente e spazio esterno privato.</p>
+    </div>
+
+
+    <div data-r="split" style="display:grid; grid-template-columns:1.15fr 0.85fr; gap:clamp(20px,2.6vw,32px); margin-top:20px; align-items:stretch;">
+      <div style="position:relative; border-radius:clamp(20px,2.6vw,30px); overflow:hidden; min-height:clamp(320px,46vh,540px); background:#EFEBDB;">
+        <div role="img" aria-label="Camere — foto 1" data-slide="1" style="position:absolute; inset:0; background-size:cover; background-position:center; background-image:url(&quot;images/cam-00.jpg);"></div>
+        <button data-prev="1" aria-label="Foto precedente" style="position:absolute; left:14px; top:50%; transform:translateY(-50%); width:44px; height:44px; border:none; border-radius:999px; background:rgba(255,255,255,0.9); color:#1c2913; font-size:20px; line-height:1; cursor:pointer; display:flex; align-items:center; justify-content:center;">‹</button>
+        <button data-next="1" aria-label="Foto successiva" style="position:absolute; right:14px; top:50%; transform:translateY(-50%); width:44px; height:44px; border:none; border-radius:999px; background:rgba(255,255,255,0.9); color:#1c2913; font-size:20px; line-height:1; cursor:pointer; display:flex; align-items:center; justify-content:center;">›</button>
+        <div style="position:absolute; left:0; right:0; bottom:16px; display:flex; justify-content:center; gap:8px;">
+          
+            <button data-dot="1" data-active="1" aria-label="Vai alla foto 1" style="width:8px; height:8px; padding:0; border:none; border-radius:999px; cursor:pointer; background:rgba(255,255,255,0.55); transition:width 0.25s ease, background 0.25s ease;"></button>
+          
+            <button data-dot="1" data-active="0" aria-label="Vai alla foto 2" style="width:8px; height:8px; padding:0; border:none; border-radius:999px; cursor:pointer; background:rgba(255,255,255,0.55); transition:width 0.25s ease, background 0.25s ease;"></button>
+          
+            <button data-dot="1" data-active="0" aria-label="Vai alla foto 3" style="width:8px; height:8px; padding:0; border:none; border-radius:999px; cursor:pointer; background:rgba(255,255,255,0.55); transition:width 0.25s ease, background 0.25s ease;"></button>
+          
+            <button data-dot="1" data-active="0" aria-label="Vai alla foto 4" style="width:8px; height:8px; padding:0; border:none; border-radius:999px; cursor:pointer; background:rgba(255,255,255,0.55); transition:width 0.25s ease, background 0.25s ease;"></button>
+          
+            <button data-dot="1" data-active="0" aria-label="Vai alla foto 5" style="width:8px; height:8px; padding:0; border:none; border-radius:999px; cursor:pointer; background:rgba(255,255,255,0.55); transition:width 0.25s ease, background 0.25s ease;"></button>
+          
+        </div>
+        <div data-countbadge="1" style="position:absolute; top:14px; right:14px; background:rgba(18,33,10,0.72); color:#fff; font-family:'Sora',sans-serif; font-size:12px; font-weight:600; padding:7px 13px; border-radius:999px;">1 / 5</div>
+      </div>
+      <div style="background:#FFFFFF; border:1px solid #e6e2ce; border-radius:clamp(20px,2.6vw,30px); padding:clamp(26px,3vw,40px); display:flex; flex-direction:column;">
+        <div data-r="pills" style="display:flex; gap:6px; background:#F1EFE2; border-radius:999px; padding:5px; margin-bottom:26px;">
+          
+            <button data-pill="1" style="flex:1 1 0; min-width:0; cursor:pointer; border:none; padding:12px 10px; border-radius:999px; font-family:'Sora',sans-serif; font-size:14.5px; font-weight:600; white-space:nowrap; transition:background 200ms ease, color 200ms ease; background:#1E3320; color:#F3F0E2;">Camere</button>
+          
+            <button data-pill="1" style="flex:1 1 0; min-width:0; cursor:pointer; border:none; padding:12px 10px; border-radius:999px; font-family:'Sora',sans-serif; font-size:14.5px; font-weight:600; white-space:nowrap; transition:background 200ms ease, color 200ms ease; background:transparent; color:#56604a;">Monolocali</button>
+          
+            <button data-pill="1" style="flex:1 1 0; min-width:0; cursor:pointer; border:none; padding:12px 10px; border-radius:999px; font-family:'Sora',sans-serif; font-size:14.5px; font-weight:600; white-space:nowrap; transition:background 200ms ease, color 200ms ease; background:transparent; color:#56604a;">Appartamenti</button>
+          
+        </div>
+        <div style="font-family:'Sora',sans-serif; font-size:12px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:#7d8a6c;">Matrimoniale · 2 persone</div>
+        <h3 style="font-family:'Sora',sans-serif; font-size:clamp(26px,3vw,38px); font-weight:600; line-height:1.05; color:#1c2913; margin:12px 0 0;">Camere</h3>
+        <p style="font-size:16.5px; line-height:1.7; color:#56604a; margin-top:14px;">Ingresso indipendente e spazio esterno privato. Letto matrimoniale, bagno con doccia e tutti i comfort per una vacanza al mare senza pensieri.</p>
+        <div style="display:inline-flex; align-items:center; gap:11px; margin-top:20px; background:#F1F5E7; border:1px solid #dfe7cd; border-radius:999px; padding:10px 18px 10px 12px;">
+          <span style="flex:0 0 auto; width:30px; height:30px; border-radius:999px; background:#FFFFFF; color:#4C7A34; display:flex; align-items:center; justify-content:center;">
+            <svg width="19" height="19" aria-hidden="true"><use href="#ic-people"></use></svg>
+          </span>
+          <span style="font-family:'Sora',sans-serif; font-size:15px; font-weight:600; color:#2f4b1f;">Fino a 3 persone</span>
+        </div>
+
+        <div data-r="amen" style="display:grid; grid-template-columns:repeat(2,1fr); gap:12px 20px; margin-top:26px; padding-top:24px; border-top:1px solid #ece8d6;">
+          
+            <div style="display:flex; align-items:center; gap:11px;">
+              <span style="flex:0 0 auto; width:36px; height:36px; border-radius:11px; background:#F1F5E7; color:#4C7A34; display:flex; align-items:center; justify-content:center;">
+                <svg width="20" height="20" aria-hidden="true"><use href="#ic-door"></use></svg>
+              </span>
+              <span style="font-size:14.5px; font-weight:500; color:#2a3320;">Ingresso indipendente</span>
+            </div>
+          
+            <div style="display:flex; align-items:center; gap:11px;">
+              <span style="flex:0 0 auto; width:36px; height:36px; border-radius:11px; background:#F1F5E7; color:#4C7A34; display:flex; align-items:center; justify-content:center;">
+                <svg width="20" height="20" aria-hidden="true"><use href="#ic-ac"></use></svg>
+              </span>
+              <span style="font-size:14.5px; font-weight:500; color:#2a3320;">Aria condizionata</span>
+            </div>
+          
+            <div style="display:flex; align-items:center; gap:11px;">
+              <span style="flex:0 0 auto; width:36px; height:36px; border-radius:11px; background:#F1F5E7; color:#4C7A34; display:flex; align-items:center; justify-content:center;">
+                <svg width="20" height="20" aria-hidden="true"><use href="#ic-safe"></use></svg>
+              </span>
+              <span style="font-size:14.5px; font-weight:500; color:#2a3320;">Cassaforte</span>
+            </div>
+          
+            <div style="display:flex; align-items:center; gap:11px;">
+              <span style="flex:0 0 auto; width:36px; height:36px; border-radius:11px; background:#F1F5E7; color:#4C7A34; display:flex; align-items:center; justify-content:center;">
+                <svg width="20" height="20" aria-hidden="true"><use href="#ic-fridge"></use></svg>
+              </span>
+              <span style="font-size:14.5px; font-weight:500; color:#2a3320;">Frigorifero</span>
+            </div>
+          
+            <div style="display:flex; align-items:center; gap:11px;">
+              <span style="flex:0 0 auto; width:36px; height:36px; border-radius:11px; background:#F1F5E7; color:#4C7A34; display:flex; align-items:center; justify-content:center;">
+                <svg width="20" height="20" aria-hidden="true"><use href="#ic-dryer"></use></svg>
+              </span>
+              <span style="font-size:14.5px; font-weight:500; color:#2a3320;">Phon</span>
+            </div>
+          
+            <div style="display:flex; align-items:center; gap:11px;">
+              <span style="flex:0 0 auto; width:36px; height:36px; border-radius:11px; background:#F1F5E7; color:#4C7A34; display:flex; align-items:center; justify-content:center;">
+                <svg width="20" height="20" aria-hidden="true"><use href="#ic-outdoor"></use></svg>
+              </span>
+              <span style="font-size:14.5px; font-weight:500; color:#2a3320;">Spazio esterno privato</span>
+            </div>
+          
+        </div>
+
+        <div style="margin-top:auto; padding-top:28px;">
+          <a href="#prenota" style="display:inline-block; background:#7DB249; color:#12210a; font-family:'Sora',sans-serif; font-size:15px; font-weight:700; padding:16px 34px; border-radius:999px;">Verifica disponibilità</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 6b — GALLERIA -->
+<section id="galleria" style="scroll-margin-top:90px; background:#EFEBDB;">
+  <div style="max-width:1440px; margin:0 auto; padding:clamp(52px,7vw,104px) clamp(14px,2.4vw,32px) clamp(20px,3vw,40px);">
+    <div style="display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:20px; padding:0 clamp(6px,1.6vw,28px);">
+      <div style="max-width:660px;">
+        
+        <h2 style="font-family:'Sora',sans-serif; font-weight:700; font-size:clamp(32px,5vw,68px); line-height:1.0; letter-spacing:-0.03em; color:#1c2913; margin:16px 0 0; text-wrap:balance;">Guarda dove starai.</h2>
+      </div>
+    </div>
+
+    <div data-r="gal" style="display:grid; grid-template-columns:repeat(7,1fr); gap:clamp(10px,1.2vw,16px); align-items:start; margin-top:clamp(36px,5vw,72px);">
       <div style="display:flex; flex-direction:column; gap:clamp(10px,1.2vw,16px);">
-        <div style="aspect-ratio:0.671; border-radius:14px; overflow:hidden;">
+        <div style="aspect-ratio:0.671; border-radius:14px; overflow:hidden; cursor:zoom-in;">
           <img src="images/g195.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
         </div>
-        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden;">
+        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden; cursor:zoom-in;">
           <img src="images/g120.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
         </div>
-        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden;">
+        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden; cursor:zoom-in;">
           <img src="images/g150.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
         </div>
-        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden;">
+        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden; cursor:zoom-in;">
           <img src="images/g5.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
         </div>
-        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden;">
+        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden; cursor:zoom-in;">
           <img src="images/g9.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
         </div>
       </div>
       <div style="display:flex; flex-direction:column; gap:clamp(10px,1.2vw,16px);">
-        <div style="aspect-ratio:1.777; border-radius:14px; overflow:hidden;">
+        <div style="aspect-ratio:1.777; border-radius:14px; overflow:hidden; cursor:zoom-in;">
           <img src="images/g17.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
         </div>
-        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden;">
+        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden; cursor:zoom-in;">
           <img src="images/g144.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
         </div>
-        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden;">
+        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden; cursor:zoom-in;">
           <img src="images/g12.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
         </div>
-        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden;">
+        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden; cursor:zoom-in;">
           <img src="images/g112.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
         </div>
-        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden;">
+        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden; cursor:zoom-in;">
           <img src="images/g77.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
         </div>
       </div>
       <div style="display:flex; flex-direction:column; gap:clamp(10px,1.2vw,16px);">
-        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden;">
+        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden; cursor:zoom-in;">
           <img src="images/g160.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
         </div>
-        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden;">
+        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden; cursor:zoom-in;">
           <img src="images/g117.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
         </div>
-        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden;">
+        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden; cursor:zoom-in;">
           <img src="images/g148.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
         </div>
-        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden;">
+        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden; cursor:zoom-in;">
           <img src="images/g24.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
         </div>
-        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden;">
+        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden; cursor:zoom-in;">
           <img src="images/g2.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
         </div>
       </div>
       <div style="display:flex; flex-direction:column; gap:clamp(10px,1.2vw,16px);">
-        <div style="aspect-ratio:1.501; border-radius:14px; overflow:hidden;">
+        <div style="aspect-ratio:1.501; border-radius:14px; overflow:hidden; cursor:zoom-in;">
           <img src="images/g71.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
         </div>
-        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden;">
+        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden; cursor:zoom-in;">
           <img src="images/g119.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
         </div>
-        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden;">
+        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden; cursor:zoom-in;">
           <img src="images/g10.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
         </div>
-        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden;">
+        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden; cursor:zoom-in;">
           <img src="images/g107.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
         </div>
-        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden;">
+        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden; cursor:zoom-in;">
           <img src="images/g14.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
         </div>
       </div>
       <div style="display:flex; flex-direction:column; gap:clamp(10px,1.2vw,16px);">
-        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden;">
+        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden; cursor:zoom-in;">
           <img src="images/g159.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
         </div>
-        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden;">
+        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden; cursor:zoom-in;">
           <img src="images/g106.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
         </div>
-        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden;">
+        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden; cursor:zoom-in;">
           <img src="images/g158.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
         </div>
-        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden;">
+        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden; cursor:zoom-in;">
           <img src="images/g35.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
         </div>
-        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden;">
+        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden; cursor:zoom-in;">
           <img src="images/g1.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
         </div>
       </div>
       <div style="display:flex; flex-direction:column; gap:clamp(10px,1.2vw,16px);">
-        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden;">
+        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden; cursor:zoom-in;">
           <img src="images/g157.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
         </div>
-        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden;">
+        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden; cursor:zoom-in;">
           <img src="images/g40.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
         </div>
-        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden;">
+        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden; cursor:zoom-in;">
           <img src="images/g122.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
         </div>
-        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden;">
+        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden; cursor:zoom-in;">
           <img src="images/g34.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
         </div>
-        <div style="aspect-ratio:1.499; border-radius:14px; overflow:hidden;">
+        <div style="aspect-ratio:1.499; border-radius:14px; overflow:hidden; cursor:zoom-in;">
           <img src="images/g3.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
         </div>
       </div>
       <div style="display:flex; flex-direction:column; gap:clamp(10px,1.2vw,16px);">
-        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden;">
+        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden; cursor:zoom-in;">
           <img src="images/g143.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
         </div>
-        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden;">
+        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden; cursor:zoom-in;">
           <img src="images/g13.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
         </div>
-        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden;">
+        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden; cursor:zoom-in;">
           <img src="images/g114.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
         </div>
-        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden;">
+        <div style="aspect-ratio:0.667; border-radius:14px; overflow:hidden; cursor:zoom-in;">
           <img src="images/g76.jpg" alt="" style="width:100%; height:100%; object-fit:cover; display:block;" loading="lazy">
         </div>
       </div>
     </div>
   </div>
-</section>
+  </section></div>
 
-<!-- 8 — MENU BAND -->
-<section id="menu" style="scroll-margin-top: 72px; background: #3F6D2E; color: #F3F0E2">
-  <div style="max-width:1240px; margin:0 auto; padding:clamp(56px,8vw,110px) clamp(20px,5vw,60px); text-align:center;">
-    <span style="display:inline-flex; align-items:center; gap:8px; font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:#e6f0d4; background:rgba(255,255,255,0.14); padding:8px 16px; border-radius:999px;"><span data-metadata="&lt;!--(figmeta)eyJmaWxlS2V5IjoibksxdDRPdnR4TUtZM294M1BlWmNYMCIsInBhc3RlSUQiOjE1MDc2OTI1NjUsImRhdGFUeXBlIjoic2NlbmUiLCJlbnZpcm9ubWVudCI6Ind3dy5maWdtYS5jb20iLCJzZWxlY3RlZE5vZGVEYXRhIjoiMTA6NTR8MzF8MCJ9Cg==(/figmeta)--&gt;"></span><span data-buffer="&lt;!--(figma)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(/figma)--&gt;"></span><span style="white-space: pre-wrap; line-height: 1.7">IL PROBLEMA NON È COSA ORDINARE.
-È COSA RIMANDARE ALLA PROSSIMA VOLTA CHE TORNERAI</span></span>
-    <h2 style="font-family:'Sora',sans-serif; font-weight:600; font-size:clamp(32px,4.6vw,58px); line-height:1.08; color:#F3F0E2; margin-top:20px;">Solo materie prime fresche.<br>Solo di stagione.</h2>
-    
-    <a href="#" style="display:inline-block; margin-top:30px; background:#F3F0E2; color:#2f4b1f; font-size:15px; font-weight:600; padding:17px 40px; border-radius:999px;">Scopri il menù</a>
-  </div>
-</section>
 
-<!-- 9 — RECENSIONI -->
-<section style="max-width:1240px; margin:0 auto; padding:clamp(52px,7vw,104px) clamp(20px,5vw,60px);">
-  <div style="text-align:center; max-width:760px; margin:0 auto;">
-    
-    
-    <h2 style="font-family:'Sora',sans-serif; font-weight:600; font-size:clamp(28px,4.4vw,54px); line-height:1.1; color:#1c2913; margin-top:20px; text-wrap:nowrap;">+ 1750 recensioni positive</h2><p style="font-size:18px; line-height:1.6; color:#56604a; margin-top:14px;">Non lo diciamo noi. Lo dice chi si è già seduto a questi tavoli.</p>
-  </div>
-  <div data-r="g3" style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:clamp(36px,4vw,56px);">
-    
-      <div style="display:flex; flex-direction:column; background:#FBF9F0; border:1px solid #e6e2ce; border-radius:20px; padding:24px;">
-        <div style="color:#C79A3E; font-size:15px; letter-spacing:2px;">★★★★★</div>
-        <p style="font-family:'Sora',sans-serif; font-size:16px; line-height:1.55; color:#2a3320; margin:12px 0 16px; flex:1 1 auto;">Il banco del pescato del giorno fa invidia a una pescheria. Tantissima varietà e prodotto di ottima qualità, già solo a vederlo. Poi nel piatto è arrivata la conferma: pesce buonissimo e un pranzo davvero da 10 e lode. Continuate così, torneremo presto.</p>
-        <div style="display:flex; align-items:center; gap:10px;">
-          <span style="font-size:14px; font-weight:600; color:#37432c;">Elisabeth <span style="font-weight:400; color:#7d8a6c;">su Google</span></span>
-        </div>
-      </div>
-    
-      <div style="display:flex; flex-direction:column; background:#FBF9F0; border:1px solid #e6e2ce; border-radius:20px; padding:24px;">
-        <div style="color:#C79A3E; font-size:15px; letter-spacing:2px;">★★★★★</div>
-        <p style="font-family:'Sora',sans-serif; font-size:16px; line-height:1.55; color:#2a3320; margin:12px 0 16px; flex:1 1 auto;">Siamo venuti per provare la carne alla brace e siamo rimasti molto soddisfatti. Cottura perfetta, carne tenera e porzioni giuste. Si vede che c'è attenzione nella scelta dei prodotti. Ottima cena, personale gentile. Prezzi onesti per la qualità che ricevi.</p>
-        <div style="display:flex; align-items:center; gap:10px;">
-          <span style="font-size:14px; font-weight:600; color:#37432c;">Marco <span style="font-weight:400; color:#7d8a6c;">su Google</span></span>
-        </div>
-      </div>
-    
-      <div style="display:flex; flex-direction:column; background:#FBF9F0; border:1px solid #e6e2ce; border-radius:20px; padding:24px;">
-        <div style="color:#C79A3E; font-size:15px; letter-spacing:2px;">★★★★★</div>
-        <p style="font-family:'Sora',sans-serif; font-size:16px; line-height:1.55; color:#2a3320; margin:12px 0 16px; flex:1 1 auto;">Siamo stati a cena qui durante la vacanza e abbiamo mangiato davvero bene. Piatti della tradizione, ingredienti freschi e sapori che ricordano la cucina di casa. Abbiamo provato diverse portate ed era tutto molto buono. Ci torneremo.</p>
-        <div style="display:flex; align-items:center; gap:10px;">
-          <span style="font-size:14px; font-weight:600; color:#37432c;">Stefano <span style="font-weight:400; color:#7d8a6c;">su TripAdvisor</span></span>
-        </div>
-      </div>
-    
-  </div>
-</section>
+  
 
-<!-- 10 — FORM -->
-<section id="prenota" style="scroll-margin-top:90px; background:#EBE7D6;">
-  <div style="max-width:1240px; margin:0 auto; padding:clamp(56px,7vw,96px) clamp(20px,5vw,60px);">
-    <div data-r="g2" style="display:grid; grid-template-columns:0.8fr 1.2fr; gap:clamp(48px,7vw,100px); align-items:stretch;">
-      <div style="display:flex; flex-direction:column; justify-content:center;">
-        
-        <h2 style="font-family:'Sora',sans-serif; font-weight:600; font-size:clamp(32px,4.4vw,54px); line-height:1.08; color:#1c2913; margin-top:18px;">Vieni ad assaggiare il salento.</h2>
-        <p style="font-size:18px; line-height:1.6; color:#56604a; margin-top:16px;">Aperti a pranzo e a cena, tutti i giorni.</p>
-        <div style="display:flex; flex-wrap:wrap; gap:12px; margin-top:24px;">
-          <span style="font-size:13px; font-weight:600; color:#4C7A34; background:#F3F0E2; border:1px solid #d3d8c0; padding:8px 16px; border-radius:999px;">Opzioni vegetariane</span>
-          <span style="font-size:13px; font-weight:600; color:#4C7A34; background:#F3F0E2; border:1px solid #d3d8c0; padding:8px 16px; border-radius:999px;">Anche senza glutine</span><span style="font-size:13px; font-weight:600; color:#4C7A34; background:#F3F0E2; border:1px solid #d3d8c0; padding:8px 16px; border-radius:999px;">Ampio parcheggio gratuito</span>
-        </div>
-      </div>
-      <div style="background:#FBF9F0; border:1px solid #e6e2ce; border-radius:22px; padding:clamp(24px,3vw,38px);">
-        
-        
-          <h3 style="font-family:'Sora',sans-serif; font-weight:600; font-size:clamp(22px,2.6vw,30px); color:#1c2913; margin-bottom:20px;">Riserva il tuo tavolo</h3>
-          <form novalidate="">
-            <div style="display:grid; gap:16px;">
 
-              <div data-r="g2f" style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
-                <label style="display:block;"><input required="" type="text" name="first_name" placeholder="Nome *" style="width:100%; padding:13px 15px; border:1px solid #d8d3bd; border-radius:12px; background:#fff; font-size:15px; color:#22301B;"></label>
-                <label style="display:block;"><input required="" type="text" name="last_name" placeholder="Cognome *" style="width:100%; padding:13px 15px; border:1px solid #d8d3bd; border-radius:12px; background:#fff; font-size:15px; color:#22301B;"></label>
-              </div>
-              <div data-r="g2f" style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
-                <label style="display:block;"><input required="" type="tel" name="phone" placeholder="Telefono *" style="width:100%; padding:13px 15px; border:1px solid #d8d3bd; border-radius:12px; background:#fff; font-size:15px; color:#22301B;"></label>
-                <label style="display:block;"><input required="" type="email" name="email" placeholder="Email *" style="width:100%; padding:13px 15px; border:1px solid #d8d3bd; border-radius:12px; background:#fff; font-size:15px; color:#22301B;"></label>
-              </div>
-              <div data-r="g3f" style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px;">
-                <label style="display:block;"><input required="" type="text" onfocus="this.type='date'" onblur="if(!this.value)this.type='text'" name="data_prenotazione" placeholder="Data *" style="width:100%; min-width:0; max-width:100%; -webkit-appearance:none; appearance:none; text-align:left; padding:13px 13px; border:1px solid #d8d3bd; border-radius:12px; background:#fff; font-size:15px; color:#22301B;"></label>
-                <label style="display:block;"><select required="" name="orario" style="width:100%; padding:13px 13px; border:1px solid #d8d3bd; border-radius:12px; background:#fff; font-size:15px; color:#22301B;"><option value="">Orario *</option><optgroup label="Pranzo"><option>12:30</option><option>13:00</option><option>13:30</option></optgroup><optgroup label="Cena"><option>19:30</option><option>20:00</option><option>20:30</option><option>21:30</option><option>22:00</option></optgroup></select></label>
-                <label style="display:block;"><input required="" type="number" min="1" name="ospiti" placeholder="Numero Ospiti *" style="width:100%; padding:13px 13px; border:1px solid #d8d3bd; border-radius:12px; background:#fff; font-size:15px; color:#22301B;"></label>
-              </div>
-              <label style="display:block;"><textarea name="note" rows="3" placeholder="Note (allergie, celiachia, occasione speciale…)" style="width:100%; padding:13px 15px; border:1px solid #d8d3bd; border-radius:12px; background:#fff; font-size:15px; color:#22301B; resize:vertical;"></textarea></label>
-              <label style="display:flex; gap:10px; align-items:flex-start; font-size:13px; color:#56604a; line-height:1.4;"><input required="" type="checkbox" name="privacy" value="accettata" style="margin-top:2px;"><span>Ho letto e accetto l'<a href="https://www.iubenda.com/privacy-policy/35643305" target="_blank" rel="noopener" style="color:#4C7A34; text-decoration:underline;">informativa sulla privacy</a>.</span></label>
-              <label style="display:flex; gap:10px; align-items:flex-start; font-size:13px; color:#56604a; line-height:1.4;"><input type="checkbox" name="newsletter" value="si" style="margin-top:2px;"><span>Voglio ricevere le novità dall'azienda agricola.</span></label>
-              <div id="form-error" role="alert" style="display:none; background:#FDECEA; border:1.5px solid #E5484D; color:#C0202A; font-size:14.5px; font-weight:700; padding:12px 16px; border-radius:12px;">⚠️ Compila tutti i campi obbligatori prima di inviare.</div>
-              <button type="submit" style="width:100%; background:#7DB249; color:#12210a; font-size:15px; font-weight:600; padding:16px; border:none; border-radius:999px; cursor:pointer;">Riserva il tuo tavolo</button>
-            </div>
-          </form>
-        
-      </div>
+<!-- 7 — RECENSIONI -->
+<section style="background:#F5F2E6;">
+  <div style="max-width:1240px; margin:0 auto; padding:clamp(56px,7vw,104px) clamp(20px,5vw,60px);">
+    <h2 style="font-family:'Sora',sans-serif; font-weight:700; font-size:clamp(28px,4vw,50px); line-height:1.08; letter-spacing:-0.02em; color:#1c2913; text-align:center; max-width:900px; margin:0 auto; text-wrap:balance;">9,4 su 10 su Booking e oltre 800 recensioni positive</h2>
+    <div data-r="g3" style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:clamp(32px,4vw,52px);">
+      
+        <div style="display:flex; flex-direction:column; background:#FFFFFF; border:1px solid #e6e2ce; border-radius:20px; padding:28px;">
+          <div style="color:#C79A3E; font-size:15px; letter-spacing:2px;">★★★★★</div>
+          <p style="font-family:'Sora',sans-serif; font-size:15.5px; line-height:1.55; color:#2a3320; margin:14px 0 18px; flex:1 1 auto;">Abbiamo scelto questa struttura soprattutto per la posizione e abbiamo fatto benissimo. In pochi minuti eravamo al mare e Otranto è davvero vicinissima. Da qui ci siamo mossi ogni giorno senza problemi per visitare il Salento. Comoda, tranquilla e perfetta come punto di partenza. Se dovessimo tornare da queste parti, sceglieremmo di nuovo questo posto.</p>
+          <span style="font-family:'Sora',sans-serif; font-size:14px; font-weight:600; color:#37432c;">Marco</span>
+        </div>
+      
+        <div style="display:flex; flex-direction:column; background:#FFFFFF; border:1px solid #e6e2ce; border-radius:20px; padding:28px;">
+          <div style="color:#C79A3E; font-size:15px; letter-spacing:2px;">★★★★★</div>
+          <p style="font-family:'Sora',sans-serif; font-size:15.5px; line-height:1.55; color:#2a3320; margin:14px 0 18px; flex:1 1 auto;">Siamo stati una settimana e non ci è mancato davvero nulla. Abbiamo noleggiato le bici direttamente in struttura, il mare è raggiungibile in pochi minuti e la piscina è perfetta per rilassarsi al rientro. I bambini si sono divertiti tantissimo nel campetto e noi abbiamo cenato quasi tutte le sere al ristorante senza stancarci mai del menù. Vacanza davvero riuscita.</p>
+          <span style="font-family:'Sora',sans-serif; font-size:14px; font-weight:600; color:#37432c;">Stefano</span>
+        </div>
+      
+        <div style="display:flex; flex-direction:column; background:#FFFFFF; border:1px solid #e6e2ce; border-radius:20px; padding:28px;">
+          <div style="color:#C79A3E; font-size:15px; letter-spacing:2px;">★★★★★</div>
+          <p style="font-family:'Sora',sans-serif; font-size:15.5px; line-height:1.55; color:#2a3320; margin:14px 0 18px; flex:1 1 auto;">Non è stata la solita vacanza, ma un'esperienza che ci porteremo dietro. Abbiamo partecipato alla degustazione dei vini, raccolto i pomodori nell'orto e imparato a fare la pasta con le cuoche. Poi ritrovare quegli stessi prodotti nel piatto è stato bellissimo. Qui non soggiorni soltanto: vivi il Salento con tutti i sensi. Una vacanza che consigliamo davvero.</p>
+          <span style="font-family:'Sora',sans-serif; font-size:14px; font-weight:600; color:#37432c;">Elisabeth</span>
+        </div>
+      
     </div>
   </div>
 </section>
 
-<!-- 11 — DOVE SIAMO -->
-<section id="dove" style="scroll-margin-top:90px; max-width:1240px; margin:0 auto; padding:clamp(52px,7vw,104px) clamp(20px,5vw,60px);">
-  <div data-r="g2" style="display:grid; grid-template-columns:0.9fr 1.1fr; gap:clamp(32px,5vw,64px); align-items:center;">
-    
-    <div>
-      <span style="display:inline-flex; align-items:center; gap:8px; font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:#4C7A34; background:#E7EDD8; padding:8px 16px; border-radius:999px;"><span style="width:6px; height:6px; border-radius:99px; background:#4C7A34;"></span>Dove siamo</span>
-      <h2 style="font-family:'Sora',sans-serif; font-weight:600; font-size:clamp(30px,4.2vw,52px); line-height:1.1; color:#1c2913; margin-top:20px;">A soli 700 metri dal mare, nel cuore del Salento.</h2>
-      <p style="font-size:18px; line-height:1.6; color:#56604a; margin-top:20px;">10 Minuti da Otranto · 30 minuti da Lecce</p>
-      <p style="font-family:'Sora',sans-serif; font-size:20px; color:#2a3320; margin-top:20px;">Via Azienda, snc<br>73028 Frassanito – Otranto (LE)</p>
-      
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=Agriturismo+Il+Contadino,+Via+Azienda,+Frassanito,+Otranto+LE" target="_blank" rel="noopener" style="display:inline-block; margin-top:26px; background:#7DB249; color:#12210a; font-size:15px; font-weight:600; padding:15px 30px; border-radius:999px;">Apri in Google Maps</a>
-    </div><div style="position:relative; aspect-ratio:16/11; border-radius:24px; overflow:hidden;">
-      <iframe title="Mappa — Agriturismo Il Contadino, Otranto" src="https://www.google.com/maps?q=Agriturismo+Il+Contadino,+Via+Azienda,+Frassanito,+Otranto+LE&amp;z=14&amp;output=embed" style="width:100%; height:100%; border:0; display:block;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<!-- 8 — PRENOTA + DOVE SIAMO -->
+<section id="prenota" style="scroll-margin-top:90px; background:#EFEBDB;">
+  <div style="max-width:1240px; margin:0 auto; padding:clamp(56px,7vw,104px) clamp(20px,5vw,60px);">
+    <div data-r="g2f" style="display:grid; grid-template-columns:1fr 1fr; gap:clamp(32px,4.5vw,64px); align-items:stretch;">
+
+      <div style="background:#FFFFFF; border:1px solid #e6e2ce; border-radius:clamp(20px,2.6vw,30px); padding:clamp(28px,3.5vw,48px); display:flex; flex-direction:column;">
+        <span style="display:inline-flex; align-self:flex-start; align-items:center; gap:10px; font-family:'Sora',sans-serif; font-size:12px; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; color:#4C7A34;"><span style="width:22px; height:1px; background:#7DB249;"></span>Prenotazione diretta</span>
+        <h2 style="font-family:'Sora',sans-serif; font-weight:700; font-size:clamp(28px,3.6vw,46px); line-height:1.06; letter-spacing:-0.02em; color:#1c2913; margin-top:16px;">Verifica disponibilità.</h2>
+        <p style="font-family:'Sora',sans-serif; font-size:17.5px; line-height:1.65; color:#56604a; margin-top:16px;">Apri il nostro sistema di prenotazione, scegli le date e vedi subito disponibilità e prezzo.</p>
+        <a href="https://booking.slope.it/20761d9d-139d-410a-bee0-901899796e82" target="_blank" rel="noopener" style="display:block; width:100%; text-align:center; margin-top:28px; background:#7DB249; color:#12210a; font-family:'Sora',sans-serif; font-size:16px; font-weight:700; padding:18px; border-radius:999px;">Prenota online</a>
+        <div style="display:flex; flex-direction:column; gap:10px; margin-top:26px; padding-top:22px; border-top:1px solid rgba(34,48,27,0.12); font-family:'Sora',sans-serif; font-size:14.5px; color:#56604a;">
+          <span>Prenoti in diretto, senza intermediari</span>
+          <span>Nessuna commissione di agenzia</span>
+          <span>Miglior prezzo garantito</span>
+        </div>
+        <div style="margin-top:auto; padding-top:26px;">
+          <p style="font-family:'Sora',sans-serif; font-size:15px; color:#56604a;">Preferisci parlarci?</p>
+          <div style="display:flex; flex-wrap:wrap; gap:14px; margin-top:12px; align-items:center;">
+            <a href="tel:+393517746917" style="font-family:'Sora',sans-serif; font-size:22px; font-weight:600; color:#1c2913;">351 774 6917</a>
+            <a href="https://wa.me/+393517746917" style="font-family:'Sora',sans-serif; font-size:14px; font-weight:600; color:#4C7A34; background:#E7EDD8; padding:10px 18px; border-radius:999px;">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="dove" style="scroll-margin-top:90px; display:flex; flex-direction:column; gap:20px;">
+        <div style="border-radius:clamp(20px,2.6vw,30px); overflow:hidden; flex:1 1 auto; min-height:260px;">
+          <iframe title="Mappa — Agriturismo Il Contadino, Otranto" src="https://www.google.com/maps?q=Agriturismo+Il+Contadino,+Via+Azienda,+Frassanito,+Otranto+LE&amp;output=embed" style="width:100%; height:100%; min-height:260px; border:0; display:block;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div style="background:#1E3320; border-radius:clamp(20px,2.6vw,30px); padding:clamp(24px,3vw,36px); color:#c6d0b6;">
+          <div style="font-family:'Sora',sans-serif; font-size:12px; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; color:#a9d47a;">Dove siamo</div>
+          <p style="font-family:'Sora',sans-serif; font-size:clamp(19px,2.2vw,24px); line-height:1.4; color:#F3F0E2; margin-top:14px;">Via Azienda, snc<br>73028 Frassanito – Otranto (LE)</p>
+          <div style="display:flex; flex-wrap:wrap; gap:8px 24px; margin-top:16px; font-family:'Sora',sans-serif; font-size:15.5px;">
+            <span>Mare a piedi in pochi minuti</span>
+            <span>10 min da Otranto</span>
+            <span>Parcheggio interno</span>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -625,29 +661,62 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- CTA FISSA -->
 <div style="position:fixed; left:0; right:0; bottom:0; z-index:60; background:#1E3320; border-top:1px solid rgba(243,240,226,0.14);">
-  <div data-r="cta" style="max-width:1240px; margin:0 auto; padding:12px clamp(16px,4vw,40px); display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap;">
-    <span style="font-family:'Sora',sans-serif; font-weight:600; font-size:16px; color:#FFFFFF;">Tutti i giorni a pranzo e cena</span>
-    <a href="#prenota" style="background:#7DB249; color:#FFFFFF; font-family:'Sora',sans-serif; font-size:15px; font-weight:700; letter-spacing:0.04em; padding:14px 30px; border-radius:999px; white-space:nowrap;">PRENOTA UN TAVOLO</a>
+  <div data-r="cta" style="max-width:1240px; margin:0 auto; padding:12px clamp(16px,4vw,40px); display:flex; align-items:center; justify-content:space-between; gap:16px;">
+    <span style="font-family:'Sora',sans-serif; font-weight:600; font-size:16px; color:#FFFFFF;">Camere e appartamenti nel verde</span>
+    <a href="#prenota" style="background:#7DB249; color:#FFFFFF; font-family:'Sora',sans-serif; font-size:15px; font-weight:700; letter-spacing:0.04em; padding:14px 30px; border-radius:999px; white-space:nowrap;">VERIFICA DISPONIBILITÀ</a>
   </div>
 </div>
 
-</div>
+
 
 <script>
 (function(){
+  var FOTOS = [["images/cam-00.jpg","images/cam-01.jpg","images/cam-02.jpg","images/cam-03.jpg","images/cam-05.jpg"],["images/mono-01.jpg","images/mono-02.jpg","images/mono-03.jpg","images/mono-04.jpg","images/mono-05.jpg"],["images/app-01.jpg","images/app-02.jpg","images/app-03.jpg","images/app-04.jpg","images/app-05.jpg"]];
   var b=document.querySelector('[data-burger]'), d=document.getElementById('mobile-drawer');
-  if(b&&d){ d.style.display='none'; b.addEventListener('click',function(){ d.style.display=(d.style.display==='none')?'flex':'none'; });
-    Array.prototype.forEach.call(d.querySelectorAll('a'),function(a){ a.addEventListener('click',function(){ d.style.display='none'; }); }); }
+  if(b&&d){ d.style.display='none'; b.addEventListener('click',function(){ d.style.display=d.style.display==='none'?'flex':'none'; });
+    Array.prototype.forEach.call(d.querySelectorAll('a'),function(a){a.addEventListener('click',function(){d.style.display='none';});}); }
+
+  var img=document.querySelector('[data-slide="1"]');
+  var wrap=img?img.parentElement:null;
+  var badge=wrap?wrap.querySelector('[data-countbadge]'):null;
+  var dots=wrap?wrap.querySelectorAll('[data-dot]'):[];
+  var pills=document.querySelectorAll('[data-pill]');
+  var tab=0, slide=0;
+  function paint(){
+    var f=FOTOS[tab]||[]; if(!f.length||!img) return;
+    slide=((slide%f.length)+f.length)%f.length;
+    img.style.backgroundImage='url("'+f[slide]+'")';
+    if(badge) badge.textContent=(slide+1)+' / '+f.length;
+    Array.prototype.forEach.call(dots,function(el,i){
+      var on=i<f.length&&i===slide;
+      el.style.display=i<f.length?'block':'none';
+      el.setAttribute('data-active',on?'1':'0');
+    });
+    Array.prototype.forEach.call(pills,function(el,i){
+      var on=i===tab;
+      el.style.background=on?'#1E3320':'transparent';
+      el.style.color=on?'#F3F0E2':'#56604a';
+    });
+  }
+  var p=wrap?wrap.querySelector('[data-prev]'):null, n=wrap?wrap.querySelector('[data-next]'):null;
+  if(p) p.addEventListener('click',function(){slide--;paint();});
+  if(n) n.addEventListener('click',function(){slide++;paint();});
+  Array.prototype.forEach.call(dots,function(el,i){el.addEventListener('click',function(){slide=i;paint();});});
+  Array.prototype.forEach.call(pills,function(el,i){el.addEventListener('click',function(){tab=i;slide=0;paint();});});
+  paint();
+
+  Array.prototype.forEach.call(document.querySelectorAll('[data-src]'),function(el){
+    el.addEventListener('click',function(){
+      var o=document.createElement('div');
+      o.style.cssText='position:fixed;inset:0;z-index:200;background:rgba(0,0,0,0.85);display:flex;align-items:center;justify-content:center;padding:4vw;cursor:zoom-out';
+      var i=document.createElement('img'); i.src=el.getAttribute('data-src');
+      i.style.cssText='max-width:100%;max-height:100%;object-fit:contain;border-radius:6px';
+      o.appendChild(i); o.addEventListener('click',function(){o.remove();}); document.body.appendChild(o);
+    });
+  });
+
   var f=document.querySelector('form');
-  var GHL_WEBHOOK='https://services.leadconnectorhq.com/hooks/VmFnGX838iORHZX477Tw/webhook-trigger/92dfd292-1de4-465c-ba32-54f013b57bee';
-  if(f){ f.addEventListener('submit',function(e){ e.preventDefault();
-    var err=document.getElementById('form-error');
-    if(!f.checkValidity()){ if(err){ err.style.display='block'; } f.reportValidity(); return; }
-    if(err){ err.style.display='none'; }
-    var go=function(){ window.location.href='/tavolo-prenotato'; };
-    if(GHL_WEBHOOK){ var t=setTimeout(go,2500);
-      fetch(GHL_WEBHOOK,{method:'POST',mode:'no-cors',body:new URLSearchParams(new FormData(f))}).then(function(){clearTimeout(t);go();}).catch(function(){clearTimeout(t);go();});
-    } else { go(); } }); }
+  if(f){ f.addEventListener('submit',function(e){e.preventDefault(); window.location.href='/tavolo-prenotato';}); }
 })();</script>
 <script>
 (function(){

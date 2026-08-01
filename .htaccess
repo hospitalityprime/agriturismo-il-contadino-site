@@ -21,8 +21,10 @@ RewriteCond %{THE_REQUEST} \s/+menu\.html[\s?] [NC]
 RewriteRule ^ /menu [R=301,L]
 RewriteCond %{THE_REQUEST} \s/+grazie\.html[\s?] [NC]
 RewriteRule ^ /tavolo-prenotato [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+ristorante\.html[\s?] [NC]
+RewriteRule ^ /ristorante [R=301,L]
 
-# URL puliti -> file reali
-RewriteRule ^ristorante$ index.html [L]
+# URL puliti -> file reali (home = index.html sulla radice)
+RewriteRule ^ristorante$ ristorante.html [L]
 RewriteRule ^menu$ menu.html [L]
 RewriteRule ^tavolo-prenotato$ grazie.html [L]
