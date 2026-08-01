@@ -175,6 +175,9 @@
     "Patate, olio evo, rosmarino, sale.":"Potatoes, extra-virgin olive oil, rosemary, salt.",
     // --- Pizze ---
     "È possibile scegliere tra 3 tipologie di impasto.":"You can choose from 3 types of dough.",
+    "Classico":"Classic",
+    "Kamut · +1,50 €":"Kamut · +€1.50",
+    "Ai cereali · +1,50 €":"Multigrain · +€1.50",
     "Pomodoro, mozzarella.":"Tomato, mozzarella.",
     "Pomodoro, mozzarella, carciofi, funghi, prosciutto, melanzane, peperoni, salame piccante, olive.":"Tomato, mozzarella, artichokes, mushrooms, ham, aubergines, peppers, spicy salami, olives.",
     "Pomodoro, mozzarella, salame piccante, olive.":"Tomato, mozzarella, spicy salami, olives.",
@@ -305,12 +308,14 @@
     }
   }
 
+  var FLAG_IT = '<svg viewBox="0 0 3 2" width="26" height="17" style="display:block;border-radius:3px" aria-hidden="true"><rect width="3" height="2" fill="#F5F5F5"/><rect width="1" height="2" fill="#009246"/><rect width="1" height="2" x="2" fill="#CE2B37"/></svg>';
+  var FLAG_EN = '<svg viewBox="0 0 60 30" width="28" height="16" style="display:block;border-radius:3px" aria-hidden="true"><clipPath id="ujA"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="ujB"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath><g clip-path="url(#ujA)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#ujB)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></g></svg>';
   function setLang(lang){
     for(var i=0;i<STORE.length;i++){ STORE[i].n.nodeValue = (lang==="en") ? STORE[i].en : STORE[i].it; }
     document.documentElement.setAttribute("lang", lang);
     document.title = (lang==="en") ? "Menu — Il Contadino, Salento farmhouse" : "Il menù — Il Contadino, Agriturismo in Salento";
     var btn = document.getElementById("lang-toggle");
-    if(btn) btn.textContent = (lang==="en") ? "IT" : "EN";
+    if(btn) btn.innerHTML = (lang==="en") ? FLAG_IT : FLAG_EN;
     try { localStorage.setItem("ilc_lang", lang); } catch(e){}
   }
 
