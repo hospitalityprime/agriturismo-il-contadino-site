@@ -21,7 +21,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   * { margin:0; padding:0; box-sizing:border-box; }
   html { scroll-behavior:smooth; }
-  html, body { overflow-x:clip; max-width:100%; }
   body { background:#F5F2E6; -webkit-font-smoothing:antialiased; }
   a { color:#4C7A34; text-decoration:none; }
   a:hover { color:#3a5f26; }
@@ -73,6 +72,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
   /* --- FIX responsive mobile (aggiunte) --- */
+  @media (max-width: 600px) {
+    [data-r="pills"] { overflow-x:auto; scrollbar-width:none; }
+    [data-r="pills"]::-webkit-scrollbar { display:none; }
+    [data-r="pills"] button { font-size:12.5px !important; padding:11px 6px !important; }
+  }
   @media (max-width: 920px) {
     [data-r="split"], [data-r="g2"], [data-r="g2f"], [data-r="mosaic"], [data-r="numeri"],
     [data-r="beat-e"], [data-r="beat-e-wrap"], [data-r="portrait"], [data-r="foot"],
