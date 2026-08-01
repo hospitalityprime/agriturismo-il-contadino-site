@@ -35,6 +35,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     [data-r="topnav"] > a:first-child { flex:0 1 auto; min-width:0; overflow:hidden; }
     [data-r="topnav"] img { height:36px !important; }
     [data-r="topnav"] > a:first-child span { font-size:17px !important; }
+    [data-r="topnav"] > a:first-child span[data-r="brandsub"] { font-size:12px !important; white-space:nowrap !important; }
     [data-r="topnav"] > a[href*="prenota"] { display:none !important; }
     [data-r="burger"] { display:flex !important; }
     section[id] { scroll-margin-top:76px !important; }
@@ -97,10 +98,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-
-
-<div style="font-family:'Plus Jakarta Sans',sans-serif; color:#22301B; background:#F5F2E6; padding-bottom:72px;">
-
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
 <symbol id="ic-ac" viewBox="0 0 24 24"><path d="M3 8h18M3 13h18M6.5 17.5c1.6 0 1.6 2 3.2 2s1.6-2 3.2-2 1.6 2 3.2 2 1.6-2 3.2-2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></symbol>
 <symbol id="ic-safe" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="10" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.6"></rect><path d="M8 10V7.5a4 4 0 0 1 8 0V10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path><circle cx="12" cy="15" r="1.4" fill="currentColor"></circle></symbol>
@@ -119,7 +116,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <nav data-r="topnav" style="max-width:1240px; margin:0 auto; padding:14px clamp(20px,5vw,60px); display:flex; align-items:center; justify-content:center; gap:clamp(20px,3vw,44px); flex-wrap:wrap;">
     <a href="/" style="display:flex; align-items:center; gap:12px;">
       <img src="/images/logo.png" alt="Il Contadino" style="height:52px; width:auto; display:block;" loading="lazy">
-      <span style="display:flex; flex-direction:column; line-height:1.05;"><span style="font-family:'Sora',sans-serif; font-weight:700; font-size:22px; color:#1c2913;">Il Contadino</span><span data-r="brandsub" style="font-family:'Sora',sans-serif; font-weight:500; font-size:12px; color:#4C7A34; margin-top:2px;">Agriturismo in Salento dal 1987</span></span>
+      <span style="display:flex; flex-direction:column; line-height:1.05;"><span style="font-family:'Sora',sans-serif; font-weight:700; font-size:22px; color:#1c2913;">Il Contadino</span><span data-r="brandsub" style="font-family:'Sora',sans-serif; font-weight:500; font-size:12px; color:#4C7A34; margin-top:2px; white-space:nowrap;">Agriturismo in Salento dal 1987</span></span>
     </a>
     <div style="display:flex; align-items:center; gap:clamp(18px,3vw,38px);">
       <div style="display:flex; gap:clamp(16px,2.4vw,30px); align-items:center; font-family:'Plus Jakarta Sans',sans-serif;">
@@ -143,6 +140,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 </header>
 
+<div style="font-family:'Plus Jakarta Sans',sans-serif; color:#22301B; background:#F5F2E6; padding-bottom:72px;">
 <!-- 1 — HERO (invariata) -->
 <section id="top" style="position:relative; min-height:62vh; display:flex; align-items:center; justify-content:center; padding:clamp(70px,11vh,120px) clamp(20px,6vw,60px); overflow:hidden; background:#12210a;">
   <div aria-hidden="true" style="position:absolute; inset:0;"><img src="images/agriturismo-otranto-il-contadino-66-msajb9oh-fxhv.jpg" alt="" style="width:100%; height:100%; object-fit:cover; object-position:center 45%; display:block;" loading="lazy"></div>
@@ -678,12 +676,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </footer>
 
-<!-- CTA FISSA -->
-<div style="position:fixed; left:0; right:0; bottom:0; z-index:60; background:#1E3320; border-top:1px solid rgba(243,240,226,0.14);">
-  <div data-r="cta" style="max-width:1240px; margin:0 auto; padding:12px clamp(16px,4vw,40px); display:flex; align-items:center; justify-content:space-between; gap:16px;">
-    <span style="font-family:'Sora',sans-serif; font-weight:600; font-size:16px; color:#FFFFFF;">Camere e appartamenti nel verde</span>
-    <a href="https://booking.slope.it/20761d9d-139d-410a-bee0-901899796e82" target="_blank" rel="noopener" style="background:#7DB249; color:#FFFFFF; font-family:'Sora',sans-serif; font-size:15px; font-weight:700; letter-spacing:0.04em; padding:14px 30px; border-radius:999px; white-space:nowrap;">VERIFICA DISPONIBILITÀ</a>
-  </div>
+<!-- CTA FISSA — 2 colonne -->
+<div style="position:fixed; left:0; right:0; bottom:0; z-index:60; display:grid; grid-template-columns:1fr 1fr; border-top:1px solid rgba(243,240,226,0.14);">
+  <a data-r="cta" href="https://booking.slope.it/20761d9d-139d-410a-bee0-901899796e82" target="_blank" rel="noopener" style="display:flex; align-items:center; justify-content:center; gap:9px; background:#3F6E2A; color:#FFFFFF; font-family:'Sora',sans-serif; font-size:clamp(14px,3.4vw,17px); font-weight:700; letter-spacing:0.01em; padding:17px 12px; text-align:center; white-space:nowrap;">Prenota una camera</a>
+  <a data-r="cta" href="/ristorante#prenota" style="display:flex; align-items:center; justify-content:center; gap:9px; background:#7DB249; color:#12210a; font-family:'Sora',sans-serif; font-size:clamp(14px,3.4vw,17px); font-weight:700; letter-spacing:0.01em; padding:17px 12px; text-align:center; white-space:nowrap; border-left:1px solid rgba(243,240,226,0.18);">Prenota un tavolo</a>
 </div>
 
 
